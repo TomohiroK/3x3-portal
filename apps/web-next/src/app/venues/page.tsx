@@ -45,7 +45,12 @@ export default async function VenuesPage({ searchParams }: PageProps) {
 
   return (
     <div className="portal-container py-8 space-y-6">
-      <h1 className="text-2xl font-bold text-white">会場</h1>
+      <div className="space-y-1">
+        <h1 className="text-2xl font-bold text-white">会場</h1>
+        <p className="text-sm text-gray-400">
+          ニュースやイベントなどで取り上げた会場を掲載しています。
+        </p>
+      </div>
 
       {/* Search form */}
       <form method="get" className="flex gap-3" aria-label="会場検索">
