@@ -1,51 +1,77 @@
 /**
- * Team repository — server-side only.
+ * Team repository — mock implementation (no DB required).
+ * Replace with DB-backed implementation when DATABASE_URL is available.
  */
 import type { Team, TeamFilters, PaginatedResult } from '@/types/domain';
-import { query } from '@/lib/db/query';
-import { mapTeamRowToTeam, type TeamRow } from '@/lib/mappers/team.mapper';
+
+const MOCK_TEAMS: Team[] = [
+  {
+    id: 1,
+    slug: 'tokyo-ballers-1',
+    name: 'Tokyo Ballers',
+    location: '東京都',
+    imageUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
+    updatedAt: '2025-04-01T00:00:00Z',
+  },
+  {
+    id: 2,
+    slug: 'osaka-kings-2',
+    name: 'Osaka Kings',
+    location: '大阪府',
+    imageUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
+    updatedAt: '2025-04-01T00:00:00Z',
+  },
+  {
+    id: 3,
+    slug: 'nagoya-hoopers-3',
+    name: 'Nagoya Hoopers',
+    location: '愛知県',
+    imageUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
+    updatedAt: '2025-04-01T00:00:00Z',
+  },
+  {
+    id: 4,
+    slug: 'fukuoka-streetballers-4',
+    name: 'Fukuoka Streetballers',
+    location: '福岡県',
+    imageUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
+    updatedAt: '2025-04-01T00:00:00Z',
+  },
+];
 
 export async function listTeams(filters: TeamFilters): Promise<PaginatedResult<Team>> {
-  const params: unknown[] = [];
-  let idx = 1;
-  const conditions: string[] = ['1=1'];
+  let result = MOCK_TEAMS;
 
   if (filters.search) {
-    conditions.push(
-      `(LOWER(name) LIKE LOWER($${idx}) OR LOWER(location) LIKE LOWER($${idx}))`
+    const q = filters.search.toLowerCase();
+    result = result.filter(
+      (t) => t.name.toLowerCase().includes(q) || t.location.toLowerCase().includes(q)
     );
-    params.push(`%${filters.search}%`);
-    idx++;
   }
 
-  const where = conditions.join(' AND ');
-
-  const countRows = await query<{ count: string }>(
-    `SELECT COUNT(*) AS count FROM teams WHERE ${where}`,
-    params
-  );
-  const total = parseInt(countRows[0]?.count ?? '0', 10);
-
+  const total = result.length;
   const offset = (filters.page - 1) * filters.pageSize;
-  const dataRows = await query<TeamRow>(
-    `SELECT * FROM teams WHERE ${where} ORDER BY name ASC LIMIT $${idx} OFFSET $${idx + 1}`,
-    [...params, filters.pageSize, offset]
-  );
+  const items = result.slice(offset, offset + filters.pageSize);
 
-  return {
-    items: dataRows.map(mapTeamRowToTeam),
-    total,
-    page: filters.page,
-    pageSize: filters.pageSize,
-  };
+  return { items, total, page: filters.page, pageSize: filters.pageSize };
 }
 
 export async function getTeamById(id: number): Promise<Team | null> {
-  const rows = await query<TeamRow>(`SELECT * FROM teams WHERE id = $1 LIMIT 1`, [id]);
-  return rows.length > 0 ? mapTeamRowToTeam(rows[0]) : null;
+  return MOCK_TEAMS.find((t) => t.id === id) ?? null;
 }
 
 export async function getAllTeams(): Promise<Team[]> {
-  const rows = await query<TeamRow>(`SELECT * FROM teams ORDER BY name ASC`);
-  return rows.map(mapTeamRowToTeam);
+  return [...MOCK_TEAMS].sort((a, b) => a.name.localeCompare(b.name));
 }

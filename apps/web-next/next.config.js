@@ -1,6 +1,6 @@
-import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
+
+const nextConfig = {
   // ISR-friendly: static pages revalidate every 60 seconds
   // Override per-page with `export const revalidate = N`
 
