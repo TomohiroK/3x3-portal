@@ -4,10 +4,6 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-brand-muted bg-brand-surface py-8 text-sm text-gray-500">
       <div className="portal-container flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="font-semibold text-gray-300">
-          <span className="text-brand-accent font-extrabold">3x3</span> Observer&apos;s Hub
-        </p>
-
         <nav aria-label="フッターナビゲーション">
           <ul className="flex flex-wrap gap-4">
             {[

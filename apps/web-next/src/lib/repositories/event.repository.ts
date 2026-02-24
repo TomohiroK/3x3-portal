@@ -15,6 +15,10 @@ const MOCK_EVENTS: PortalEvent[] = [
     endDate: '2025-06-16',
     status: 'upcoming',
     imageUrl: null,
+    websiteUrl: 'https://example.com/tokyo-3x3-open',
+    xAccount: 'tokyo3x3open',
+    instagramAccount: 'tokyo3x3open',
+    tiktokAccount: null,
     updatedAt: '2025-04-01T00:00:00Z',
   },
   {
@@ -27,6 +31,10 @@ const MOCK_EVENTS: PortalEvent[] = [
     endDate: '2025-07-21',
     status: 'upcoming',
     imageUrl: null,
+    websiteUrl: null,
+    xAccount: 'osakastreetball',
+    instagramAccount: null,
+    tiktokAccount: 'osakastreetball',
     updatedAt: '2025-04-01T00:00:00Z',
   },
   {
@@ -39,6 +47,10 @@ const MOCK_EVENTS: PortalEvent[] = [
     endDate: '2025-05-10',
     status: 'completed',
     imageUrl: null,
+    websiteUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
     updatedAt: '2025-05-11T00:00:00Z',
   },
   {
@@ -51,6 +63,10 @@ const MOCK_EVENTS: PortalEvent[] = [
     endDate: '2025-08-04',
     status: 'upcoming',
     imageUrl: null,
+    websiteUrl: 'https://example.com/sapporo-3x3',
+    xAccount: null,
+    instagramAccount: 'sapporo3x3',
+    tiktokAccount: null,
     updatedAt: '2025-04-15T00:00:00Z',
   },
 ];

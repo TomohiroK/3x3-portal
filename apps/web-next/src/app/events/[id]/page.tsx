@@ -4,7 +4,22 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Calendar, MapPin, ArrowLeft } from 'lucide-react';
+import { Calendar, MapPin, ArrowLeft, Globe, Instagram } from 'lucide-react';
+
+/** X (formerly Twitter) の公式ロゴ SVG */
+function XLogo({ size = 15 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+    </svg>
+  );
+}
 import { StatusBadge } from '@/components/ui/StatusBadge';
 import { getEventById } from '@/lib/repositories/event.repository';
 import { formatDate } from '@/lib/utils/date';
@@ -74,6 +89,67 @@ export default async function EventDetailPage({ params }: PageProps) {
             <p className="text-sm text-gray-300 whitespace-pre-wrap leading-relaxed">
               {event.description}
             </p>
+          </div>
+        )}
+
+        {/* External links */}
+        {(event.websiteUrl || event.xAccount || event.instagramAccount || event.tiktokAccount) && (
+          <div className="card p-5">
+            <h2 className="text-sm font-semibold text-gray-300 mb-3">リンク</h2>
+            <ul className="flex flex-wrap gap-2">
+              {event.websiteUrl && (
+                <li>
+                  <a
+                    href={event.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium bg-sky-500/15 text-sky-300 hover:bg-sky-500/25 transition-colors"
+                  >
+                    <Globe size={15} aria-hidden="true" />
+                    公式サイト
+                  </a>
+                </li>
+              )}
+              {event.xAccount && (
+                <li>
+                  <a
+                    href={`https://x.com/${event.xAccount}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-colors"
+                  >
+                    <XLogo size={15} />
+                    @{event.xAccount}
+                  </a>
+                </li>
+              )}
+              {event.instagramAccount && (
+                <li>
+                  <a
+                    href={`https://instagram.com/${event.instagramAccount}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium bg-pink-500/15 text-pink-300 hover:bg-pink-500/25 transition-colors"
+                  >
+                    <Instagram size={15} aria-hidden="true" />
+                    @{event.instagramAccount}
+                  </a>
+                </li>
+              )}
+              {event.tiktokAccount && (
+                <li>
+                  <a
+                    href={`https://tiktok.com/@${event.tiktokAccount}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium bg-cyan-500/15 text-cyan-300 hover:bg-cyan-500/25 transition-colors"
+                  >
+                    <span className="text-xs font-extrabold leading-none" aria-hidden="true">TikTok</span>
+                    @{event.tiktokAccount}
+                  </a>
+                </li>
+              )}
+            </ul>
           </div>
         )}
       </div>

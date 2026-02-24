@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import Image from 'next/image';
+import { MobileNav } from './MobileNav';
 
 const NAV_LINKS = [
   { href: '/events', label: 'イベント' },
@@ -16,11 +17,17 @@ export function SiteHeader() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-bold tracking-tight text-white hover:text-brand-accent transition-colors"
+          className="flex items-center hover:opacity-80 transition-opacity"
           aria-label="3x3 Observer's Hub ホームへ"
         >
-          <span className="text-brand-accent font-extrabold">3x3</span>
-          <span className="hidden sm:inline text-white">Observer&apos;s Hub</span>
+          <Image
+            src="/android-icon-192x192.png"
+            alt="3x3 Observer's Hub"
+            width={36}
+            height={36}
+            className="rounded-sm"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -28,10 +35,7 @@ export function SiteHeader() {
           <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
-                <Link
-                  href={href}
-                  className="hover:text-white transition-colors"
-                >
+                <Link href={href} className="hover:text-white transition-colors">
                   {label}
                 </Link>
               </li>
@@ -39,23 +43,9 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        {/* Mobile menu button */}
-        <MobileNavToggle />
+        {/* Mobile nav (Client Component) */}
+        <MobileNav />
       </div>
     </header>
-  );
-}
-
-function MobileNavToggle() {
-  return (
-    <button
-      className="md:hidden rounded-md p-2 text-gray-400 hover:text-white focus-visible:outline"
-      aria-label="メニューを開く"
-      aria-expanded="false"
-      aria-controls="mobile-nav"
-      type="button"
-    >
-      <Menu size={20} aria-hidden="true" />
-    </button>
   );
 }

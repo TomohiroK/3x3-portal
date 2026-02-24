@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         brand: {
           // 3x3 Observer's Hub カラーパレット (紺・ネイビー系)
-          accent: '#4F6EF7',   // メインアクセント（インディゴブルー）
-          orange: '#4F6EF7',   // 後方互換エイリアス
+          accent: '#60A5FA',   // メインアクセント（明るいスカイブルー・黒背景で視認性高）
+          orange: '#60A5FA',   // 後方互換エイリアス
           dark: '#0B0E1A',     // 最深背景
           surface: '#131829',  // カード・パネル背景
           muted: '#1E2540',    // ボーダー・セパレータ

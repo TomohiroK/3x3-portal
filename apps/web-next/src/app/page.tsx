@@ -28,7 +28,7 @@ export default async function HomePage() {
     <>
       {/* Hero — full-width, outside portal-container */}
       <section aria-label="ヒーロー画像">
-        <div className="relative w-full" style={{ aspectRatio: '2816/1536' }}>
+        <div className="relative w-full aspect-[2816/1536]">
           <Image
             src="/hero-section-3x3.jpg"
             alt="3x3 Observer's Hub"

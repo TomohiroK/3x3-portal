@@ -23,6 +23,10 @@ export interface PortalEvent {
   endDate: string | null;
   status: EventStatus;
   imageUrl: string | null;
+  websiteUrl: string | null;
+  xAccount: string | null;
+  instagramAccount: string | null;
+  tiktokAccount: string | null;
   updatedAt: string;
 }
 
@@ -36,6 +40,7 @@ export interface Team {
   name: string;
   location: string;
   imageUrl: string | null;
+  websiteUrl: string | null;
   xAccount: string | null;
   instagramAccount: string | null;
   tiktokAccount: string | null;
