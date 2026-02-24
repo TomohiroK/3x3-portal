@@ -81,6 +81,17 @@ export default async function EventDetailPage({ params }: PageProps) {
             <MapPin size={15} aria-hidden="true" />
             {event.location}
           </span>
+          <span>
+            <span
+              className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-semibold ${
+                event.country === '日本'
+                  ? 'bg-green-500/15 text-green-300'
+                  : 'bg-violet-500/15 text-violet-300'
+              }`}
+            >
+              {event.country === '日本' ? '国内' : `海外・${event.country}`}
+            </span>
+          </span>
         </div>
 
         {event.description && (

@@ -19,6 +19,7 @@ export interface PortalEvent {
   name: string;
   description: string | null;
   location: string;
+  country: string; // 例: "日本" / "タイ" / "シンガポール"
   startDate: string; // ISO date string, e.g. "2025-06-01"
   endDate: string | null;
   status: EventStatus;
@@ -73,7 +74,7 @@ export interface Venue {
   slug: string;
   name: string;
   region: string; // 都道府県 or 国名（海外の場合）
-  mapUrl: string | null; // Google Maps URL
+  websiteUrl: string | null; // 公式サイト URL
   updatedAt: string;
 }
 

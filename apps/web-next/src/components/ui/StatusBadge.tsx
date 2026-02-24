@@ -20,7 +20,7 @@ interface StatusBadgeProps {
 
 export function StatusBadge({ status }: StatusBadgeProps) {
   return (
-    <span className={STATUS_CLASSES[status]} role="status" aria-label={`ステータス: ${STATUS_LABELS[status]}`}>
+    <span className={`${STATUS_CLASSES[status]} whitespace-nowrap`} role="status" aria-label={`ステータス: ${STATUS_LABELS[status]}`}>
       {STATUS_LABELS[status]}
     </span>
   );

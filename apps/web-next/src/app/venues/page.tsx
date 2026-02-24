@@ -4,7 +4,7 @@
  */
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Search, MapPin, Map, Clock } from 'lucide-react';
+import { Search, MapPin, Globe, Clock } from 'lucide-react';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorMessage } from '@/components/ui/ErrorMessage';
 import { NewBadge } from '@/components/ui/NewBadge';
@@ -108,18 +108,18 @@ export default async function VenuesPage({ searchParams }: PageProps) {
                       {venue.region}
                     </p>
 
-                    {/* Footer: map link + updated date */}
+                    {/* Footer: website link + updated date */}
                     <div className="flex items-center justify-between gap-2 mt-auto pt-1">
-                      {venue.mapUrl ? (
+                      {venue.websiteUrl ? (
                         <a
-                          href={venue.mapUrl}
+                          href={venue.websiteUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium bg-emerald-500/15 text-emerald-300 hover:bg-emerald-500/25 transition-colors"
-                          aria-label={`${venue.name} を Google Maps で見る`}
+                          className="inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium bg-sky-500/15 text-sky-300 hover:bg-sky-500/25 transition-colors"
+                          aria-label={`${venue.name} の公式サイトを見る`}
                         >
-                          <Map size={14} aria-hidden="true" />
-                          地図を見る
+                          <Globe size={14} aria-hidden="true" />
+                          公式サイト
                         </a>
                       ) : (
                         <span />
