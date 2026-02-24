@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-brand-dark text-gray-100 font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Accessible focus ring */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-orange;
+  }
+
+  /* Remove autofill yellow flash */
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+}
+
+@layer components {
+  /* Card surface */
+  .card {
+    @apply bg-brand-surface rounded-xl border border-brand-muted;
+  }
+
+  /* Badge variants */
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-orange {
+    @apply badge bg-brand-orange/20 text-brand-orange;
+  }
+  .badge-green {
+    @apply badge bg-green-500/20 text-green-400;
+  }
+  .badge-gray {
+    @apply badge bg-gray-700 text-gray-300;
+  }
+
+  /* Container */
+  .portal-container {
+    @apply mx-auto w-full max-w-5xl px-4 sm:px-6;
+  }
+}
