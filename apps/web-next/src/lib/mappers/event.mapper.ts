@@ -6,10 +6,15 @@ export interface TournamentRow {
   name: string;
   description: string | null;
   location: string;
+  country: string | null;
   date: string;
   end_date: string | null;
   status: string | null;
   image: string | null;
+  website_url: string | null;
+  x_account: string | null;
+  instagram_account: string | null;
+  tiktok_account: string | null;
   updated_at: string | null;
 }
 
@@ -35,10 +40,15 @@ export function mapTournamentRowToEvent(row: TournamentRow): PortalEvent {
     name: row.name,
     description: row.description,
     location: row.location,
+    country: row.country ?? '日本',
     startDate: row.date,
     endDate: row.end_date,
     status: toEventStatus(row.status),
     imageUrl: row.image,
+    websiteUrl: row.website_url ?? null,
+    xAccount: row.x_account ?? null,
+    instagramAccount: row.instagram_account ?? null,
+    tiktokAccount: row.tiktok_account ?? null,
     updatedAt: row.updated_at ?? new Date().toISOString(),
   };
 }

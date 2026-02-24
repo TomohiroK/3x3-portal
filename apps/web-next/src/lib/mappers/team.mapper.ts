@@ -5,6 +5,7 @@ export interface TeamRow {
   name: string;
   location: string;
   image: string | null;
+  website_url: string | null;
   x_account: string | null;
   instagram_account: string | null;
   tiktok_account: string | null;
@@ -28,6 +29,7 @@ export function mapTeamRowToTeam(row: TeamRow): Team {
     name: row.name,
     location: row.location,
     imageUrl: row.image,
+    websiteUrl: row.website_url ?? null,
     xAccount: row.x_account,
     instagramAccount: row.instagram_account,
     tiktokAccount: row.tiktok_account,

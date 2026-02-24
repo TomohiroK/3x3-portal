@@ -3,8 +3,8 @@ import type { NewsArticle } from '@/types/domain';
 export interface NewsRow {
   id: number;
   title: string;
-  content: string;
   summary: string | null;
+  source_url: string | null;
   image: string | null;
   date: string;
   updated_at: string | null;
@@ -28,7 +28,7 @@ export function mapNewsRowToArticle(row: NewsRow): NewsArticle {
     slug: slugify(row.title, row.id),
     title: row.title,
     summary: row.summary,
-    content: row.content,
+    sourceUrl: row.source_url ?? null,
     imageUrl: row.image,
     publishedAt: row.date,
     updatedAt: row.updated_at ?? new Date().toISOString(),
