@@ -15,7 +15,7 @@ const MOCK_TEAMS: Team[] = [
     xAccount: 'tokyoballers',
     instagramAccount: 'tokyoballers',
     tiktokAccount: null,
-    updatedAt: '2025-04-01T00:00:00Z',
+    updatedAt: '2026-02-24T11:00:00Z',
   },
   {
     id: 2,

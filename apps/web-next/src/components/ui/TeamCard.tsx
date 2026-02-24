@@ -1,13 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 import type { Team } from '@/types/domain';
+import { formatDateShort, isNewlyUpdated } from '@/lib/utils/date';
+import { NewBadge } from './NewBadge';
 
 interface TeamCardProps {
   team: Team;
 }
 
 export function TeamCard({ team }: TeamCardProps) {
+  const isNew = isNewlyUpdated(team.updatedAt);
+
   return (
     <Link
       href={`/teams/${team.id}`}
@@ -32,10 +36,17 @@ export function TeamCard({ team }: TeamCardProps) {
       </div>
 
       <div className="min-w-0 flex-1">
-        <p className="font-semibold text-white truncate">{team.name}</p>
+        <div className="flex items-center gap-2 mb-0.5">
+          {isNew && <NewBadge />}
+          <p className="font-semibold text-white truncate">{team.name}</p>
+        </div>
         <p className="flex items-center gap-1 text-sm text-gray-400 truncate">
           <MapPin size={12} aria-hidden="true" />
           {team.location}
+        </p>
+        <p className="flex items-center gap-1 text-xs text-gray-600 mt-1">
+          <Clock size={11} aria-hidden="true" />
+          更新: {formatDateShort(team.updatedAt)}
         </p>
       </div>
     </Link>

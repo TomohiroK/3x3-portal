@@ -19,7 +19,7 @@ const MOCK_EVENTS: PortalEvent[] = [
     xAccount: 'tokyo3x3open',
     instagramAccount: 'tokyo3x3open',
     tiktokAccount: null,
-    updatedAt: '2025-04-01T00:00:00Z',
+    updatedAt: '2026-02-23T10:00:00Z',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const MOCK_EVENTS: PortalEvent[] = [
     xAccount: 'osakastreetball',
     instagramAccount: null,
     tiktokAccount: 'osakastreetball',
-    updatedAt: '2025-04-01T00:00:00Z',
+    updatedAt: '2026-02-22T08:00:00Z',
   },
   {
     id: 3,

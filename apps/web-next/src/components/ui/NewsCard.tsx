@@ -1,19 +1,24 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 import type { NewsArticle } from '@/types/domain';
-import { formatDateShort } from '@/lib/utils/date';
+import { formatDateShort, isNewlyUpdated } from '@/lib/utils/date';
+import { NewBadge } from './NewBadge';
 
 interface NewsCardProps {
   article: NewsArticle;
 }
 
 export function NewsCard({ article }: NewsCardProps) {
-  return (
-    <Link
-      href={`/news/${article.id}`}
-      className="card flex gap-4 p-4 hover:border-brand-orange/50 transition-colors focus-visible:outline"
-      aria-label={`${article.title} を読む`}
-    >
+  const isNew = isNewlyUpdated(article.updatedAt);
+
+  const cardClass =
+    'card flex gap-4 p-4 transition-colors focus-visible:outline ' +
+    (article.sourceUrl
+      ? 'hover:border-brand-orange/50 cursor-pointer'
+      : 'cursor-default opacity-80');
+
+  const inner = (
+    <>
       {/* Thumbnail */}
       {article.imageUrl && (
         <div className="relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-lg bg-brand-muted">
@@ -28,9 +33,19 @@ export function NewsCard({ article }: NewsCardProps) {
       )}
 
       <div className="min-w-0 flex-1">
-        <p className="text-xs text-gray-500 mb-1">{formatDateShort(article.publishedAt)}</p>
+        <div className="flex items-center gap-2 mb-1">
+          {isNew && <NewBadge />}
+          <p className="text-xs text-gray-500">{formatDateShort(article.publishedAt)}</p>
+        </div>
         <h3 className="font-semibold text-white leading-snug line-clamp-2 mb-1">
           {article.title}
+          {article.sourceUrl && (
+            <ExternalLink
+              size={12}
+              className="inline-block ml-1.5 text-gray-500 align-middle"
+              aria-hidden="true"
+            />
+          )}
         </h3>
         {article.summary && (
           <p className="text-sm text-gray-400 line-clamp-2">{article.summary}</p>
@@ -38,7 +53,28 @@ export function NewsCard({ article }: NewsCardProps) {
         {article.relatedTeamName && (
           <p className="mt-1 text-xs text-brand-orange">{article.relatedTeamName}</p>
         )}
+        {article.updatedAt !== article.publishedAt && (
+          <p className="mt-1 text-xs text-gray-600">
+            更新: {formatDateShort(article.updatedAt)}
+          </p>
+        )}
       </div>
-    </Link>
+    </>
   );
+
+  if (article.sourceUrl) {
+    return (
+      <a
+        href={article.sourceUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cardClass}
+        aria-label={`${article.title} を元サイトで読む`}
+      >
+        {inner}
+      </a>
+    );
+  }
+
+  return <div className={cardClass}>{inner}</div>;
 }

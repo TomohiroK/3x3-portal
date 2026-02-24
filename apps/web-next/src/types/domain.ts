@@ -89,7 +89,7 @@ export interface NewsArticle {
   slug: string;
   title: string;
   summary: string | null;
-  content: string;
+  sourceUrl: string | null;
   imageUrl: string | null;
   publishedAt: string;
   updatedAt: string;

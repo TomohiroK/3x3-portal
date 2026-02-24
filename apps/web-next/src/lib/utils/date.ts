@@ -42,3 +42,10 @@ export function formatDateTime(isoString: string): string {
 export function isUpcoming(isoString: string): boolean {
   return new Date(isoString) >= new Date();
 }
+
+/** Returns true if the ISO datetime was updated within the last N days (default: 3) */
+export function isNewlyUpdated(isoString: string, days = 3): boolean {
+  const threshold = new Date();
+  threshold.setDate(threshold.getDate() - days);
+  return new Date(isoString) >= threshold;
+}
