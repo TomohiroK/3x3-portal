@@ -10,11 +10,11 @@ import { ErrorMessage } from '@/components/ui/ErrorMessage';
 import { listTeams } from '@/lib/repositories/team.repository';
 import { parseSearchParam, parsePageParam } from '@/lib/utils/params';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 export const metadata: Metadata = {
-  title: 'チーム',
-  description: '3x3バスケットボールのチーム一覧',
+  title: '3x3バスケ チーム一覧',
+  description: '3x3バスケットボールのチームを一覧で掲載。国内外の主要チームのSNS・公式サイトリンクを収録。ニュースやイベントで取り上げたチームを随時更新。',
 };
 
 interface PageProps {

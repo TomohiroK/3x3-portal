@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
+
+const GA_ID = 'G-9PE5H1RVBL';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,14 +14,17 @@ const inter = Inter({
 });
 
 const SITE_NAME = "3x3 Observer's Hub";
+const SITE_DESCRIPTION = '3x3バスケットボールのイベント・チーム・会場情報ポータル';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://web-next-self-nine.vercel.app';
+const OGP_IMAGE = '/hero-section-3x3.jpg';
 
 export const metadata: Metadata = {
   title: {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
   },
-  description: '3x3バスケットボールのイベント・チーム・選手情報ポータル',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'),
+  description: SITE_DESCRIPTION,
+  metadataBase: new URL(BASE_URL),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -44,6 +50,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ja_JP',
     siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: BASE_URL,
+    images: [{ url: OGP_IMAGE, width: 1200, height: 630, alt: SITE_NAME }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [OGP_IMAGE],
   },
 };
 
@@ -64,6 +80,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <SiteFooter />
         </div>
+
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );

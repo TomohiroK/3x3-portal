@@ -12,11 +12,11 @@ import { listVenues } from '@/lib/repositories/venue.repository';
 import { formatDateShort, isNewlyUpdated } from '@/lib/utils/date';
 import { parseSearchParam, parsePageParam } from '@/lib/utils/params';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 export const metadata: Metadata = {
-  title: '会場',
-  description: '3x3バスケットボールの会場情報',
+  title: '3x3バスケ 会場一覧',
+  description: '3x3バスケットボールの国内外の大会・イベント会場を一覧で掲載。各会場の所在地・公式サイトリンク付き。',
 };
 
 interface PageProps {

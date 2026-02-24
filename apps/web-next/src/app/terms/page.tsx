@@ -7,7 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '利用規約',
-  description: '3x3 Observer\'s Hub の利用規約',
+  description: '3x3 Observer\'s Hub の利用規約・免責事項・著作権に関する説明と、掲載情報の参照ページ一覧。',
 };
 
 /** 最終更新日 — 規約を改定した際はここを更新してください */
@@ -15,14 +15,27 @@ const LAST_UPDATED = '2026-02-24';
 
 /** 参照ページURL一覧 — URLを追加・編集する場合はここを更新してください */
 const REFERENCE_URLS: { label: string; url: string }[] = [
-  {
-    label: '3x3.basketball（FIBA 公式）',
-    url: 'https://www.fiba.basketball/3x3',
-  },
-  {
-    label: 'バスケットボール競技規則（JBA）',
-    url: 'https://www.japanbasketball.jp/',
-  },
+  // イベント・スケジュール
+  { label: '3x3.EXE PREMIER – Super Premier スケジュール', url: 'https://3x3exe.com/superpremier/schedules/' },
+  { label: 'FIBA 3x3 Asia Cup 2026（The Kallang）', url: 'https://www.thekallang.com.sg/events/fiba-3x3-asia-cup-26' },
+  { label: 'FIBA 3x3 World Tour 2026 開催都市発表', url: 'https://about.fiba.basketball/en/news/fiba-3x3-world-tour-reveals-global-line-up-of-host-cities-for-upcoming' },
+  { label: '3x3 Japan Championships 2026 公式', url: 'https://3x3japanchampionships2026.japanbasketball.jp/news/145/' },
+  // ニュース
+  { label: 'Basketball King – 記事（2026/02/23）①', url: 'https://basketballking.jp/news/japan/20260223/597597.html' },
+  { label: 'Basketball King – 記事（2026/02/23）②', url: 'https://basketballking.jp/news/japan/20260223/597627.html' },
+  { label: 'Basket Count – 記事', url: 'https://basket-count.com/article/detail/253060' },
+  // チーム
+  { label: '品川シティバスケットボールクラブ – 3x3', url: 'https://www.shinagawa-city.com/3x3basketball/' },
+  { label: '@scbc_3x3（X）', url: 'https://x.com/scbc_3x3' },
+  { label: 'shinagawacity3x3basketball（Instagram）', url: 'https://www.instagram.com/shinagawacity3x3basketball/' },
+  { label: 'Flowlish Gunma 公式サイト', url: 'https://flowlish-gunma.com/' },
+  { label: '@flowlish3x3（X）', url: 'https://x.com/flowlish3x3' },
+  { label: 'flowlish3x3（Instagram）', url: 'https://www.instagram.com/flowlish3x3/' },
+  // 会場
+  { label: 'Xebia Arena', url: 'https://www.xebioarena.com/' },
+  { label: 'Mega Bangna（タイ）', url: 'https://www.mega-bangna.com/' },
+  { label: 'Sengkang Grand Mall（シンガポール）', url: 'https://www.sengkanggrandmall.com.sg/en.html' },
+  { label: 'The Kallang（シンガポール）', url: 'https://www.thekallang.com.sg/' },
 ];
 
 export default function TermsPage() {

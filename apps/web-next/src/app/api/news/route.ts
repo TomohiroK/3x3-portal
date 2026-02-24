@@ -1,6 +1,8 @@
 /**
  * GET /api/news
  * Query params: search, teamId, page, pageSize
+ *
+ * Dynamic route (uses searchParams); CDN caching via Cache-Control header.
  */
 import { type NextRequest, NextResponse } from 'next/server';
 import { listNews } from '@/lib/repositories/news.repository';
@@ -11,7 +13,7 @@ import {
   parseOptionalIntParam,
 } from '@/lib/utils/params';
 
-export const revalidate = 60;
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {
@@ -27,7 +29,7 @@ export async function GET(request: NextRequest) {
     const result = await listNews(filters);
 
     return NextResponse.json(result, {
-      headers: { 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300' },
+      headers: { 'Cache-Control': 'public, s-maxage=43200, stale-while-revalidate=3600' },
     });
   } catch (err) {
     console.error('[/api/news] Error:', err instanceof Error ? err.message : err);

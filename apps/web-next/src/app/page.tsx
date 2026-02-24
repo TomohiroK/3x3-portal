@@ -1,5 +1,5 @@
 /**
- * Home page — Server Component with ISR (revalidate every 60 s).
+ * Home page — Server Component with ISR (revalidate every 12 h).
  */
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -11,11 +11,13 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { getUpcomingEvents } from '@/lib/repositories/event.repository';
 import { getLatestNews } from '@/lib/repositories/news.repository';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 export const metadata: Metadata = {
-  title: 'ホーム',
-  description: '3x3バスケットボールの最新イベントとニュースをチェック',
+  title: {
+    absolute: "3x3 Observer's Hub | 3x3バスケットボール 情報ポータル",
+  },
+  description: '国内・海外の3x3バスケットボール大会・イベント・ニュースを日本語で発信。開催スケジュール、チーム、会場情報をまとめてチェック。',
 };
 
 export default async function HomePage() {

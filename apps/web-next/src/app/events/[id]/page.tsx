@@ -25,7 +25,7 @@ import { getEventById } from '@/lib/repositories/event.repository';
 import { formatDate } from '@/lib/utils/date';
 import { parseIntParam } from '@/lib/utils/params';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -39,9 +39,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const event = await getEventById(eventId).catch(() => null);
   if (!event) return { title: 'イベントが見つかりません' };
 
+  const description = event.description
+    ?? `${event.name}（${event.location}）の3x3バスケットボールイベント情報。開催日程・ステータス・公式リンクを掲載。`;
   return {
     title: event.name,
-    description: event.description ?? `${event.name} — ${event.location}`,
+    description,
+    openGraph: {
+      title: event.name,
+      description,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: event.name,
+      description,
+    },
   };
 }
 

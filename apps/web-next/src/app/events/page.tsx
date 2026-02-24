@@ -12,11 +12,11 @@ import { listEvents } from '@/lib/repositories/event.repository';
 import { parseSearchParam, parsePageParam } from '@/lib/utils/params';
 import type { EventStatus } from '@/types/domain';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 export const metadata: Metadata = {
-  title: 'イベント',
-  description: '3x3バスケットボールのイベント一覧',
+  title: 'イベント・大会スケジュール',
+  description: '国内・海外の3x3バスケットボール大会・イベントのスケジュール一覧。開催予定・進行中・終了で絞り込み可能。随時更新中。',
 };
 
 const VALID_STATUSES = new Set<EventStatus>(['upcoming', 'ongoing', 'completed', 'cancelled']);
@@ -53,7 +53,12 @@ export default async function EventsPage({ searchParams }: PageProps) {
 
   return (
     <div className="portal-container py-8 space-y-6">
-      <h1 className="text-2xl font-bold text-white">イベント</h1>
+      <div className="space-y-1">
+        <h1 className="text-2xl font-bold text-white">イベント</h1>
+        <p className="text-sm text-gray-400">
+          3x3は参加チームの決定・変更が直前になる場合があります。現時点で未定の情報が数日前に一気に更新されることもありますので、あらかじめご了承ください。
+        </p>
+      </div>
 
       <EventFilters currentSearch={filters.search} currentStatus={filters.status} />
 

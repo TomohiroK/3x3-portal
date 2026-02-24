@@ -25,7 +25,7 @@ function XLogo({ size = 15 }: { size?: number }) {
 import { getTeamById } from '@/lib/repositories/team.repository';
 import { parseIntParam } from '@/lib/utils/params';
 
-export const revalidate = 60;
+export const revalidate = 43200; // 12 h
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -39,9 +39,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const team = await getTeamById(teamId).catch(() => null);
   if (!team) return { title: 'チームが見つかりません' };
 
+  const description = `${team.name}（${team.location}）の3x3バスケットボールチーム情報。公式サイト・SNSリンクを掲載。`;
   return {
     title: team.name,
-    description: `${team.name} — ${team.location}`,
+    description,
+    openGraph: {
+      title: team.name,
+      description,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: team.name,
+      description,
+    },
   };
 }
 

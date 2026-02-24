@@ -2,7 +2,7 @@
  * GET /api/events
  * Query params: search, status, page, pageSize
  *
- * Cached for 60 s on the CDN edge (ISR-compatible).
+ * Dynamic route (uses searchParams); CDN caching via Cache-Control header.
  */
 import { type NextRequest, NextResponse } from 'next/server';
 import { listEvents } from '@/lib/repositories/event.repository';
@@ -13,7 +13,7 @@ import {
 } from '@/lib/utils/params';
 import type { EventStatus } from '@/types/domain';
 
-export const revalidate = 60; // CDN cache: 60 s
+export const dynamic = 'force-dynamic';
 
 const VALID_STATUSES = new Set<EventStatus>(['upcoming', 'ongoing', 'completed', 'cancelled']);
 
@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     const result = await listEvents(filters);
 
     return NextResponse.json(result, {
-      headers: { 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300' },
+      headers: { 'Cache-Control': 'public, s-maxage=43200, stale-while-revalidate=3600' },
     });
   } catch (err) {
     console.error('[/api/events] Error:', err instanceof Error ? err.message : err);
