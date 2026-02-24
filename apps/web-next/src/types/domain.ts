@@ -72,11 +72,8 @@ export interface Venue {
   id: number;
   slug: string;
   name: string;
-  address: string;
-  city: string;
-  mapUrl: string | null;
-  imageUrl: string | null;
-  description: string | null;
+  region: string; // 都道府県 or 国名（海外の場合）
+  mapUrl: string | null; // Google Maps URL
   updatedAt: string;
 }
 
@@ -155,6 +152,12 @@ export interface PlayerFilters {
 export interface NewsFilters {
   search: string;
   teamId: number | null;
+  page: number;
+  pageSize: number;
+}
+
+export interface VenueFilters {
+  search: string;
   page: number;
   pageSize: number;
 }
