@@ -19,7 +19,7 @@
 
   /* Accessible focus ring */
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-orange;
+    @apply outline-2 outline-offset-2 outline-brand-accent;
   }
 
   /* Remove autofill yellow flash */
@@ -40,7 +40,7 @@
     @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
   }
   .badge-orange {
-    @apply badge bg-brand-orange/20 text-brand-orange;
+    @apply badge bg-brand-accent/20 text-brand-accent;
   }
   .badge-green {
     @apply badge bg-green-500/20 text-green-400;

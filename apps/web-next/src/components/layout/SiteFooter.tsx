@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-brand-muted bg-brand-surface py-8 text-sm text-gray-400">
+    <footer className="border-t border-brand-muted bg-brand-surface py-8 text-sm text-gray-500">
       <div className="portal-container flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="font-semibold text-gray-200">
-          <span className="text-brand-orange">3x3</span> Basketball Portal
+        <p className="font-semibold text-gray-300">
+          <span className="text-brand-accent font-extrabold">3x3</span> Observer&apos;s Hub
         </p>
 
         <nav aria-label="フッターナビゲーション">
@@ -18,7 +18,7 @@ export function SiteFooter() {
               { href: '/news', label: 'ニュース' },
             ].map(({ href, label }) => (
               <li key={href}>
-                <Link href={href} className="hover:text-brand-orange transition-colors">
+                <Link href={href} className="hover:text-white transition-colors">
                   {label}
                 </Link>
               </li>
@@ -26,8 +26,8 @@ export function SiteFooter() {
           </ul>
         </nav>
 
-        <p className="text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} 3x3 Basketball Portal
+        <p className="text-xs text-gray-600">
+          &copy; {new Date().getFullYear()} 3x3 Observer&apos;s Hub
         </p>
       </div>
     </footer>

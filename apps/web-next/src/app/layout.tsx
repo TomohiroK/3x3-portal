@@ -10,24 +10,26 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
+const SITE_NAME = "3x3 Observer's Hub";
+
 export const metadata: Metadata = {
   title: {
-    default: '3x3 Basketball Portal',
-    template: '%s | 3x3 Basketball Portal',
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
   description: '3x3バスケットボールのイベント・チーム・選手情報ポータル',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'),
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    siteName: '3x3 Basketball Portal',
+    siteName: SITE_NAME,
   },
 };
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#FF6B2B',
+  themeColor: '#4F6EF7',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // 3x3 portal brand colors
         brand: {
-          orange: '#FF6B2B',
-          dark: '#0F1117',
-          surface: '#1A1D27',
-          muted: '#2D3148',
+          // 3x3 Observer's Hub カラーパレット (紺・ネイビー系)
+          accent: '#4F6EF7',   // メインアクセント（インディゴブルー）
+          orange: '#4F6EF7',   // 後方互換エイリアス
+          dark: '#0B0E1A',     // 最深背景
+          surface: '#131829',  // カード・パネル背景
+          muted: '#1E2540',    // ボーダー・セパレータ
+          subtle: '#252D4A',   // ホバー背景
         },
       },
       fontFamily: {
