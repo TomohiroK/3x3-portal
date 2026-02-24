@@ -43,7 +43,12 @@ export default async function TeamsPage({ searchParams }: PageProps) {
 
   return (
     <div className="portal-container py-8 space-y-6">
-      <h1 className="text-2xl font-bold text-white">チーム</h1>
+      <div className="space-y-1">
+        <h1 className="text-2xl font-bold text-white">チーム</h1>
+        <p className="text-sm text-gray-400">
+          ニュースやイベントなどで取り上げたチームを掲載しています。
+        </p>
+      </div>
 
       {/* Search form */}
       <form method="get" className="flex gap-3" aria-label="チーム検索">
