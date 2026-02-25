@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: '国内・海外の3x3バスケットボール大会・イベントのスケジュール一覧。開催予定・進行中・終了で絞り込み可能。随時更新中。',
 };
 
-const VALID_STATUSES = new Set<EventStatus>(['upcoming', 'ongoing', 'completed', 'cancelled']);
+const VALID_STATUSES = new Set<EventStatus>(['開催予定', '開催中', '終了', '中止']);
 
 interface PageProps {
   searchParams: Promise<Record<string, string | string[] | undefined>>;

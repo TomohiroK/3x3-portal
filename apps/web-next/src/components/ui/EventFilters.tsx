@@ -7,9 +7,9 @@ import type { EventStatus } from '@/types/domain';
 
 const STATUS_OPTIONS: { value: EventStatus | ''; label: string }[] = [
   { value: '', label: 'すべて' },
-  { value: 'upcoming', label: '開催予定' },
-  { value: 'ongoing', label: '開催中' },
-  { value: 'completed', label: '終了' },
+  { value: '開催予定', label: '開催予定' },
+  { value: '開催中', label: '開催中' },
+  { value: '終了', label: '終了' },
 ];
 
 interface EventFiltersProps {

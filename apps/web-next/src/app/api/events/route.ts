@@ -15,7 +15,7 @@ import type { EventStatus } from '@/types/domain';
 
 export const dynamic = 'force-dynamic';
 
-const VALID_STATUSES = new Set<EventStatus>(['upcoming', 'ongoing', 'completed', 'cancelled']);
+const VALID_STATUSES = new Set<EventStatus>(['開催予定', '開催中', '終了', '中止']);
 
 export async function GET(request: NextRequest) {
   try {

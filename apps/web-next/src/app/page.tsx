@@ -49,6 +49,18 @@ export default async function HomePage() {
       </section>
 
       <div className="portal-container pb-14 space-y-14">
+        {/* Site tagline */}
+        <section aria-label="サイト紹介" className="pt-2 pb-2 border-b border-brand-muted">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-orange mb-1">
+            3x3 Basketball Portal
+          </p>
+          <h1 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+            試合日程・チーム情報をまとめてチェック
+          </h1>
+          <p className="mt-1.5 text-sm text-gray-400">
+            国内外の3x3バスケットボール大会スケジュール・チーム・会場情報をワンストップで。
+          </p>
+        </section>
         {/* Upcoming Events */}
         <section aria-labelledby="events-heading">
           <div className="flex items-center justify-between mb-5">

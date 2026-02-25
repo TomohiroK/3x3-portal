@@ -61,6 +61,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [OGP_IMAGE],
   },
+  verification: {
+    google: 'a85d5d3e975d09a7',
+  },
 };
 
 export const viewport: Viewport = {

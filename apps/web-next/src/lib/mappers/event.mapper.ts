@@ -29,8 +29,8 @@ function slugify(text: string, id: number): string {
 }
 
 function toEventStatus(raw: string | null): EventStatus {
-  const valid: EventStatus[] = ['upcoming', 'ongoing', 'completed', 'cancelled'];
-  return valid.includes(raw as EventStatus) ? (raw as EventStatus) : 'upcoming';
+  const valid: EventStatus[] = ['開催予定', '開催中', '終了', '中止'];
+  return valid.includes(raw as EventStatus) ? (raw as EventStatus) : '開催予定';
 }
 
 export function mapTournamentRowToEvent(row: TournamentRow): PortalEvent {

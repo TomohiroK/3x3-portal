@@ -11,7 +11,7 @@
 // Event (Tournament)
 // ─────────────────────────────────────────
 
-export type EventStatus = 'upcoming' | 'ongoing' | 'completed' | 'cancelled';
+export type EventStatus = '開催予定' | '開催中' | '終了' | '中止';
 
 export interface PortalEvent {
   id: number;
