@@ -22,6 +22,7 @@ function XLogo({ size = 15 }: { size?: number }) {
 }
 import { StatusBadge } from '@/components/ui/StatusBadge';
 import { getEventById } from '@/lib/repositories/event.repository';
+import { findVenueByLocation } from '@/lib/repositories/venue.repository';
 import { formatDate } from '@/lib/utils/date';
 import { parseIntParam } from '@/lib/utils/params';
 
@@ -66,6 +67,8 @@ export default async function EventDetailPage({ params }: PageProps) {
   const event = await getEventById(eventId).catch(() => null);
   if (!event) notFound();
 
+  const matchedVenue = findVenueByLocation(event.location);
+
   return (
     <div className="portal-container py-8 space-y-6">
       <Link
@@ -91,7 +94,17 @@ export default async function EventDetailPage({ params }: PageProps) {
           </span>
           <span className="flex items-center gap-2">
             <MapPin size={15} aria-hidden="true" />
-            {event.location}
+            {matchedVenue ? (
+              <Link
+                href={`/venues?search=${encodeURIComponent(matchedVenue.name)}`}
+                className="hover:text-brand-orange underline underline-offset-2 transition-colors"
+                aria-label={`会場「${matchedVenue.name}」の詳細を見る`}
+              >
+                {event.location}
+              </Link>
+            ) : (
+              event.location
+            )}
           </span>
           <span>
             <span

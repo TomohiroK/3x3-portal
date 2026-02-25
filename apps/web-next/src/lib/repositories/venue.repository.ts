@@ -71,6 +71,14 @@ const MOCK_VENUES: Venue[] = [
   },
 ];
 
+/**
+ * イベントの location 文字列（会場名＋住所混在）から一致する会場を返す。
+ * 会場名が location に含まれているかで判定する。
+ */
+export function findVenueByLocation(location: string): Venue | null {
+  return MOCK_VENUES.find((v) => location.includes(v.name)) ?? null;
+}
+
 export async function listVenues(filters: VenueFilters): Promise<PaginatedResult<Venue>> {
   let result = MOCK_VENUES;
 
