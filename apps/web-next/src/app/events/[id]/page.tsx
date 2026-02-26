@@ -21,7 +21,9 @@ function XLogo({ size = 15 }: { size?: number }) {
   );
 }
 import { StatusBadge } from '@/components/ui/StatusBadge';
+import { TeamCategoryBadge } from '@/components/ui/TeamCategoryBadge';
 import { getEventById } from '@/lib/repositories/event.repository';
+import { getTeamsByIds } from '@/lib/repositories/team.repository';
 import { findVenueByLocation } from '@/lib/repositories/venue.repository';
 import { formatDate } from '@/lib/utils/date';
 import { parseIntParam } from '@/lib/utils/params';
@@ -68,6 +70,7 @@ export default async function EventDetailPage({ params }: PageProps) {
   if (!event) notFound();
 
   const matchedVenue = findVenueByLocation(event.location);
+  const participantTeams = await getTeamsByIds(event.participantTeamIds).catch(() => []);
 
   return (
     <div className="portal-container py-8 space-y-6">
@@ -185,6 +188,40 @@ export default async function EventDetailPage({ params }: PageProps) {
                   </a>
                 </li>
               )}
+            </ul>
+          </div>
+        )}
+
+        {/* Participant teams */}
+        {participantTeams.length > 0 && (
+          <div className="card p-5">
+            <h2 className="text-sm font-semibold text-gray-300 mb-3">
+              参加チーム
+              <span className="ml-2 text-xs font-normal text-gray-500">
+                {participantTeams.length} チーム
+              </span>
+            </h2>
+            <ul className="grid gap-2 sm:grid-cols-2" role="list">
+              {participantTeams.map((team) => (
+                <li key={team.id}>
+                  <Link
+                    href={`/teams/${team.id}`}
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 bg-brand-muted hover:bg-brand-muted/70 transition-colors group"
+                  >
+                    {/* ロゴ or 頭文字 */}
+                    <div className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-surface flex items-center justify-center text-sm font-bold text-brand-accent overflow-hidden">
+                      {team.name.charAt(0)}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-white truncate group-hover:text-brand-orange transition-colors">
+                        {team.name}
+                      </p>
+                      <p className="text-xs text-gray-500 truncate">{team.location}</p>
+                    </div>
+                    <TeamCategoryBadge category={team.category} />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         )}

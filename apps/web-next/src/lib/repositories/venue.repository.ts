@@ -69,6 +69,24 @@ const MOCK_VENUES: Venue[] = [
     websiteUrl: null,
     updatedAt: '2026-02-24T00:00:00Z',
   },
+
+  // ⭐追加
+  {
+    id: 9,
+    slug: 'hengqin-island',
+    name: 'Hengqin Island Court',
+    region: 'Zhuhai, China',
+    websiteUrl: null,
+    updatedAt: '2026-02-26T00:00:00Z',
+  },
+  {
+    id: 10,
+    slug: 'ebisu-garden-place-center-plaza',
+    name: '恵比寿ガーデンプレイス センター広場',
+    region: '東京都渋谷区',
+    websiteUrl: 'https://gardenplace.jp/',
+    updatedAt: '2026-02-26T00:00:00Z',
+  },
 ];
 
 /**

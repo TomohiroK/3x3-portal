@@ -20,6 +20,7 @@ export async function GET(request: NextRequest) {
 
     const filters = {
       search: parseSearchParam(sp.get('search')),
+      category: '' as const,
       page: parsePageParam(sp.get('page')),
       pageSize: parsePageSizeParam(sp.get('pageSize'), 20, 100),
     };

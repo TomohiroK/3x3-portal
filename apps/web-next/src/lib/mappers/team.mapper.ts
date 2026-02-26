@@ -1,15 +1,22 @@
-import type { Team } from '@/types/domain';
+import type { Team, TeamCategory } from '@/types/domain';
 
 export interface TeamRow {
   id: number;
   name: string;
   location: string;
+  category: string | null;
   image: string | null;
   website_url: string | null;
   x_account: string | null;
   instagram_account: string | null;
   tiktok_account: string | null;
   updated_at: string | null;
+}
+
+const VALID_CATEGORIES: TeamCategory[] = ['EXE', '代表', 'U23', '招待', '一般クラブ'];
+
+function toTeamCategory(raw: string | null): TeamCategory {
+  return VALID_CATEGORIES.includes(raw as TeamCategory) ? (raw as TeamCategory) : '一般クラブ';
 }
 
 function slugify(text: string, id: number): string {
@@ -28,6 +35,7 @@ export function mapTeamRowToTeam(row: TeamRow): Team {
     slug: slugify(row.name, row.id),
     name: row.name,
     location: row.location,
+    category: toTeamCategory(row.category),
     imageUrl: row.image,
     websiteUrl: row.website_url ?? null,
     xAccount: row.x_account,

@@ -24,6 +24,7 @@ function XLogo({ size = 15 }: { size?: number }) {
 
 import { getTeamById } from '@/lib/repositories/team.repository';
 import { parseIntParam } from '@/lib/utils/params';
+import { TeamCategoryBadge } from '@/components/ui/TeamCategoryBadge';
 
 export const revalidate = 43200; // 12 h
 
@@ -96,6 +97,9 @@ export default async function TeamDetailPage({ params }: PageProps) {
           </div>
 
           <div className="flex-1 space-y-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <TeamCategoryBadge category={team.category} />
+            </div>
             <h1 className="text-2xl font-bold text-white">{team.name}</h1>
             <p className="flex items-center gap-1.5 text-sm text-gray-400">
               <MapPin size={14} aria-hidden="true" />

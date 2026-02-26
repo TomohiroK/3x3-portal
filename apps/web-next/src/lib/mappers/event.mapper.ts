@@ -15,6 +15,7 @@ export interface TournamentRow {
   x_account: string | null;
   instagram_account: string | null;
   tiktok_account: string | null;
+  participant_team_ids: number[] | null;
   updated_at: string | null;
 }
 
@@ -49,6 +50,7 @@ export function mapTournamentRowToEvent(row: TournamentRow): PortalEvent {
     xAccount: row.x_account ?? null,
     instagramAccount: row.instagram_account ?? null,
     tiktokAccount: row.tiktok_account ?? null,
+    participantTeamIds: row.participant_team_ids ?? [],
     updatedAt: row.updated_at ?? new Date().toISOString(),
   };
 }

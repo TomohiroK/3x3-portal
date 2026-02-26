@@ -18,7 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const [eventsResult, teamsResult] = await Promise.all([
     listEvents({ search: '', status: '', page: 1, pageSize: 200 }).catch(() => null),
-    listTeams({ search: '', page: 1, pageSize: 200 }).catch(() => null),
+    listTeams({ search: '', category: '', page: 1, pageSize: 200 }).catch(() => null),
   ]);
 
   const eventPages: MetadataRoute.Sitemap = (eventsResult?.items ?? []).map((event) => ({

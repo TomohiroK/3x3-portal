@@ -28,6 +28,7 @@ export interface PortalEvent {
   xAccount: string | null;
   instagramAccount: string | null;
   tiktokAccount: string | null;
+  participantTeamIds: number[]; // 参加チームID一覧（空配列 = 未設定）
   updatedAt: string;
 }
 
@@ -35,11 +36,14 @@ export interface PortalEvent {
 // Team
 // ─────────────────────────────────────────
 
+export type TeamCategory = 'EXE' | '代表' | 'U23' | '招待' | '一般クラブ';
+
 export interface Team {
   id: number;
   slug: string;
   name: string;
   location: string;
+  category: TeamCategory;
   imageUrl: string | null;
   websiteUrl: string | null;
   xAccount: string | null;
@@ -139,6 +143,7 @@ export interface EventFilters {
 
 export interface TeamFilters {
   search: string;
+  category: TeamCategory | '';
   page: number;
   pageSize: number;
 }

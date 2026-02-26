@@ -4,6 +4,7 @@ import { MapPin, Clock } from 'lucide-react';
 import type { Team } from '@/types/domain';
 import { formatDateShort, isNewlyUpdated } from '@/lib/utils/date';
 import { NewBadge } from './NewBadge';
+import { TeamCategoryBadge } from './TeamCategoryBadge';
 
 interface TeamCardProps {
   team: Team;
@@ -36,8 +37,9 @@ export function TeamCard({ team }: TeamCardProps) {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2 mb-0.5">
+        <div className="flex items-center gap-2 mb-0.5 flex-wrap">
           {isNew && <NewBadge />}
+          <TeamCategoryBadge category={team.category} />
           <p className="font-semibold text-white truncate">{team.name}</p>
         </div>
         <p className="flex items-center gap-1 text-sm text-gray-400 truncate">
