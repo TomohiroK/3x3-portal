@@ -86,6 +86,11 @@ export interface Venue {
 // News
 // ─────────────────────────────────────────
 
+export interface NewsRelatedTeam {
+  id: number;
+  name: string;
+}
+
 export interface NewsArticle {
   id: number;
   slug: string;
@@ -95,8 +100,7 @@ export interface NewsArticle {
   imageUrl: string | null;
   publishedAt: string;
   updatedAt: string;
-  relatedTeamId: number | null;
-  relatedTeamName: string | null;
+  relatedTeams: NewsRelatedTeam[]; // 複数チームタグ（空配列 = 関連なし）
 }
 
 // ─────────────────────────────────────────

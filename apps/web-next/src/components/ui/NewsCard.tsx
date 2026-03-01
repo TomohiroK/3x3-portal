@@ -50,8 +50,17 @@ export function NewsCard({ article }: NewsCardProps) {
         {article.summary && (
           <p className="text-sm text-gray-400 line-clamp-2">{article.summary}</p>
         )}
-        {article.relatedTeamName && (
-          <p className="mt-1 text-xs text-brand-orange">{article.relatedTeamName}</p>
+        {article.relatedTeams.length > 0 && (
+          <ul className="mt-1.5 flex flex-wrap gap-1" aria-label="関連チーム">
+            {article.relatedTeams.map((team) => (
+              <li
+                key={team.id}
+                className="rounded-full border border-brand-orange/40 bg-brand-orange/10 px-2 py-0.5 text-xs text-brand-orange"
+              >
+                {team.name}
+              </li>
+            ))}
+          </ul>
         )}
         {article.updatedAt !== article.publishedAt && (
           <p className="mt-1 text-xs text-gray-600">

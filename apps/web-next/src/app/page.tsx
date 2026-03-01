@@ -2,7 +2,6 @@
  * Home page — Server Component with ISR (revalidate every 12 h).
  */
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Trophy, Newspaper } from 'lucide-react';
 import { EventCard } from '@/components/ui/EventCard';
@@ -28,17 +27,25 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero — full-width, outside portal-container */}
-      <section aria-label="ヒーロー画像">
-        <div className="relative w-full aspect-[2816/1536]">
-          <Image
-            src="/hero-section-3x3.jpg"
-            alt="3x3 Observer's Hub"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
+      {/* Hero — full-width video, outside portal-container */}
+      <section aria-label="ヒーロービデオ">
+        <div className="relative w-full aspect-video overflow-hidden">
+          {/* 動画: autoplay/muted/loop/playsInline でモバイル含め自動再生 */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/videos/hero-poster.jpg"
+            preload="none"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            aria-hidden="true"
+          >
+            {/* VP9 を先に宣言（Chrome/Firefox が優先選択） */}
+            <source src="/videos/hero.webm" type="video/webm" />
+            {/* Safari / 古いブラウザ向けフォールバック */}
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
           {/* Bottom fade into page background */}
           <div
             className="absolute inset-x-0 bottom-0 h-1/3"

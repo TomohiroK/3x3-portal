@@ -8,8 +8,12 @@ export interface NewsRow {
   image: string | null;
   date: string;
   updated_at: string | null;
-  team_id: number | null;
-  team_name: string | null;
+  /**
+   * DB実装時は JSON_AGG などで複数チームを集約して渡す。
+   * 例: SELECT ..., json_agg(json_build_object('id', t.id, 'name', t.name)) AS related_teams
+   *     FROM news n LEFT JOIN news_teams nt ON nt.news_id = n.id LEFT JOIN teams t ON t.id = nt.team_id
+   */
+  related_teams: Array<{ id: number; name: string }> | null;
 }
 
 function slugify(text: string, id: number): string {
@@ -32,7 +36,6 @@ export function mapNewsRowToArticle(row: NewsRow): NewsArticle {
     imageUrl: row.image,
     publishedAt: row.date,
     updatedAt: row.updated_at ?? new Date().toISOString(),
-    relatedTeamId: row.team_id,
-    relatedTeamName: row.team_name,
+    relatedTeams: row.related_teams ?? [],
   };
 }
