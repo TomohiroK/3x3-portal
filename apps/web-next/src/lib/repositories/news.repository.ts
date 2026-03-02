@@ -7,72 +7,61 @@ import type { NewsArticle, NewsFilters, PaginatedResult } from '@/types/domain';
 const MOCK_NEWS: NewsArticle[] = [
   {
     id: 1,
-    slug: '3x3-women-national-team-first-camp-la2028-1',
-    title:
-      '3×3女子日本代表がロサンゼルスオリンピックに向けて第1次合宿を実施、国内ランキングトップ10を含めた15名が参加',
+    slug: '3x3-exe-super-premier-2025-26-round1-lugano-wins-1',
+    title: '〖ROUND1速報〗LUGANO(スイス)が優勝！',
     summary:
-      'JBAが3×3女子日本代表の第1次強化合宿を実施。国内ランキング上位を中心に15名を招集し、アジアカップ2026やLA五輪に向けた強化を本格始動した。',
-    sourceUrl: 'https://basket-count.com/article/detail/253060',
+      '3x3.EXE SUPER PREMIER 2025-26 ROUND.1（仙台）が2日間の日程を終了。予選グループ（2/28）と決勝トーナメント（3/1）の結果、LUGANO（スイス）が優勝。次戦ROUND.2（タイ）とFINAL（シンガポール）へ繋がる初戦が決着。',
+    sourceUrl: 'https://3x3exe.com/superpremier/round1_result/',
     imageUrl: null,
-    publishedAt: '2026-02-24',
-    updatedAt: '2026-02-26T00:00:00Z',
-    relatedTeams: [],
+    publishedAt: '2026-03-01',
+    updatedAt: '2026-03-01T00:00:00Z',
+    relatedTeams: [{ id: 13, name: 'LUGANO' }],
   },
   {
     id: 2,
-    slug: 'japan-3x3-championships-2026-final-recap-2',
-    title:
-      '3×3日本選手権FINAL総括…SHINAGAWA CITYとFLOWLISH GUNMAが初優勝',
+    slug: '3x3-exe-super-premier-2025-26-round1-day1-results-day2-slots-2',
+    title: '〖ROUND1〗DAY.1結果 & DAY.2スロット',
     summary:
-      '横浜BUNTAIで開催された3×3日本選手権FINALが終了。男子はSHINAGAWA CITY、女子はFLOWLISH GUNMAが初優勝を達成し、国内最高峰大会の新王者が誕生した。',
-    sourceUrl:
-      'https://basketballking.jp/news/japan/20260225/597777.html',
+      '仙台ROUND.1のDAY.1（グループ予選）結果と、DAY.2決勝トーナメント進出8チームが公開。GROUP AはBRISBANE 3x3.EXEとSHINAGAWA CITY.EXE、GROUP BはUTSUNOMIYA BREX.EXEとLUGANO、GROUP CはZETHREE ISHIKAWA.EXEとSHONAN SEASIDE.EXE、GROUP DはRN SPORT.EXEとSINGAPOREが通過。',
+    sourceUrl: 'https://3x3exe.com/superpremier/round1_results_slots/',
     imageUrl: null,
-    publishedAt: '2026-02-25',
-    updatedAt: '2026-02-26T00:00:00Z',
+    publishedAt: '2026-02-28',
+    updatedAt: '2026-03-01T00:00:00Z',
     relatedTeams: [
+      { id: 3, name: 'BRISBANE 3X3.EXE' },
       { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-      { id: 2, name: 'FLOWLISH GUNMA' },
+      { id: 6, name: 'UTSUNOMIYA BREX.EXE' },
+      { id: 13, name: 'LUGANO' },
+      { id: 5, name: 'ZETHREE ISHIKAWA.EXE' },
+      { id: 10, name: 'SHONAN SEASIDE.EXE' },
+      { id: 9, name: 'RN SPORT.EXE' },
+      { id: 11, name: 'SINGAPORE' },
     ],
   },
-
-  // ⭐追加（Sendai直前）
   {
     id: 3,
-    slug: '3x3-exe-super-premier-2026-round1-sendai-preview-3',
+    slug: '3x3-exe-super-premier-2025-26-round1-sendai-viewing-campaigns-3',
     title:
-      '3x3.EXE SUPER PREMIER 2025-26 ROUND.1が今週末仙台で開幕、国内外12チームが集結',
+      '〖情報更新・観戦方法まとめ〗コートの最前席が当たるキャンペーンや、入場＆観戦無料招待のご案内',
     summary:
-      'ゼビオアリーナ仙台で開催される3x3.EXE SUPER PREMIER ROUND.1に、SHINAGAWA CITYやUTSUNOMIYA BREX.EXE、ZETHREE ISHIKAWA.EXEなど国内外12チームが出場予定。新シーズン最初のSTOPに注目が集まる。',
-    sourceUrl:
-      'https://3x3exe.com/superpremier/xebio_arena_0228-0301/',
+      '仙台ROUND.1（2/28-3/1）に向け、観戦方法と各種キャンペーン情報を更新。無料招待（事前フォーム＋公式LINE）、ゼビオ店舗レシート提示でコートサイド席（先着）、抽選プレゼント等の導線をまとめて案内。',
+    sourceUrl: 'https://3x3exe.com/superpremier/25-26campaign/',
     imageUrl: null,
-    publishedAt: '2026-02-26',
-    updatedAt: '2026-02-26T08:00:00Z',
-    relatedTeams: [
-      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-      { id: 3, name: 'UTSUNOMIYA BREX.EXE' },
-      { id: 4, name: 'ZETHREE ISHIKAWA.EXE' },
-    ],
+    publishedAt: '2026-02-27',
+    updatedAt: '2026-03-01T00:00:00Z',
+    relatedTeams: [],
   },
-
   {
     id: 4,
-    slug: '3x3-exe-super-premier-roster-announced-sendai-4',
-    title:
-      '3x3.EXE SUPER PREMIER ROUND.1仙台大会のロスター発表、各チーム4名体制でエントリー',
+    slug: '3x3-women-national-team-first-camp-additional-call-ups-4',
+    title: '3×3女子日本代表 第1次強化合宿 追加招集メンバー発表',
     summary:
-      'ROUND.1仙台大会の出場12チームがロスターを公開。SHINAGAWA CITY、SHONAN SEASIDE.EXE、UTSUNOMIYA BREX.EXEらが4名体制で登録し、初戦に備える。',
-    sourceUrl:
-      'https://3x3exe.com/superpremier/teams/',
+      'JBAが3×3女子日本代表の第1次強化合宿（3/1〜）に向け、追加招集メンバーを発表。強化と選手層拡大を目的に、合宿体制を更新した。',
+    sourceUrl: 'https://www.japanbasketball.jp/japan/85325',
     imageUrl: null,
-    publishedAt: '2026-02-26',
-    updatedAt: '2026-02-26T08:00:00Z',
-    relatedTeams: [
-      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-      { id: 3, name: 'UTSUNOMIYA BREX.EXE' },
-      { id: 5, name: 'SHONAN SEASIDE.EXE' },
-    ],
+    publishedAt: '2026-02-28',
+    updatedAt: '2026-03-01T00:00:00Z',
+    relatedTeams: [],
   },
 ];
 
