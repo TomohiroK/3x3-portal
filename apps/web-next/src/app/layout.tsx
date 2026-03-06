@@ -16,7 +16,7 @@ const inter = Inter({
 const SITE_NAME = "3x3 Observer's Hub";
 const SITE_DESCRIPTION = '3x3バスケットボールのイベント・チーム・会場情報ポータル';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://web-next-self-nine.vercel.app';
-const OGP_IMAGE = '/hero-section-3x3.jpg';
+const OGP_IMAGE = '/videos/hero-poster.jpg';
 
 export const metadata: Metadata = {
   title: {
