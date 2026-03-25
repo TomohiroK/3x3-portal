@@ -78,6 +78,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" className={inter.variable}>
+      <head>
+        <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt" />
+      </head>
       <body>
         <div className="flex min-h-screen flex-col">
           <SiteHeader />
