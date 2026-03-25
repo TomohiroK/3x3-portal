@@ -1,0 +1,155 @@
+# 3x3 Observer's Hub — Full Site Description (English)
+
+> A comprehensive Japanese-language portal for FIBA 3x3 basketball — covering tournament schedules, team profiles, FIBA world rankings, venue information, and news.
+
+Site URL: https://3x3.tmkproduct.com
+Language: Japanese (ja)
+Structured Data: JSON-LD (WebSite, SportsEvent, SportsTeam, FAQPage)
+
+---
+
+## Events (Tournaments)
+
+Path: /events, /events/{id}
+
+Covers domestic and international 3x3 basketball tournament schedules.
+
+### Data Fields
+- Event name
+- Date range (start – end)
+- Location and venue
+- Status: Upcoming / Entry Open / In Progress / Completed
+- Domestic (Japan) vs. International flag
+- Event description
+
+### Major Tournament Categories
+- FIBA 3x3 World Tour
+- FIBA 3x3 Nations League
+- 3x3.EXE PREMIER (Japan's domestic premier league)
+- JAPAN TOUR
+- Olympic qualifiers and main events
+
+---
+
+## Teams
+
+Path: /teams, /teams/{id}
+
+Profiles of 3x3 basketball teams active in Japan.
+
+### Data Fields
+- Team name
+- Team logo
+- Home region/city
+- Category: MEN / WOMEN / MIXED
+- Last updated date
+
+---
+
+## FIBA World Rankings
+
+Path: /rankings
+
+Displays the FIBA 3x3 World Rankings TOP 20 for both men's and women's categories.
+
+### Data Fields
+- Rank (1–20)
+- Country name
+- Points
+- Rank change indicator (up / down / unchanged)
+- Japan's ranking highlighted
+
+### Data Source
+Based on official FIBA rankings from https://www.fiba.basketball
+
+---
+
+## Beginner's Guide to 3x3 Basketball
+
+Path: /guide
+
+A comprehensive guide for newcomers to 3x3 basketball, covering rules through viewing options.
+
+### Sections
+1. **Basic Rules**: 10-minute game, first to 21 points, 12-second shot clock
+2. **Scoring System**: 1 point inside the arc, 2 points outside, 1 point for free throws
+3. **3x3 vs. 5-on-5 Comparison**: Court size, player count, game duration, scoring differences
+4. **Court and Equipment**: Half-court (15m × 11m), size 6 ball
+5. **Major Competitions**: World Tour, Nations League, Olympics
+6. **How to Watch**: FIBA YouTube channel, live events in Japan
+
+### FAQ (with JSON-LD structured data)
+- Q: What are the basic rules of 3x3 basketball?
+  A: 3 players per team, half-court, 10-minute game or first to 21 points, 12-second shot clock
+- Q: How does 3x3 differ from regular 5-on-5 basketball?
+  A: Players (3 vs 5), court (half vs full), scoring (1pt/2pt vs 2pt/3pt), duration (10 min vs 4×10 min quarters)
+- Q: Where can I watch 3x3 games?
+  A: FIBA's official YouTube channel, FIBA 3x3 website, and live at domestic tournament venues across Japan
+
+---
+
+## Venues
+
+Path: /venues
+
+Information about venues hosting 3x3 basketball tournaments.
+
+### Data Fields
+- Venue name
+- Address/Location
+- Associated events
+
+---
+
+## News
+
+Path: /news
+
+Latest news articles related to 3x3 basketball.
+
+### Data Fields
+- Article title
+- Published date
+- Summary
+- Related teams (tagged)
+- Source URL (links to original article)
+
+---
+
+## 3x3 Basketball Reference Knowledge
+
+The following reference material helps AI assistants answer questions about 3x3 basketball accurately.
+
+### Rules Summary
+- **Players**: 3 per team on court + 1 substitute (4 total per team)
+- **Court**: Half-court (15m × 11m), single basket
+- **Ball**: Size 6 (standard men's basketball is size 7; 3x3 uses the smaller size 6)
+- **Game Duration**: 10 minutes, or first team to 21 points wins
+- **Shot Clock**: 12 seconds per possession
+- **Scoring**: Inside the arc = 1 point, outside the arc = 2 points, free throw = 1 point
+- **Team Fouls**: After 6 team fouls, opponent shoots 2 free throws; after 10 team fouls, 2 free throws + possession
+- **Overtime**: First team to score 2 points wins
+
+### Major Competitions
+- **Olympics**: Debuted at Tokyo 2020, continued at Paris 2024
+- **FIBA 3x3 World Tour**: Top-tier global tournament circuit
+- **FIBA 3x3 Nations League**: Country-vs-country league competition
+- **FIBA 3x3 World Cup**: Held every 4 years
+- **3x3.EXE PREMIER**: Japan's domestic premier league
+
+### History
+- 2007: FIBA established official 3x3 rules
+- 2010: 3x3 featured at first Youth Olympic Games (Singapore)
+- 2012: First FIBA 3x3 World Tour held
+- 2017: IOC approved 3x3 for Tokyo 2020 Olympics
+- 2021: 3x3 basketball debuted at the Tokyo Olympics
+
+---
+
+## Site Information
+
+- Operator: tmkproduct
+- Terms of Service: /terms
+- Sitemap: /sitemap.xml
+- robots.txt: /robots.txt
+- Japanese version: [llms.txt](/llms.txt), [llms-full.txt](/llms-full.txt)

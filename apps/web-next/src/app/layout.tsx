@@ -80,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ja" className={inter.variable}>
       <head>
         <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt" />
+        <link rel="alternate" type="text/plain" hrefLang="en" title="LLMs.txt (English)" href="/llms-en.txt" />
       </head>
       <body>
         <div className="flex min-h-screen flex-col">

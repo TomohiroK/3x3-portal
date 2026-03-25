@@ -34,3 +34,8 @@ FIBA公認の3x3バスケットボールに関するイベント、チーム、�
 ## 詳細版
 
 詳細なコンテンツ情報は [llms-full.txt](/llms-full.txt) を参照してください。
+
+## English Version
+
+- [llms-en.txt](/llms-en.txt) — Site overview in English
+- [llms-full-en.txt](/llms-full-en.txt) — Full site description in English

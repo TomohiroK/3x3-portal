@@ -1,0 +1,40 @@
+# 3x3 Observer's Hub
+
+> A comprehensive Japanese-language portal for FIBA 3x3 basketball — covering tournament schedules, team profiles, FIBA world rankings, venue information, and news.
+
+## About This Site
+
+3x3 Observer's Hub is the go-to Japanese portal for FIBA 3x3 basketball information. It aggregates domestic and international event schedules, team data, world rankings, rules guides, venue details, and the latest news — all in Japanese.
+
+The site primarily serves the Japanese 3x3 basketball community, including players, fans, team staff, and sports media.
+
+## Content Overview
+
+- [Events](/events): Domestic and international 3x3 tournament schedules and details
+- [Teams](/teams): Profiles of 3x3 teams active in Japan (men's, women's, mixed)
+- [FIBA Rankings](/rankings): FIBA 3x3 World Rankings — men's and women's TOP 20 with Japan highlight
+- [Beginner's Guide](/guide): Rules, scoring, court specs, and how to watch 3x3 basketball
+- [Venues](/venues): Tournament venue information
+- [News](/news): Latest 3x3 basketball news with related team tags
+
+## Key Facts About 3x3 Basketball
+
+- 3-on-3 half-court game, governed by FIBA
+- Olympic sport since Tokyo 2020
+- 10-minute game or first to 21 points
+- 12-second shot clock
+- Scoring: 1 point inside the arc, 2 points outside the arc
+- Ball: size 6 (smaller than standard men's size 7)
+- Court: 15m x 11m half-court with one basket
+
+## Technical Details
+
+- URL: https://3x3.tmkproduct.com
+- Language: Japanese (ja)
+- Update frequency: Events and news updated as available; rankings weekly
+- Structured data: JSON-LD (WebSite, SportsEvent, SportsTeam, FAQPage)
+- Sitemap: /sitemap.xml
+
+## Extended Version
+
+For detailed page-by-page content descriptions, see [llms-full-en.txt](/llms-full-en.txt).
