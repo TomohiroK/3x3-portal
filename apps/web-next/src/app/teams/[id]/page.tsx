@@ -25,6 +25,7 @@ function XLogo({ size = 15 }: { size?: number }) {
 import { getTeamById } from '@/lib/repositories/team.repository';
 import { parseIntParam } from '@/lib/utils/params';
 import { TeamCategoryBadge } from '@/components/ui/TeamCategoryBadge';
+import { TeamJsonLd } from '@/components/seo/JsonLd';
 
 export const revalidate = 43200; // 12 h
 
@@ -44,6 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: team.name,
     description,
+    alternates: { canonical: `/teams/${teamId}` },
     openGraph: {
       title: team.name,
       description,
@@ -68,6 +70,7 @@ export default async function TeamDetailPage({ params }: PageProps) {
 
   return (
     <div className="portal-container py-8 space-y-6">
+      <TeamJsonLd team={team} />
       <Link
         href="/teams"
         className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-brand-orange transition-colors"

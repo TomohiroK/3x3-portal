@@ -70,7 +70,7 @@ const MOCK_VENUES: Venue[] = [
     updatedAt: '2026-02-24T00:00:00Z',
   },
 
-  // ⭐追加
+  // ⭐追加（既存）
   {
     id: 9,
     slug: 'hengqin-island',
@@ -86,6 +86,80 @@ const MOCK_VENUES: Venue[] = [
     region: '東京都渋谷区',
     websiteUrl: 'https://gardenplace.jp/',
     updatedAt: '2026-02-26T00:00:00Z',
+  },
+
+  // ✅ 追加（今回増えたイベントの会場）
+  {
+    id: 11,
+    slug: 'light-cube-utsunomiya',
+    name: 'ライトキューブ宇都宮',
+    region: '栃木県宇都宮市',
+    websiteUrl: 'https://light-cube.jp/',
+    updatedAt: '2026-03-03T00:00:00Z',
+  },
+  {
+    id: 12,
+    slug: 'waterras',
+    name: 'ワテラス（WATERRAS）',
+    region: '東京都千代田区',
+    websiteUrl: 'https://www.waterras.com/',
+    updatedAt: '2026-03-03T00:00:00Z',
+  },
+  {
+    id: 13,
+    slug: 'yaizu-port',
+    name: '焼津港（焼津漁港）',
+    region: '静岡県焼津市',
+    websiteUrl: 'https://www.city.yaizu.lg.jp/business/suisan-nougyo/fisheries/port/yaizu-port.html',
+    updatedAt: '2026-03-03T00:00:00Z',
+  },
+  {
+    id: 14,
+    slug: 'sevenpark-ario-kashiwa',
+    name: 'セブンパーク アリオ柏',
+    region: '千葉県柏市',
+    websiteUrl: 'https://sevenpark-kashiwa.ario.jp/',
+    updatedAt: '2026-03-03T00:00:00Z',
+  },
+  {
+    id: 15,
+    slug: 'campus-square-univadome-kobe',
+    name: 'キャンパススクェア（ユニバードーム）',
+    region: '兵庫県神戸市',
+    websiteUrl: null,
+    updatedAt: '2026-03-25T00:00:00Z',
+  },
+  {
+    id: 16,
+    slug: 'onda-sports-park-ube',
+    name: '恩田スポーツパーク',
+    region: '山口県宇部市',
+    websiteUrl: null,
+    updatedAt: '2026-03-25T00:00:00Z',
+  },
+  {
+    id: 17,
+    slug: 'oasis21-nagoya',
+    name: 'オアシス21 銀河の広場',
+    region: '愛知県名古屋市',
+    websiteUrl: 'https://www.sakaepark.co.jp/oasis21/',
+    updatedAt: '2026-03-25T00:00:00Z',
+  },
+  {
+    id: 18,
+    slug: 'arctown-utsunomiya',
+    name: 'アークタウン宇都宮',
+    region: '栃木県宇都宮市',
+    websiteUrl: null,
+    updatedAt: '2026-03-25T00:00:00Z',
+  },
+  {
+    id: 19,
+    slug: 'grangreen-osaka',
+    name: 'グラングリーン大阪 ロートハートスクエアうめきた',
+    region: '大阪府大阪市',
+    websiteUrl: 'https://www.grangreen-osaka.com/',
+    updatedAt: '2026-03-25T00:00:00Z',
   },
 ];
 

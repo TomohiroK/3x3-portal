@@ -32,7 +32,14 @@
 @layer components {
   /* Card surface */
   .card {
-    @apply bg-brand-surface rounded-xl border border-brand-muted;
+    @apply bg-brand-surface rounded-xl border border-brand-muted transition-[border-color,transform] duration-200;
+  }
+  .card:hover {
+    @apply border-brand-accent/40;
+  }
+  a.card:hover,
+  a .card:hover {
+    @apply -translate-y-0.5;
   }
 
   /* Badge variants */

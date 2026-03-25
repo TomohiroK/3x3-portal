@@ -17,6 +17,7 @@ export const revalidate = 43200; // 12 h
 export const metadata: Metadata = {
   title: 'イベント・大会スケジュール',
   description: '国内・海外の3x3バスケットボール大会・イベントのスケジュール一覧。開催予定・進行中・終了で絞り込み可能。随時更新中。',
+  alternates: { canonical: '/events' },
 };
 
 const VALID_STATUSES = new Set<EventStatus>(['開催予定', '開催中', '終了', '中止']);

@@ -6,27 +6,72 @@ import type { NewsArticle, NewsFilters, PaginatedResult } from '@/types/domain';
 
 const MOCK_NEWS: NewsArticle[] = [
   {
-    id: 1,
-    slug: '3x3-exe-super-premier-2025-26-round1-lugano-wins-1',
-    title: '〖ROUND1速報〗LUGANO(スイス)が優勝！',
+    id: 7,
+    slug: '3x3-exe-super-premier-2025-26-final-singapore-preview-7',
+    title: '〖FINAL予告〗3/28-29 シンガポールでSUPER PREMIERシーズンファイナル開催',
     summary:
-      '3x3.EXE SUPER PREMIER 2025-26 ROUND.1（仙台）が2日間の日程を終了。予選グループ（2/28）と決勝トーナメント（3/1）の結果、LUGANO（スイス）が優勝。次戦ROUND.2（タイ）とFINAL（シンガポール）へ繋がる初戦が決着。',
-    sourceUrl: 'https://3x3exe.com/superpremier/round1_result/',
+      '3x3.EXE SUPER PREMIER 2025-26 FINAL がシンガポール（Sengkang Grand Mall）で3月28-29日に開催。ROUND.1優勝のLUGANO、ROUND.2優勝のSHINAGAWA CITY.EXEらが頂点を争う。',
+    sourceUrl: 'https://3x3exe.com/superpremier/schedules/',
     imageUrl: null,
-    publishedAt: '2026-03-01',
-    updatedAt: '2026-03-01T00:00:00Z',
-    relatedTeams: [{ id: 13, name: 'LUGANO' }],
+    publishedAt: '2026-03-25',
+    updatedAt: '2026-03-25T00:00:00Z',
+    relatedTeams: [
+      { id: 13, name: 'LUGANO' },
+      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
+    ],
+  },
+  {
+    id: 6,
+    slug: '3x3-exe-super-premier-2025-26-round2-shinagawa-wins-6',
+    title: '〖ROUND2速報〗SHINAGAWA CITY.EXE（日本）が優勝！',
+    summary:
+      '3x3.EXE SUPER PREMIER 2025-26 ROUND.2（タイ / Mega Bangna）が終了。SHINAGAWA CITY.EXEが優勝、LUGANOが準優勝。得点王はDusan Samardzic（SHINAGAWA CITY.EXE、36得点）。次戦はFINAL（シンガポール）。',
+    sourceUrl: 'https://3x3exe.com/superpremier/round2_result/',
+    imageUrl: null,
+    publishedAt: '2026-03-22',
+    updatedAt: '2026-03-25T00:00:00Z',
+    relatedTeams: [
+      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
+      { id: 13, name: 'LUGANO' },
+      { id: 3, name: 'BRISBANE 3X3.EXE' },
+      { id: 9, name: 'RN SPORT.EXE' },
+    ],
+  },
+  {
+    id: 1,
+    slug: '3x3-exe-premier-japan-2026-season-schedule-announced-1',
+    title: '〖3x3.EXE PREMIER JAPAN 2026 SEASON〗開催全日程決定!',
+    summary:
+      '3x3.EXE PREMIER JAPAN 2026シーズンの開催日程（男女）が発表。4月〜10月にかけて各RoundとPLAYOFFSを全国各地で開催予定。女子は4月宇都宮で開幕、男子は5月ワテラスで開幕予定。PLAYOFFSは10月に大阪（グラングリーン大阪）で開催。',
+    sourceUrl: 'https://3x3exe.com/premier/japan_2026_schedule/',
+    imageUrl:
+      'https://3x3exe.com/premier/wp-content/uploads/2026/03/29d3bc99193cb0b837fb8cc53f050ae5.jpg',
+    publishedAt: '2026-03-03',
+    updatedAt: '2026-03-25T00:00:00Z',
+    relatedTeams: [],
   },
   {
     id: 2,
-    slug: '3x3-exe-super-premier-2025-26-round1-day1-results-day2-slots-2',
+    slug: '3x3-exe-super-premier-2025-26-round1-lugano-wins-2',
+    title: '〖ROUND1速報〗LUGANO(スイス)が優勝！',
+    summary:
+      '3x3.EXE SUPER PREMIER 2025-26 ROUND.1（仙台）が終了。予選グループ（2/28）と決勝トーナメント（3/1）の結果、スイスのLUGANOが優勝。次戦はROUND.2（タイ）、FINAL（シンガポール）へ続く。',
+    sourceUrl: 'https://3x3exe.com/superpremier/round1_result/',
+    imageUrl: null,
+    publishedAt: '2026-03-01',
+    updatedAt: '2026-03-06T00:00:00Z',
+    relatedTeams: [{ id: 13, name: 'LUGANO' }],
+  },
+  {
+    id: 3,
+    slug: '3x3-exe-super-premier-2025-26-round1-day1-results-day2-slots-3',
     title: '〖ROUND1〗DAY.1結果 & DAY.2スロット',
     summary:
-      '仙台ROUND.1のDAY.1（グループ予選）結果と、DAY.2決勝トーナメント進出8チームが公開。GROUP AはBRISBANE 3x3.EXEとSHINAGAWA CITY.EXE、GROUP BはUTSUNOMIYA BREX.EXEとLUGANO、GROUP CはZETHREE ISHIKAWA.EXEとSHONAN SEASIDE.EXE、GROUP DはRN SPORT.EXEとSINGAPOREが通過。',
+      '仙台ROUND.1のDAY.1結果とDAY.2決勝トーナメント進出チームが公開。BRISBANE 3x3.EXE、SHINAGAWA CITY、UTSUNOMIYA BREX.EXE、LUGANOなど8チームが決勝トーナメントに進出。',
     sourceUrl: 'https://3x3exe.com/superpremier/round1_results_slots/',
     imageUrl: null,
     publishedAt: '2026-02-28',
-    updatedAt: '2026-03-01T00:00:00Z',
+    updatedAt: '2026-03-06T00:00:00Z',
     relatedTeams: [
       { id: 3, name: 'BRISBANE 3X3.EXE' },
       { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
@@ -39,28 +84,28 @@ const MOCK_NEWS: NewsArticle[] = [
     ],
   },
   {
-    id: 3,
-    slug: '3x3-exe-super-premier-2025-26-round1-sendai-viewing-campaigns-3',
-    title:
-      '〖情報更新・観戦方法まとめ〗コートの最前席が当たるキャンペーンや、入場＆観戦無料招待のご案内',
-    summary:
-      '仙台ROUND.1（2/28-3/1）に向け、観戦方法と各種キャンペーン情報を更新。無料招待（事前フォーム＋公式LINE）、ゼビオ店舗レシート提示でコートサイド席（先着）、抽選プレゼント等の導線をまとめて案内。',
-    sourceUrl: 'https://3x3exe.com/superpremier/25-26campaign/',
-    imageUrl: null,
-    publishedAt: '2026-02-27',
-    updatedAt: '2026-03-01T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
     id: 4,
     slug: '3x3-women-national-team-first-camp-additional-call-ups-4',
     title: '3×3女子日本代表 第1次強化合宿 追加招集メンバー発表',
     summary:
-      'JBAが3×3女子日本代表の第1次強化合宿（3/1〜）に向け、追加招集メンバーを発表。強化と選手層拡大を目的に、合宿体制を更新した。',
+      'JBAが3×3女子日本代表の第1次強化合宿（3月実施）に向けて追加招集メンバーを発表。アジアカップや国際大会を見据えた強化合宿がスタート。',
     sourceUrl: 'https://www.japanbasketball.jp/japan/85325',
     imageUrl: null,
     publishedAt: '2026-02-28',
-    updatedAt: '2026-03-01T00:00:00Z',
+    updatedAt: '2026-03-06T00:00:00Z',
+    relatedTeams: [],
+  },
+  {
+    id: 5,
+    slug: '3x3-exe-super-premier-2025-26-round1-sendai-viewing-campaigns-5',
+    title:
+      '〖情報更新・観戦方法まとめ〗コート最前席が当たるキャンペーンや無料招待のご案内',
+    summary:
+      '3x3.EXE SUPER PREMIER ROUND.1仙台大会に向けて、観戦方法とキャンペーン情報を更新。事前申込による無料招待やゼビオ店舗レシート提示でコートサイド席が当たる企画などを案内。',
+    sourceUrl: 'https://3x3exe.com/superpremier/25-26campaign/',
+    imageUrl: null,
+    publishedAt: '2026-02-27',
+    updatedAt: '2026-03-06T00:00:00Z',
     relatedTeams: [],
   },
 ];

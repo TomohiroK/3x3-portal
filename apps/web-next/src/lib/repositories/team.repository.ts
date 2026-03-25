@@ -176,6 +176,19 @@ const MOCK_TEAMS: Team[] = [
     tiktokAccount: null,
     updatedAt: '2026-02-26T00:00:00Z',
   },
+  {
+    id: 14,
+    slug: 'ct-monkey-exe-14',
+    name: 'CT MONKEY.EXE',
+    location: 'Thailand',
+    category: 'EXE',
+    imageUrl: null,
+    websiteUrl: null,
+    xAccount: null,
+    instagramAccount: null,
+    tiktokAccount: null,
+    updatedAt: '2026-03-25T00:00:00Z',
+  },
 ];
 
 export async function listTeams(filters: TeamFilters): Promise<PaginatedResult<Team>> {

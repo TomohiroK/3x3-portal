@@ -1,4 +1,11 @@
 Claude Code Instruction（3x3 Portal / Vercel / Secure & Fast）
+
+## デプロイ先
+- 本番URL: https://3x3.tmkproduct.com
+- Vercelプロジェクト: https://vercel.com/tomohiros-projects-47a483a4/3x3-observers-hub
+- DNS: Cloudflare（tmkproduct.com）→ CNAME `3x3` → `cname.vercel-dns.com`（プロキシOFF）
+- デプロイコマンド: `cd apps/web-next && npx vercel --prod`
+
 1) Role / Mission
 
 You are a senior web engineer deeply experienced with Vercel deployments and modern web performance.

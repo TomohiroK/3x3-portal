@@ -1,40 +1,15 @@
 
 
 const nextConfig = {
-  // ISR-friendly: static pages revalidate every 60 seconds
-  // Override per-page with `export const revalidate = N`
-
   images: {
-    // Allow Neon / any CDN image domains as needed
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
+      { protocol: 'https', hostname: '3x3exe.com' },
+      { protocol: 'https', hostname: '*.3x3exe.com' },
+      { protocol: 'https', hostname: '*.vercel.app' },
     ],
     formats: ['image/avif', 'image/webp'],
   },
-
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
-        ],
-      },
-      {
-        // Long-lived cache for static assets
-        source: '/_next/static/(.*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
-    ];
-  },
+  // Security headers are managed in vercel.json to avoid duplication
 };
 
 export default nextConfig;

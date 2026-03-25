@@ -5,7 +5,8 @@ import { MobileNav } from './MobileNav';
 const NAV_LINKS = [
   { href: '/events', label: 'イベント' },
   { href: '/teams', label: 'チーム' },
-  { href: '/venues', label: '会場' },
+  { href: '/rankings', label: 'ランキング' },
+  { href: '/guide', label: 'ガイド' },
   { href: '/news', label: 'ニュース' },
 ] as const;
 
@@ -31,10 +32,13 @@ export function SiteHeader() {
 
         {/* Desktop nav */}
         <nav aria-label="メインナビゲーション">
-          <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+          <ul className="hidden md:flex items-center gap-1 text-sm font-medium">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
-                <Link href={href} className="hover:text-white transition-colors">
+                <Link
+                  href={href}
+                  className="rounded-md px-3 py-1.5 text-gray-400 hover:text-white hover:bg-brand-subtle transition-colors"
+                >
                   {label}
                 </Link>
               </li>

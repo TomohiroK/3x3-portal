@@ -16,6 +16,7 @@ export const revalidate = 43200; // 12 h
 export const metadata: Metadata = {
   title: '3x3バスケ チーム一覧',
   description: '3x3バスケットボールのチームを一覧で掲載。国内外の主要チームのSNS・公式サイトリンクを収録。ニュースやイベントで取り上げたチームを随時更新。',
+  alternates: { canonical: '/teams' },
 };
 
 const VALID_CATEGORIES = new Set<TeamCategory>(['EXE', '代表', 'U23', '招待', '一般クラブ']);

@@ -12,9 +12,9 @@ export function NewsCard({ article }: NewsCardProps) {
   const isNew = isNewlyUpdated(article.updatedAt);
 
   const cardClass =
-    'card flex gap-4 p-4 transition-colors focus-visible:outline ' +
+    'card flex gap-4 p-4 focus-visible:outline ' +
     (article.sourceUrl
-      ? 'hover:border-brand-orange/50 cursor-pointer'
+      ? 'cursor-pointer'
       : 'cursor-default opacity-80');
 
   const inner = (
@@ -24,7 +24,7 @@ export function NewsCard({ article }: NewsCardProps) {
         <div className="relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-lg bg-brand-muted">
           <Image
             src={article.imageUrl}
-            alt=""
+            alt={article.title}
             fill
             sizes="112px"
             className="object-cover"

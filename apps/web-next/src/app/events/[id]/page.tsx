@@ -27,6 +27,7 @@ import { getTeamsByIds } from '@/lib/repositories/team.repository';
 import { findVenueByLocation } from '@/lib/repositories/venue.repository';
 import { formatDate } from '@/lib/utils/date';
 import { parseIntParam } from '@/lib/utils/params';
+import { EventJsonLd } from '@/components/seo/JsonLd';
 
 export const revalidate = 43200; // 12 h
 
@@ -47,6 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: event.name,
     description,
+    alternates: { canonical: `/events/${eventId}` },
     openGraph: {
       title: event.name,
       description,
@@ -70,10 +72,17 @@ export default async function EventDetailPage({ params }: PageProps) {
   if (!event) notFound();
 
   const matchedVenue = findVenueByLocation(event.location);
-  const participantTeams = await getTeamsByIds(event.participantTeamIds).catch(() => []);
+  const participantTeams = await getTeamsByIds(event.participants.map((p) => p.teamId)).catch(() => []);
+
+  // チームとイベントでの出場ステータスを結合
+  const teamsWithStatus = participantTeams.map((team) => {
+    const p = event.participants.find((p) => p.teamId === team.id);
+    return { ...team, eventStatus: p?.status ?? 'confirmed' };
+  });
 
   return (
     <div className="portal-container py-8 space-y-6">
+      <EventJsonLd event={event} />
       <Link
         href="/events"
         className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-brand-orange transition-colors"
@@ -111,11 +120,10 @@ export default async function EventDetailPage({ params }: PageProps) {
           </span>
           <span>
             <span
-              className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-semibold ${
-                event.country === '日本'
+              className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-semibold ${event.country === '日本'
                   ? 'bg-green-500/15 text-green-300'
                   : 'bg-violet-500/15 text-violet-300'
-              }`}
+                }`}
             >
               {event.country === '日本' ? '国内' : `海外・${event.country}`}
             </span>
@@ -193,16 +201,16 @@ export default async function EventDetailPage({ params }: PageProps) {
         )}
 
         {/* Participant teams */}
-        {participantTeams.length > 0 && (
+        {teamsWithStatus.length > 0 && (
           <div className="card p-5">
             <h2 className="text-sm font-semibold text-gray-300 mb-3">
               参加チーム
               <span className="ml-2 text-xs font-normal text-gray-500">
-                {participantTeams.length} チーム
+                {teamsWithStatus.length} チーム
               </span>
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2" role="list">
-              {participantTeams.map((team) => (
+              {teamsWithStatus.map((team) => (
                 <li key={team.id}>
                   <Link
                     href={`/teams/${team.id}`}
@@ -218,7 +226,22 @@ export default async function EventDetailPage({ params }: PageProps) {
                       </p>
                       <p className="text-xs text-gray-500 truncate">{team.location}</p>
                     </div>
-                    <TeamCategoryBadge category={team.category} />
+                    <div className="flex flex-col items-end gap-1">
+                      <TeamCategoryBadge category={team.category} />
+                      {team.eventStatus === 'confirmed' ? (
+                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-green-500/15 text-green-300">
+                          確定
+                        </span>
+                      ) : team.eventStatus === 'probable' ? (
+                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-blue-500/15 text-blue-300">
+                          おそらく
+                        </span>
+                      ) : team.eventStatus === 'speculated' ? (
+                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-amber-500/15 text-amber-300">
+                          噂
+                        </span>
+                      ) : null}
+                    </div>
                   </Link>
                 </li>
               ))}

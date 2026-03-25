@@ -9,6 +9,7 @@ import { EmptyState } from '@/components/ui/EmptyState';
 export const metadata: Metadata = {
   title: '選手',
   description: '3x3バスケットボールの選手一覧',
+  robots: { index: false, follow: true },
 };
 
 export default function PlayersPage() {

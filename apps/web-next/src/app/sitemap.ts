@@ -29,13 +29,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const latestTeamAt  = latestUpdatedAt(teamItems.map((t) => t.updatedAt),  TERMS_UPDATED);
   const latestHomeAt  = latestUpdatedAt([latestEventAt, latestNewsAt],       TERMS_UPDATED);
 
+  const GUIDE_UPDATED = '2026-03-25T00:00:00Z';
+
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL,             lastModified: latestHomeAt,  changeFrequency: 'daily',   priority: 1.0 },
-    { url: `${BASE_URL}/events`, lastModified: latestEventAt, changeFrequency: 'daily',   priority: 0.9 },
-    { url: `${BASE_URL}/news`,   lastModified: latestNewsAt,  changeFrequency: 'daily',   priority: 0.8 },
-    { url: `${BASE_URL}/teams`,  lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${BASE_URL}/venues`, lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.7 },
-    { url: `${BASE_URL}/terms`,  lastModified: TERMS_UPDATED, changeFrequency: 'monthly', priority: 0.3 },
+    { url: BASE_URL,                lastModified: latestHomeAt,  changeFrequency: 'daily',   priority: 1.0 },
+    { url: `${BASE_URL}/events`,    lastModified: latestEventAt, changeFrequency: 'daily',   priority: 0.9 },
+    { url: `${BASE_URL}/news`,      lastModified: latestNewsAt,  changeFrequency: 'daily',   priority: 0.8 },
+    { url: `${BASE_URL}/teams`,     lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE_URL}/rankings`,  lastModified: GUIDE_UPDATED, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE_URL}/guide`,     lastModified: GUIDE_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/venues`,    lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.7 },
+    { url: `${BASE_URL}/terms`,     lastModified: TERMS_UPDATED, changeFrequency: 'monthly', priority: 0.3 },
   ];
 
   const eventPages: MetadataRoute.Sitemap = eventItems.map((event) => ({

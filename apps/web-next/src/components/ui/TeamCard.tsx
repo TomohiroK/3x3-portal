@@ -16,7 +16,7 @@ export function TeamCard({ team }: TeamCardProps) {
   return (
     <Link
       href={`/teams/${team.id}`}
-      className="card flex items-center gap-4 p-4 hover:border-brand-orange/50 transition-colors focus-visible:outline"
+      className="card flex items-center gap-4 p-4 focus-visible:outline"
       aria-label={`${team.name} の詳細を見る`}
     >
       {/* Team image */}

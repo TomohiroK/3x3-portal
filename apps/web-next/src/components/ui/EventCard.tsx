@@ -31,7 +31,7 @@ export function EventCard({ event }: EventCardProps) {
   return (
     <Link
       href={`/events/${event.id}`}
-      className="card flex flex-col gap-2.5 p-4 hover:border-brand-orange/50 transition-colors focus-visible:outline"
+      className="card flex flex-col gap-2.5 p-4 focus-visible:outline"
       aria-label={`${event.name} の詳細を見る`}
     >
       {/* バッジ行: NEW・国内/海外・ステータスを横並びに */}

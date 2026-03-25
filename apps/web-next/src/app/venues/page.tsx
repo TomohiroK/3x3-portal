@@ -17,6 +17,7 @@ export const revalidate = 43200; // 12 h
 export const metadata: Metadata = {
   title: '3x3バスケ 会場一覧',
   description: '3x3バスケットボールの国内外の大会・イベント会場を一覧で掲載。各会場の所在地・公式サイトリンク付き。',
+  alternates: { canonical: '/venues' },
 };
 
 interface PageProps {
@@ -99,7 +100,7 @@ export default async function VenuesPage({ searchParams }: PageProps) {
                     {/* Header */}
                     <div className="flex items-center gap-2 flex-wrap">
                       {isNew && <NewBadge />}
-                      <h3 className="font-semibold text-white leading-snug">{venue.name}</h3>
+                      <h2 className="font-semibold text-white leading-snug text-base">{venue.name}</h2>
                     </div>
 
                     {/* Region */}

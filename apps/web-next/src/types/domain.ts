@@ -28,8 +28,15 @@ export interface PortalEvent {
   xAccount: string | null;
   instagramAccount: string | null;
   tiktokAccount: string | null;
-  participantTeamIds: number[]; // 参加チームID一覧（空配列 = 未設定）
+  participants: EventParticipant[]; // 参加チームとステータスのリスト
   updatedAt: string;
+}
+
+export type EventTeamStatus = 'confirmed' | 'probable' | 'speculated';
+
+export interface EventParticipant {
+  teamId: number;
+  status: EventTeamStatus;
 }
 
 // ─────────────────────────────────────────

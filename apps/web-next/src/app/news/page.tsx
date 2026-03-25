@@ -15,6 +15,7 @@ export const revalidate = 43200; // 12 h
 export const metadata: Metadata = {
   title: '3x3バスケ 最新ニュース',
   description: '3x3バスケットボールに関する最新ニュースを一覧で確認。大会情報・チーム動向・試合結果など随時更新中。',
+  alternates: { canonical: '/news' },
 };
 
 interface PageProps {

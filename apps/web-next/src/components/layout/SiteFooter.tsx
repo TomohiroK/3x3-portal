@@ -9,6 +9,8 @@ export function SiteFooter() {
             {[
               { href: '/events', label: 'イベント' },
               { href: '/teams', label: 'チーム' },
+              { href: '/rankings', label: 'ランキング' },
+              { href: '/guide', label: 'ガイド' },
               { href: '/venues', label: '会場' },
               { href: '/news', label: 'ニュース' },
               { href: '/terms', label: '利用規約' },
