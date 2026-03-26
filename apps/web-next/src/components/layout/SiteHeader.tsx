@@ -5,6 +5,8 @@ import { MobileNav } from './MobileNav';
 const NAV_LINKS = [
   { href: '/events', label: 'イベント' },
   { href: '/teams', label: 'チーム' },
+  { href: '/venues', label: '会場' },
+  { href: '/videos', label: '動画' },
   { href: '/rankings', label: 'ランキング' },
   { href: '/guide', label: 'ガイド' },
   { href: '/news', label: 'ニュース' },

@@ -74,8 +74,8 @@ const MOCK_VENUES: Venue[] = [
   {
     id: 9,
     slug: 'hengqin-island',
-    name: 'Hengqin Island Court',
-    region: 'Zhuhai, China',
+    name: 'Hengqin',
+    region: 'Zhuhai, Guangdong-Macao In-Depth Cooperation Zone, China',
     websiteUrl: null,
     updatedAt: '2026-02-26T00:00:00Z',
   },
@@ -160,6 +160,24 @@ const MOCK_VENUES: Venue[] = [
     region: '大阪府大阪市',
     websiteUrl: 'https://www.grangreen-osaka.com/',
     updatedAt: '2026-03-25T00:00:00Z',
+  },
+
+  // 4月イベント会場
+  {
+    id: 20,
+    slug: 'ocbc-square-the-kallang-singapore',
+    name: 'OCBC Square',
+    region: 'Singapore',
+    websiteUrl: 'https://www.thekallang.com.sg/',
+    updatedAt: '2026-03-26T00:00:00Z',
+  },
+  {
+    id: 21,
+    slug: 'futaarayama-jinja-court-utsunomiya',
+    name: '二荒山神社付近特設コート',
+    region: '栃木県宇都宮市',
+    websiteUrl: null,
+    updatedAt: '2026-03-26T00:00:00Z',
   },
 ];
 
