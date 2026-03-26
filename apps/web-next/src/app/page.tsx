@@ -81,7 +81,7 @@ export default async function HomePage() {
           </div>
           {/* Bottom fade into page background */}
           <div
-            className="absolute inset-x-0 bottom-0 h-1/3"
+            className="absolute inset-x-0 bottom-0 h-1/3 pointer-events-none"
             style={{ background: 'linear-gradient(to bottom, transparent, #0B0E1A)' }}
             aria-hidden="true"
           />
