@@ -1,169 +1,14 @@
 /**
- * News repository — mock implementation (no DB required).
- * Replace with DB-backed implementation when DATABASE_URL is available.
+ * News repository — reads from JSON data file.
+ * Scheduled task updates src/data/news/articles.json.
  */
 import type { NewsArticle, NewsFilters, PaginatedResult } from '@/types/domain';
+import articlesData from '@/data/news/articles.json';
 
-const MOCK_NEWS: NewsArticle[] = [
-  {
-    id: 11,
-    slug: 'fiba-3x3-womens-series-2026-japan-stops-announced-11',
-    title: '〖Women\'s Series〗FIBA 3x3 Women\'s Series 2026 に東京・高崎が開催地決定',
-    summary:
-      'FIBA 3x3 Women\'s Series 2026のアジアラウンドに東京（8月）と高崎（8月）が開催地として決定。世界トップの女子3x3選手がアジア各地を転戦し、上海ファイナルを目指す。',
-    sourceUrl: 'https://womensseries.fiba3x3.com/2026',
-    imageUrl: null,
-    publishedAt: '2026-03-27',
-    updatedAt: '2026-03-27T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
-    id: 10,
-    slug: 'fiba-3x3-world-tour-utsunomiya-opener-2026-teams-confirmed-10',
-    title: '〖World Tour〗宇都宮オープナー2026 出場10チーム確定 — 5年連続の開幕地',
-    summary:
-      'FIBA 3x3 World Tour 2026の開幕戦が4/25-26に宇都宮・二荒山神社で開催。前年王者Ub（セルビア）、2連覇中のMiami（アメリカ）、Amsterdam、Liman、Raudondvaris、Shanghai、Skyliners、Toulouse、Vienna、Antwerpの10チームが確定。UTSUNOMIYA BREX.EXEが開催都市枠で出場決定。',
-    sourceUrl: 'https://www.fiba.basketball/en/news/top-teams-confirmed-for-fiba-3x3-world-tour-utsunomiya-opener-2026',
-    imageUrl: null,
-    publishedAt: '2026-03-26',
-    updatedAt: '2026-03-27T00:00:00Z',
-    relatedTeams: [
-      { id: 15, name: 'Ub' },
-      { id: 17, name: 'Miami' },
-      { id: 6, name: 'UTSUNOMIYA BREX.EXE' },
-    ],
-  },
-  {
-    id: 9,
-    slug: 'fiba-3x3-asia-cup-2026-pools-announced-9',
-    title: '〖Asia Cup〗FIBA 3x3 アジアカップ2026 プール組み合わせ発表 — 4/1-5 シンガポール',
-    summary:
-      'FIBA 3x3 Asia Cup 2026（4/1-5、シンガポール The Kallang）のプール組み合わせが発表。男子は中国・モンゴル・日本・豪州がトップシード。日本はPool Cでシンガポールと同組。女子は中国・モンゴル・日本・豪州の順。World Cup 2027出場権をかけた戦い。',
-    sourceUrl: 'https://www.fiba.basketball/en/news/pools-and-seedings-announced-for-fiba-3x3-asia-cup-2026',
-    imageUrl: null,
-    publishedAt: '2026-03-26',
-    updatedAt: '2026-03-27T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
-    id: 8,
-    slug: 'fiba-3x3-superleagues-2026-announced-8',
-    title: '〖新制度〗FIBA 3x3 SuperLeagues 2026 発表 — ChallengerとWorld Tour出場権の新パスウェイ',
-    summary:
-      'FIBA 3x3が新たな大会形式「SuperLeagues」を発表。複数Stopを経てFinalで頂点を決める構造で、Stop優勝チームにChallenger出場権、Final上位にWorld Tour Zadar出場権を付与。3x3プロエコシステムの拡充を目指す。',
-    sourceUrl: 'https://www.fiba.basketball/en/news/superleagues-2026-to-allocate-challenger-and-world-tour-spots-across-global',
-    imageUrl: null,
-    publishedAt: '2026-03-25',
-    updatedAt: '2026-03-27T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
-    id: 7,
-    slug: '3x3-exe-super-premier-2025-26-final-singapore-preview-7',
-    title: '〖FINAL予告〗3/28-29 シンガポールでSUPER PREMIERシーズンファイナル開催',
-    summary:
-      '3x3.EXE SUPER PREMIER 2025-26 FINAL がシンガポール（Sengkang Grand Mall）で3月28-29日に開催。ROUND.1優勝のLUGANO、ROUND.2優勝のSHINAGAWA CITY.EXEらが頂点を争う。優勝・準優勝チームはWorld Tour Zadar出場権を獲得。ライブ配信は28日13時開始。',
-    sourceUrl: 'https://3x3exe.com/superpremier/schedules/',
-    imageUrl: null,
-    publishedAt: '2026-03-25',
-    updatedAt: '2026-03-27T00:00:00Z',
-    relatedTeams: [
-      { id: 13, name: 'LUGANO' },
-      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-    ],
-  },
-  {
-    id: 6,
-    slug: '3x3-exe-super-premier-2025-26-round2-shinagawa-wins-6',
-    title: '〖ROUND2速報〗SHINAGAWA CITY.EXE（日本）が優勝！',
-    summary:
-      '3x3.EXE SUPER PREMIER 2025-26 ROUND.2（タイ / Mega Bangna）が終了。SHINAGAWA CITY.EXEが優勝、LUGANOが準優勝。得点王はDusan Samardzic（SHINAGAWA CITY.EXE、36得点）。次戦はFINAL（シンガポール）。',
-    sourceUrl: 'https://3x3exe.com/superpremier/round2_result/',
-    imageUrl: null,
-    publishedAt: '2026-03-22',
-    updatedAt: '2026-03-25T00:00:00Z',
-    relatedTeams: [
-      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-      { id: 13, name: 'LUGANO' },
-      { id: 3, name: 'BRISBANE 3X3.EXE' },
-      { id: 9, name: 'RN SPORT.EXE' },
-    ],
-  },
-  {
-    id: 1,
-    slug: '3x3-exe-premier-japan-2026-season-schedule-announced-1',
-    title: '〖3x3.EXE PREMIER JAPAN 2026 SEASON〗開催全日程決定!',
-    summary:
-      '3x3.EXE PREMIER JAPAN 2026シーズンの開催日程（男女）が発表。4月〜10月にかけて各RoundとPLAYOFFSを全国各地で開催予定。女子は4月宇都宮で開幕、男子は5月ワテラスで開幕予定。PLAYOFFSは10月に大阪（グラングリーン大阪）で開催。',
-    sourceUrl: 'https://3x3exe.com/premier/japan_2026_schedule/',
-    imageUrl:
-      'https://3x3exe.com/premier/wp-content/uploads/2026/03/29d3bc99193cb0b837fb8cc53f050ae5.jpg',
-    publishedAt: '2026-03-03',
-    updatedAt: '2026-03-25T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
-    id: 2,
-    slug: '3x3-exe-super-premier-2025-26-round1-lugano-wins-2',
-    title: '〖ROUND1速報〗LUGANO(スイス)が優勝！',
-    summary:
-      '3x3.EXE SUPER PREMIER 2025-26 ROUND.1（仙台）が終了。予選グループ（2/28）と決勝トーナメント（3/1）の結果、スイスのLUGANOが優勝。次戦はROUND.2（タイ）、FINAL（シンガポール）へ続く。',
-    sourceUrl: 'https://3x3exe.com/superpremier/round1_result/',
-    imageUrl: null,
-    publishedAt: '2026-03-01',
-    updatedAt: '2026-03-06T00:00:00Z',
-    relatedTeams: [{ id: 13, name: 'LUGANO' }],
-  },
-  {
-    id: 3,
-    slug: '3x3-exe-super-premier-2025-26-round1-day1-results-day2-slots-3',
-    title: '〖ROUND1〗DAY.1結果 & DAY.2スロット',
-    summary:
-      '仙台ROUND.1のDAY.1結果とDAY.2決勝トーナメント進出チームが公開。BRISBANE 3x3.EXE、SHINAGAWA CITY、UTSUNOMIYA BREX.EXE、LUGANOなど8チームが決勝トーナメントに進出。',
-    sourceUrl: 'https://3x3exe.com/superpremier/round1_results_slots/',
-    imageUrl: null,
-    publishedAt: '2026-02-28',
-    updatedAt: '2026-03-06T00:00:00Z',
-    relatedTeams: [
-      { id: 3, name: 'BRISBANE 3X3.EXE' },
-      { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },
-      { id: 6, name: 'UTSUNOMIYA BREX.EXE' },
-      { id: 13, name: 'LUGANO' },
-      { id: 5, name: 'ZETHREE ISHIKAWA.EXE' },
-      { id: 10, name: 'SHONAN SEASIDE.EXE' },
-      { id: 9, name: 'RN SPORT.EXE' },
-      { id: 11, name: 'SINGAPORE' },
-    ],
-  },
-  {
-    id: 4,
-    slug: '3x3-women-national-team-first-camp-additional-call-ups-4',
-    title: '3×3女子日本代表 第1次強化合宿 追加招集メンバー発表',
-    summary:
-      'JBAが3×3女子日本代表の第1次強化合宿（3月実施）に向けて追加招集メンバーを発表。アジアカップや国際大会を見据えた強化合宿がスタート。',
-    sourceUrl: 'https://www.japanbasketball.jp/japan/85325',
-    imageUrl: null,
-    publishedAt: '2026-02-28',
-    updatedAt: '2026-03-06T00:00:00Z',
-    relatedTeams: [],
-  },
-  {
-    id: 5,
-    slug: '3x3-exe-super-premier-2025-26-round1-sendai-viewing-campaigns-5',
-    title:
-      '〖情報更新・観戦方法まとめ〗コート最前席が当たるキャンペーンや無料招待のご案内',
-    summary:
-      '3x3.EXE SUPER PREMIER ROUND.1仙台大会に向けて、観戦方法とキャンペーン情報を更新。事前申込による無料招待やゼビオ店舗レシート提示でコートサイド席が当たる企画などを案内。',
-    sourceUrl: 'https://3x3exe.com/superpremier/25-26campaign/',
-    imageUrl: null,
-    publishedAt: '2026-02-27',
-    updatedAt: '2026-03-06T00:00:00Z',
-    relatedTeams: [],
-  },
-];
+const articles: NewsArticle[] = articlesData as NewsArticle[];
 
 export async function listNews(filters: NewsFilters): Promise<PaginatedResult<NewsArticle>> {
-  let result = MOCK_NEWS;
+  let result = articles;
 
   if (filters.search) {
     const q = filters.search.toLowerCase();
@@ -187,7 +32,7 @@ export async function listNews(filters: NewsFilters): Promise<PaginatedResult<Ne
 }
 
 export async function getLatestNews(limit = 4): Promise<NewsArticle[]> {
-  return [...MOCK_NEWS]
+  return [...articles]
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
     .slice(0, limit);
 }
