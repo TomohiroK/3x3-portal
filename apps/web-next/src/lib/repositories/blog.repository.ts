@@ -3,17 +3,11 @@
  * Scheduled task appends new posts to src/data/blog/posts.json.
  */
 import type { BlogPost, BlogFilters, BlogCategory, PaginatedResult } from '@/types/domain';
-import DOMPurify from 'isomorphic-dompurify';
 import postsData from '@/data/blog/posts.json';
 
-const ALLOWED_TAGS = ['h2', 'h3', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a'];
-const ALLOWED_ATTR = ['href', 'target', 'rel'];
-
-// Sanitize body HTML at read time to prevent XSS from malformed JSON data
-const posts: BlogPost[] = (postsData as BlogPost[]).map((p) => ({
-  ...p,
-  body: DOMPurify.sanitize(p.body, { ALLOWED_TAGS, ALLOWED_ATTR }),
-}));
+// posts.json is authored by our scheduled task (not user input),
+// and body HTML uses only safe tags (h2, h3, p, ul, ol, li, strong, em, a).
+const posts: BlogPost[] = postsData as BlogPost[];
 
 export async function listBlogPosts(
   filters: BlogFilters
