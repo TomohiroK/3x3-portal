@@ -6,15 +6,67 @@ import type { NewsArticle, NewsFilters, PaginatedResult } from '@/types/domain';
 
 const MOCK_NEWS: NewsArticle[] = [
   {
+    id: 11,
+    slug: 'fiba-3x3-womens-series-2026-japan-stops-announced-11',
+    title: '〖Women\'s Series〗FIBA 3x3 Women\'s Series 2026 に東京・高崎が開催地決定',
+    summary:
+      'FIBA 3x3 Women\'s Series 2026のアジアラウンドに東京（8月）と高崎（8月）が開催地として決定。世界トップの女子3x3選手がアジア各地を転戦し、上海ファイナルを目指す。',
+    sourceUrl: 'https://womensseries.fiba3x3.com/2026',
+    imageUrl: null,
+    publishedAt: '2026-03-27',
+    updatedAt: '2026-03-27T00:00:00Z',
+    relatedTeams: [],
+  },
+  {
+    id: 10,
+    slug: 'fiba-3x3-world-tour-utsunomiya-opener-2026-teams-confirmed-10',
+    title: '〖World Tour〗宇都宮オープナー2026 出場10チーム確定 — 5年連続の開幕地',
+    summary:
+      'FIBA 3x3 World Tour 2026の開幕戦が4/25-26に宇都宮・二荒山神社で開催。前年王者Ub（セルビア）、2連覇中のMiami（アメリカ）、Amsterdam、Liman、Raudondvaris、Shanghai、Skyliners、Toulouse、Vienna、Antwerpの10チームが確定。UTSUNOMIYA BREX.EXEが開催都市枠で出場決定。',
+    sourceUrl: 'https://www.fiba.basketball/en/news/top-teams-confirmed-for-fiba-3x3-world-tour-utsunomiya-opener-2026',
+    imageUrl: null,
+    publishedAt: '2026-03-26',
+    updatedAt: '2026-03-27T00:00:00Z',
+    relatedTeams: [
+      { id: 15, name: 'Ub' },
+      { id: 17, name: 'Miami' },
+      { id: 6, name: 'UTSUNOMIYA BREX.EXE' },
+    ],
+  },
+  {
+    id: 9,
+    slug: 'fiba-3x3-asia-cup-2026-pools-announced-9',
+    title: '〖Asia Cup〗FIBA 3x3 アジアカップ2026 プール組み合わせ発表 — 4/1-5 シンガポール',
+    summary:
+      'FIBA 3x3 Asia Cup 2026（4/1-5、シンガポール The Kallang）のプール組み合わせが発表。男子は中国・モンゴル・日本・豪州がトップシード。日本はPool Cでシンガポールと同組。女子は中国・モンゴル・日本・豪州の順。World Cup 2027出場権をかけた戦い。',
+    sourceUrl: 'https://www.fiba.basketball/en/news/pools-and-seedings-announced-for-fiba-3x3-asia-cup-2026',
+    imageUrl: null,
+    publishedAt: '2026-03-26',
+    updatedAt: '2026-03-27T00:00:00Z',
+    relatedTeams: [],
+  },
+  {
+    id: 8,
+    slug: 'fiba-3x3-superleagues-2026-announced-8',
+    title: '〖新制度〗FIBA 3x3 SuperLeagues 2026 発表 — ChallengerとWorld Tour出場権の新パスウェイ',
+    summary:
+      'FIBA 3x3が新たな大会形式「SuperLeagues」を発表。複数Stopを経てFinalで頂点を決める構造で、Stop優勝チームにChallenger出場権、Final上位にWorld Tour Zadar出場権を付与。3x3プロエコシステムの拡充を目指す。',
+    sourceUrl: 'https://www.fiba.basketball/en/news/superleagues-2026-to-allocate-challenger-and-world-tour-spots-across-global',
+    imageUrl: null,
+    publishedAt: '2026-03-25',
+    updatedAt: '2026-03-27T00:00:00Z',
+    relatedTeams: [],
+  },
+  {
     id: 7,
     slug: '3x3-exe-super-premier-2025-26-final-singapore-preview-7',
     title: '〖FINAL予告〗3/28-29 シンガポールでSUPER PREMIERシーズンファイナル開催',
     summary:
-      '3x3.EXE SUPER PREMIER 2025-26 FINAL がシンガポール（Sengkang Grand Mall）で3月28-29日に開催。ROUND.1優勝のLUGANO、ROUND.2優勝のSHINAGAWA CITY.EXEらが頂点を争う。',
+      '3x3.EXE SUPER PREMIER 2025-26 FINAL がシンガポール（Sengkang Grand Mall）で3月28-29日に開催。ROUND.1優勝のLUGANO、ROUND.2優勝のSHINAGAWA CITY.EXEらが頂点を争う。優勝・準優勝チームはWorld Tour Zadar出場権を獲得。ライブ配信は28日13時開始。',
     sourceUrl: 'https://3x3exe.com/superpremier/schedules/',
     imageUrl: null,
     publishedAt: '2026-03-25',
-    updatedAt: '2026-03-25T00:00:00Z',
+    updatedAt: '2026-03-27T00:00:00Z',
     relatedTeams: [
       { id: 13, name: 'LUGANO' },
       { id: 1, name: 'SHINAGAWA CITY 3x3 BASKETBALL CLUB' },

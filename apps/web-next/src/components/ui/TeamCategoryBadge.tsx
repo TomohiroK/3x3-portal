@@ -2,6 +2,7 @@ import type { TeamCategory } from '@/types/domain';
 
 const CATEGORY_CLASSES: Record<TeamCategory, string> = {
   'EXE':      'badge bg-brand-orange/20 text-brand-orange',
+  'WT':       'badge bg-emerald-500/20 text-emerald-300',
   '代表':     'badge bg-violet-500/20 text-violet-300',
   'U23':      'badge bg-cyan-500/20 text-cyan-300',
   '招待':     'badge bg-amber-500/20 text-amber-300',

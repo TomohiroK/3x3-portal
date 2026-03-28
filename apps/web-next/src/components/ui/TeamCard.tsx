@@ -37,11 +37,11 @@ export function TeamCard({ team }: TeamCardProps) {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+        <div className="flex items-center gap-1.5 mb-0.5">
           {isNew && <NewBadge />}
           <TeamCategoryBadge category={team.category} />
-          <p className="font-semibold text-white truncate">{team.name}</p>
         </div>
+        <p className="font-semibold text-white truncate">{team.name}</p>
         <p className="flex items-center gap-1 text-sm text-gray-400 truncate">
           <MapPin size={12} aria-hidden="true" />
           {team.location}

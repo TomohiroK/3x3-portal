@@ -179,6 +179,14 @@ const MOCK_VENUES: Venue[] = [
     websiteUrl: null,
     updatedAt: '2026-03-26T00:00:00Z',
   },
+  {
+    id: 22,
+    slug: 'biento-takasaki',
+    name: 'ビエント高崎',
+    region: '群馬県高崎市',
+    websiteUrl: 'https://www.biento.jp/',
+    updatedAt: '2026-03-27T00:00:00Z',
+  },
 ];
 
 /**

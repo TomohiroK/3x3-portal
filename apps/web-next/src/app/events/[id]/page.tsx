@@ -209,38 +209,40 @@ export default async function EventDetailPage({ params }: PageProps) {
                 {teamsWithStatus.length} チーム
               </span>
             </h2>
-            <ul className="grid gap-2 sm:grid-cols-2" role="list">
+            <ul className="grid gap-2 sm:grid-cols-2 [&>li]:min-w-0" role="list">
               {teamsWithStatus.map((team) => (
                 <li key={team.id}>
                   <Link
                     href={`/teams/${team.id}`}
-                    className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 bg-brand-muted hover:bg-brand-muted/70 transition-colors group"
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 bg-brand-muted hover:bg-brand-muted/70 transition-colors group overflow-hidden"
                   >
                     {/* ロゴ or 頭文字 */}
                     <div className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-surface flex items-center justify-center text-sm font-bold text-brand-accent overflow-hidden">
                       {team.name.charAt(0)}
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-white truncate group-hover:text-brand-orange transition-colors">
-                        {team.name}
-                      </p>
-                      <p className="text-xs text-gray-500 truncate">{team.location}</p>
-                    </div>
-                    <div className="flex flex-col items-end gap-1">
-                      <TeamCategoryBadge category={team.category} />
-                      {team.eventStatus === 'confirmed' ? (
-                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-green-500/15 text-green-300">
-                          確定
-                        </span>
-                      ) : team.eventStatus === 'probable' ? (
-                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-blue-500/15 text-blue-300">
-                          おそらく
-                        </span>
-                      ) : team.eventStatus === 'speculated' ? (
-                        <span className="inline-flex items-center rounded px-2 py-0.5 text-[10px] font-medium bg-amber-500/15 text-amber-300">
-                          噂
-                        </span>
-                      ) : null}
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-1.5">
+                        <p className="text-sm font-medium text-white truncate group-hover:text-brand-orange transition-colors">
+                          {team.name}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-1.5 mt-0.5">
+                        <p className="text-xs text-gray-500 truncate">{team.location}</p>
+                        <TeamCategoryBadge category={team.category} />
+                        {team.eventStatus === 'confirmed' ? (
+                          <span className="inline-flex flex-shrink-0 items-center rounded px-1.5 py-0.5 text-[10px] font-medium bg-green-500/15 text-green-300">
+                            確定
+                          </span>
+                        ) : team.eventStatus === 'probable' ? (
+                          <span className="inline-flex flex-shrink-0 items-center rounded px-1.5 py-0.5 text-[10px] font-medium bg-blue-500/15 text-blue-300">
+                            おそらく
+                          </span>
+                        ) : team.eventStatus === 'speculated' ? (
+                          <span className="inline-flex flex-shrink-0 items-center rounded px-1.5 py-0.5 text-[10px] font-medium bg-amber-500/15 text-amber-300">
+                            噂
+                          </span>
+                        ) : null}
+                      </div>
                     </div>
                   </Link>
                 </li>

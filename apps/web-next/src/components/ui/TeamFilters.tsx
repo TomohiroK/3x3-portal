@@ -8,6 +8,7 @@ import type { TeamCategory } from '@/types/domain';
 const CATEGORY_OPTIONS: { value: TeamCategory | ''; label: string }[] = [
   { value: '',        label: 'すべて' },
   { value: 'EXE',    label: 'EXE' },
+  { value: 'WT',     label: 'WT' },
   { value: '代表',   label: '代表' },
   { value: 'U23',    label: 'U23' },
   { value: '招待',   label: '招待' },
@@ -17,6 +18,7 @@ const CATEGORY_OPTIONS: { value: TeamCategory | ''; label: string }[] = [
 const ACTIVE_CLASSES: Record<TeamCategory | '', string> = {
   '':       'bg-brand-orange border-brand-orange text-white',
   'EXE':    'bg-brand-orange border-brand-orange text-white',
+  'WT':     'bg-emerald-500 border-emerald-500 text-white',
   '代表':   'bg-violet-500 border-violet-500 text-white',
   'U23':    'bg-cyan-500 border-cyan-500 text-white',
   '招待':   'bg-amber-500 border-amber-500 text-white',

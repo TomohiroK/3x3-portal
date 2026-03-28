@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/teams' },
 };
 
-const VALID_CATEGORIES = new Set<TeamCategory>(['EXE', '代表', 'U23', '招待', '一般クラブ']);
+const VALID_CATEGORIES = new Set<TeamCategory>(['EXE', 'WT', '代表', 'U23', '招待', '一般クラブ']);
 
 interface PageProps {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
