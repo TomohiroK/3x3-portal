@@ -9,10 +9,12 @@ export function SiteFooter() {
             {[
               { href: '/events', label: 'イベント' },
               { href: '/teams', label: 'チーム' },
+              { href: '/videos', label: '動画' },
               { href: '/rankings', label: 'ランキング' },
               { href: '/guide', label: 'ガイド' },
               { href: '/venues', label: '会場' },
               { href: '/news', label: 'ニュース' },
+              { href: '/blog', label: 'ブログ' },
               { href: '/terms', label: '利用規約' },
             ].map(({ href, label }) => (
               <li key={href}>

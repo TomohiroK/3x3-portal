@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { listEvents } from '@/lib/repositories/event.repository';
 import { listTeams } from '@/lib/repositories/team.repository';
 import { listNews } from '@/lib/repositories/news.repository';
+import { listBlogPosts } from '@/lib/repositories/blog.repository';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://web-next-self-nine.vercel.app';
 
@@ -14,20 +15,23 @@ function latestUpdatedAt(dates: (string | undefined)[], fallback: string): strin
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const TERMS_UPDATED = '2026-01-01T00:00:00Z'; // 利用規約は手動更新時に変更
 
-  const [eventsResult, teamsResult, newsResult] = await Promise.all([
+  const [eventsResult, teamsResult, newsResult, blogResult] = await Promise.all([
     listEvents({ search: '', status: '', page: 1, pageSize: 200 }).catch(() => null),
     listTeams({ search: '', category: '', page: 1, pageSize: 200 }).catch(() => null),
     listNews({ search: '', teamId: null, page: 1, pageSize: 200 }).catch(() => null),
+    listBlogPosts({ search: '', category: '', page: 1, pageSize: 200 }).catch(() => null),
   ]);
 
   const eventItems  = eventsResult?.items ?? [];
   const teamItems   = teamsResult?.items  ?? [];
   const newsItems   = newsResult?.items   ?? [];
+  const blogItems   = blogResult?.items   ?? [];
 
   const latestEventAt = latestUpdatedAt(eventItems.map((e) => e.updatedAt), TERMS_UPDATED);
   const latestNewsAt  = latestUpdatedAt(newsItems.map((n) => n.updatedAt),  TERMS_UPDATED);
   const latestTeamAt  = latestUpdatedAt(teamItems.map((t) => t.updatedAt),  TERMS_UPDATED);
-  const latestHomeAt  = latestUpdatedAt([latestEventAt, latestNewsAt],       TERMS_UPDATED);
+  const latestBlogAt  = latestUpdatedAt(blogItems.map((b) => b.updatedAt),  TERMS_UPDATED);
+  const latestHomeAt  = latestUpdatedAt([latestEventAt, latestNewsAt, latestBlogAt], TERMS_UPDATED);
 
   const GUIDE_UPDATED = '2026-03-25T00:00:00Z';
 
@@ -38,6 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/teams`,     lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE_URL}/rankings`,  lastModified: GUIDE_UPDATED, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE_URL}/guide`,     lastModified: GUIDE_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/blog`,      lastModified: latestBlogAt,  changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE_URL}/venues`,    lastModified: latestTeamAt,  changeFrequency: 'weekly',  priority: 0.7 },
     { url: `${BASE_URL}/terms`,     lastModified: TERMS_UPDATED, changeFrequency: 'monthly', priority: 0.3 },
   ];
@@ -56,5 +61,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...eventPages, ...teamPages];
+  const blogPages: MetadataRoute.Sitemap = blogItems.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: post.updatedAt,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...eventPages, ...teamPages, ...blogPages];
 }

@@ -43,7 +43,7 @@ export interface EventParticipant {
 // Team
 // ─────────────────────────────────────────
 
-export type TeamCategory = 'EXE' | '代表' | 'U23' | '招待' | '一般クラブ';
+export type TeamCategory = 'EXE' | 'WT' | '代表' | 'U23' | '招待' | '一般クラブ';
 
 export interface Team {
   id: number;
@@ -108,6 +108,31 @@ export interface NewsArticle {
   publishedAt: string;
   updatedAt: string;
   relatedTeams: NewsRelatedTeam[]; // 複数チームタグ（空配列 = 関連なし）
+}
+
+// ─────────────────────────────────────────
+// Blog
+// ─────────────────────────────────────────
+
+export type BlogCategory = '戦術解説' | 'ルール紹介';
+
+export interface BlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: BlogCategory;
+  body: string; // HTML content
+  readingTime: number; // minutes
+  publishedAt: string; // ISO date "2026-04-07"
+  updatedAt: string; // ISO datetime
+}
+
+export interface BlogFilters {
+  search: string;
+  category: BlogCategory | '';
+  page: number;
+  pageSize: number;
 }
 
 // ─────────────────────────────────────────

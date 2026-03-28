@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: '/rankings', label: 'ランキング' },
   { href: '/guide', label: 'ガイド' },
   { href: '/news', label: 'ニュース' },
+  { href: '/blog', label: 'ブログ' },
 ] as const;
 
 export function SiteHeader() {

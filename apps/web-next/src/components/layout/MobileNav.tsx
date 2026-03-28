@@ -8,10 +8,12 @@ import { Menu, X } from 'lucide-react';
 const NAV_LINKS = [
   { href: '/events', label: 'イベント' },
   { href: '/teams', label: 'チーム' },
+  { href: '/videos', label: '動画' },
   { href: '/rankings', label: 'ランキング' },
   { href: '/guide', label: 'ガイド' },
   { href: '/venues', label: '会場' },
   { href: '/news', label: 'ニュース' },
+  { href: '/blog', label: 'ブログ' },
 ] as const;
 
 export function MobileNav() {
