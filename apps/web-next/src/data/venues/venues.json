@@ -174,5 +174,21 @@
     "region": "群馬県高崎市",
     "websiteUrl": "https://www.biento.jp/",
     "updatedAt": "2026-03-27T00:00:00Z"
+  },
+  {
+    "id": 23,
+    "slug": "centralworld-bangkok",
+    "name": "CentralWorld",
+    "region": "Bangkok, Thailand",
+    "websiteUrl": "https://www.centralworld.co.th/",
+    "updatedAt": "2026-03-29T00:00:00Z"
+  },
+  {
+    "id": 24,
+    "slug": "warsaw-city-center-court",
+    "name": "ワルシャワ中心市街地特設コート",
+    "region": "Warsaw, Poland",
+    "websiteUrl": null,
+    "updatedAt": "2026-03-29T00:00:00Z"
   }
 ]
