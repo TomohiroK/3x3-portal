@@ -137,12 +137,12 @@
     "id": 3,
     "slug": "3x3-exe-super-premier-singapore-2026-final",
     "name": "3x3.EXE SUPER PREMIER 2025-26 FINAL（Singapore）",
-    "description": "3x3.EXE SUPER PREMIERシーズンファイナル（シンガポール）。シンガポール初開催。プレミア10チーム＋ホストチーム（シンガポール代表・U-23）＋ゲストチーム（LUGANO）が今季王者の座を争う。優勝・準優勝チームはWorld Tour Zadar出場権を獲得。ライブ配信は3/28 13時（SGT）開始、3/29 17時頃から決勝。",
+    "description": "3x3.EXE SUPER PREMIERシーズンファイナル（シンガポール）。シンガポール初開催。決勝でLUGANO（スイス）がUTSUNOMIYA BREX.EXE（日本）を21-15で破りシーズン王者に。LUGANO・UTSUNOMIYA BREX.EXEがWorld Tour Zadar 2026出場権を獲得。",
     "location": "Sengkang Grand Mall（Singapore）",
     "country": "シンガポール",
     "startDate": "2026-03-28",
     "endDate": "2026-03-29",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/superpremier/schedules/",
     "xAccount": "3x3league",
@@ -202,25 +202,25 @@
         "status": "confirmed"
       }
     ],
-    "updatedAt": "2026-03-29T00:00:00Z"
+    "updatedAt": "2026-04-03T00:00:00Z"
   },
   {
     "id": 4,
     "slug": "fiba-3x3-asia-cup-2026-singapore",
     "name": "FIBA 3x3 Asia Cup 2026",
-    "description": "FIBA公式アジア選手権。男子24チーム・女子22チームが参加。5年連続シンガポール開催。男子プール: A=中国・タイ、B=モンゴル・NZ、C=日本・シンガポール、D=豪州・フィリピン。女子トップシード: 中国・モンゴル・日本・豪州。優勝チームはFIBA 3x3 World Cup 2027の出場権を獲得。4/1-2の予選ラウンドは入場無料。",
+    "description": "FIBA公式アジア選手権。男子24チーム・女子22チームが参加。5年連続シンガポール開催。予選ラウンド（4/1-2）終了、メインドロー（4/3-5）開始。男子はインド・フィリピン・マレーシアがメインドロー進出。女子はトンガが初のメインドロー進出を達成。優勝チームはFIBA 3x3 World Cup 2027の出場権を獲得。",
     "location": "OCBC Square, The Kallang（1 Stadium Drive, Singapore 397629）",
     "country": "シンガポール",
     "startDate": "2026-04-01",
     "endDate": "2026-04-05",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://fiba3x3.basketball/2026/asiacup",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-26T00:00:00Z"
+    "updatedAt": "2026-04-03T00:00:00Z"
   },
   {
     "id": 5,

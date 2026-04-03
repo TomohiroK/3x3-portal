@@ -1,5 +1,52 @@
 [
   {
+    "id": 16,
+    "slug": "usa-basketball-3x3-pro-rosters-2026-miami-phoenix-16",
+    "title": "〖USA Basketball〗2026 FIBA 3x3 Pro Circuit向けにTeam Miami・Team Phoenixのロスター発表",
+    "summary": "USA Basketballが2026 FIBA 3x3 Men's Pro Circuit向けにTeam MiamiとTeam Phoenixのロスターを発表。Team Miamiは4/25-26のFIBA 3x3 World Tour宇都宮オープナーでシーズン開幕。",
+    "sourceUrl": "https://usab.prowly.com/452535-usa-basketball-announces-3x3-pro-rosters-ahead-of-the-2026-fiba-3x3-pro-circuit",
+    "imageUrl": null,
+    "publishedAt": "2026-04-01",
+    "updatedAt": "2026-04-03T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 17,
+        "name": "Miami"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "fiba-3x3-asia-cup-2026-qualifying-round-results-15",
+    "title": "〖Asia Cup〗FIBA 3x3 アジアカップ2026 予選ラウンド終了 — メインドロー開幕",
+    "summary": "FIBA 3x3 Asia Cup 2026（シンガポール）の予選ラウンド（4/1-2）が終了。男子はインドがバーレーン・カザフスタン・香港を破りメインドロー進出。フィリピン・マレーシアも進出。女子はトンガが初のメインドロー進出を達成。4/3からメインドロー開始。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/tonga-philippines-headline-day-2-of-fiba-3x3-asia-cup-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-04-02",
+    "updatedAt": "2026-04-03T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 14,
+    "slug": "3x3-exe-super-premier-2025-26-final-lugano-champion-14",
+    "title": "〖FINAL結果〗LUGANO（スイス）がシーズン王者！ 決勝でUTSUNOMIYA BREX.EXEを21-15で撃破",
+    "summary": "3x3.EXE SUPER PREMIER 2025-26 FINALがシンガポール（Sengkang Grand Mall）で開催。決勝でLUGANO（スイス）がUTSUNOMIYA BREX.EXE（日本）を21-15で破り、ROUND.1優勝に続きシーズン総合王者に。LUGANO・UTSUNOMIYA BREX.EXEはFIBA 3x3 World Tour Zadar 2026の出場権を獲得。",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000001203.000004149.html",
+    "imageUrl": null,
+    "publishedAt": "2026-03-29",
+    "updatedAt": "2026-04-03T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 13,
+        "name": "LUGANO"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      }
+    ]
+  },
+  {
     "id": 11,
     "slug": "fiba-3x3-womens-series-2026-japan-stops-announced-11",
     "title": "〖Women's Series〗FIBA 3x3 Women's Series 2026 に東京・高崎が開催地決定",
