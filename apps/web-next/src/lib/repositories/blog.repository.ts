@@ -6,7 +6,8 @@ import type { BlogPost, BlogFilters, BlogCategory, PaginatedResult } from '@/typ
 import postsData from '@/data/blog/posts.json';
 
 // posts.json is authored by our scheduled task (not user input),
-// and body HTML uses only safe tags (h2, h3, p, ul, ol, li, strong, em, a).
+// and body HTML uses only safe tags (h2, h3, p, ul, ol, li, strong, em, a,
+// figure, figcaption, and inline SVG for instructional diagrams).
 const posts: BlogPost[] = postsData as BlogPost[];
 
 export async function listBlogPosts(
@@ -50,5 +51,5 @@ export async function getLatestBlogPosts(limit = 3): Promise<BlogPost[]> {
 }
 
 export function getAllBlogCategories(): BlogCategory[] {
-  return ['戦術解説', 'ルール紹介'];
+  return ['戦術解説', 'テクニック解説', 'ルール紹介'];
 }

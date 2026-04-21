@@ -14,9 +14,9 @@ import type { BlogCategory, BlogFilters } from '@/types/domain';
 export const revalidate = 43200; // 12 h
 
 export const metadata: Metadata = {
-  title: '3x3ブログ — 戦術解説・ルール紹介',
+  title: '3x3ブログ — 戦術解説・テクニック解説・ルール紹介',
   description:
-    '3x3バスケットボールの戦術解説やルール紹介を発信するブログ。ピック&ロール、ディフェンス戦略など、観戦がもっと楽しくなる知識をお届けします。',
+    '3x3バスケットボールの戦術解説・テクニック解説・ルール紹介を発信するブログ。ピック&ロール、カット、ディフェンスなど、観戦とプレーがもっと楽しくなる知識を図解付きでお届けします。',
   alternates: { canonical: '/blog' },
 };
 
@@ -55,7 +55,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
     <div className="portal-container py-8 space-y-6">
       <h1 className="text-2xl font-bold text-white">ブログ</h1>
       <p className="text-sm text-gray-400">
-        3x3バスケットボールの戦術解説・ルール紹介
+        3x3バスケットボールの戦術解説・テクニック解説・ルール紹介
       </p>
 
       {/* Search & Category filter */}

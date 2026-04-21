@@ -114,7 +114,7 @@ export interface NewsArticle {
 // Blog
 // ─────────────────────────────────────────
 
-export type BlogCategory = '戦術解説' | 'ルール紹介';
+export type BlogCategory = '戦術解説' | 'ルール紹介' | 'テクニック解説';
 
 export interface BlogPost {
   id: number;
