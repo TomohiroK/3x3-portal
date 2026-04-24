@@ -208,19 +208,19 @@
     "id": 4,
     "slug": "fiba-3x3-asia-cup-2026-singapore",
     "name": "FIBA 3x3 Asia Cup 2026",
-    "description": "FIBA公式アジア選手権。男子24チーム・女子22チームが参加。5年連続シンガポール開催。予選ラウンド（4/1-2）終了、メインドロー（4/3-5）開始。男子はインド・フィリピン・マレーシアがメインドロー進出。女子はトンガが初のメインドロー進出を達成。優勝チームはFIBA 3x3 World Cup 2027の出場権を獲得。",
+    "description": "FIBA公式アジア選手権。男子24チーム・女子22チームが参加（5年連続シンガポール開催）。予選ラウンド（4/1-2）を経てメインドロー（4/3-5）を実施。日本代表は男子が準々決勝でモンゴルを21-20で下したが、準決勝でニュージーランドに16-21、3位決定戦で中国に20-22で敗れて4位。女子も準々決勝でタイを15-13で破ったが、準決勝でフィリピンに19-21、3位決定戦で中国に15-20で敗れ4位で閉幕。優勝チームはFIBA 3x3 World Cup 2027の出場権を獲得。",
     "location": "OCBC Square, The Kallang（1 Stadium Drive, Singapore 397629）",
     "country": "シンガポール",
     "startDate": "2026-04-01",
     "endDate": "2026-04-05",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://fiba3x3.basketball/2026/asiacup",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-04-03T00:00:00Z"
+    "updatedAt": "2026-04-24T00:00:00Z"
   },
   {
     "id": 5,

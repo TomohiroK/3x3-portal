@@ -265,5 +265,97 @@
     "publishedAt": "2026-02-27",
     "updatedAt": "2026-03-06T00:00:00Z",
     "relatedTeams": []
+  },
+  {
+    "id": 17,
+    "slug": "fiba-3x3-asia-cup-2026-closed-japan-4th-17",
+    "title": "〖Asia Cup〗FIBA 3x3 アジアカップ2026 閉幕 — 日本代表男女とも4位",
+    "summary": "4/1-5にシンガポールで開催されたFIBA 3x3 アジアカップ2026が閉幕。男子日本代表は準々決勝でモンゴルを21-20で下したが、準決勝でニュージーランドに16-21、3位決定戦で中国に20-22で惜敗し4位。女子日本代表も準々決勝でタイを15-13で破ったが、準決勝でフィリピンに19-21、3位決定戦で中国に15-20で敗れて4位。日本は既に6月のFIBA 3x3 ワールドカップ2026出場権を獲得しており、今大会の経験をロス五輪出場へ繋げる。",
+    "sourceUrl": "https://basket-count.com/article/detail/257056",
+    "imageUrl": null,
+    "publishedAt": "2026-04-05",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 18,
+    "slug": "japan-3x3-men-national-camp3-2026-april-18",
+    "title": "〖日本代表〗3x3男子日本代表 強化合宿③参加メンバー発表 — W杯・ネーションズリーグに向けて",
+    "summary": "JBAが3x3男子日本代表強化合宿③（4/21-23、味の素ナショナルトレーニングセンター）の参加メンバー11名を発表。Asia Cup 2026で4位となった小澤崚ら代表選手を中心に、松澤大晃、中西佑起、出羽崚一、井後健矢、クーリバリソロモン、若木悟琉、バラダランタホリ玲依、ロイ優太郎、井伊拓海、小野恵富を招集。6月のFIBA 3x3 ワールドカップ2026（ポーランド・ワルシャワ）と FIBA 3x3 ユース・ネーションズリーグ2026 に向けた継続的な強化の一環。",
+    "sourceUrl": "https://www.japanbasketball.jp/japan/86114",
+    "imageUrl": null,
+    "publishedAt": "2026-04-17",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 19,
+    "slug": "fiba-3x3-world-cup-2026-pool-draw-japan-pool-c-19",
+    "title": "〖World Cup〗FIBA 3x3 ワールドカップ2026 予選プール発表 — 日本はプールCでオランダ・ドイツ・中国・NZと対戦",
+    "summary": "FIBA 3x3 ワールドカップ2026（6月1日〜、ポーランド・ワルシャワ開催）の予選プール組み合わせが決定。日本男子（FIBAランキング14位）はプールCに入り、オランダ（3位）、ドイツ（6位）、中国（11位）、ニュージーランド（22位）と対戦する。Asia Cup 2026で4位の経験を活かし、トーナメント進出を目指す。",
+    "sourceUrl": "https://www.fiba.basketball/en/3x3wc",
+    "imageUrl": null,
+    "publishedAt": "2026-04-20",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 20,
+    "slug": "fiba-3x3-world-tour-utsunomiya-opener-2026-preview-20",
+    "title": "〖World Tour〗FIBA 3x3 World Tour 2026 開幕 — Utsunomiya Opener 4/25-26 二荒山神社",
+    "summary": "FIBA 3x3 World Tour 2026 シーズンが4月25日に宇都宮で開幕。5年連続のシーズンオープナーとなる宇都宮・二荒山神社特設コートで14チームが激突。トップシードはUb（セルビア、Nenad Nerandžić擁する優勝候補筆頭）、2024-25連覇のMiami（米国）が防衛を狙う。Amsterdam RABOBANK・Shanghai・Liman など主要チームに加え、開催都市枠でUTSUNOMIYA BREX.EXEも本戦出場。4/25は予選プール、4/26はノックアウト・決勝。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-utsunomiya-opener-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-04-22",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "exe-premier-wildcard-shinagawa-shonan-wt-utsunomiya-2026-21",
+    "title": "〖Wildcard〗SHINAGAWA・HIRATSUKA がWT宇都宮オープナー予選ドローに出場",
+    "summary": "3x3.EXE PREMIER から SHINAGAWA CITY.EXE（World Tour登録名: SHINAGAWA）と SHONAN SEASIDE.EXE（同: HIRATSUKA）がFIBA 3x3 World Tour Utsunomiya Opener 2026 のワイルドカード枠予選ドローに出場。台北 WanBao を含む3チーム総当たり戦の1位が本戦進出。開催都市枠の UTSUNOMIYA BREX.EXE と合わせて3x3.EXE勢3チームが宇都宮に集結する。",
+    "sourceUrl": "https://3x3exe.com/premier/opener2026_md/",
+    "imageUrl": null,
+    "publishedAt": "2026-04-23",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      },
+      {
+        "id": 10,
+        "name": "SHONAN SEASIDE.EXE"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "exe-premier-japan-2026-women-round1-utsunomiya-opening-22",
+    "title": "〖EXE PREMIER〗3x3.EXE PREMIER JAPAN 2026 明日開幕 — 4/25 宇都宮で WOMEN ROUND.1",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 シーズンが4月25日にライトキューブ宇都宮「大ホール」で女子開幕戦を迎える。WOMEN ROUND.1は14:00-18:00の予定。翌26日は1F「交流広場」で13:30-15:00にイベント開催。男子ROUND.1は5月16日にワテラス（東京）と焼津港（静岡）で同時開幕予定。",
+    "sourceUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
+    "imageUrl": null,
+    "publishedAt": "2026-04-24",
+    "updatedAt": "2026-04-24T00:00:00Z",
+    "relatedTeams": []
   }
 ]
