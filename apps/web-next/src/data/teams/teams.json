@@ -1,5 +1,18 @@
 [
   {
+    "id": 36,
+    "slug": "shibuya-scelfida-exe-36",
+    "name": "SHIBUYA SCELFIDA.EXE",
+    "location": "東京都",
+    "category": "EXE",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-05-29T00:00:00Z"
+  },
+  {
     "id": 18,
     "slug": "amsterdam-ned-18",
     "name": "Amsterdam HiPRO",

@@ -1,5 +1,131 @@
 [
   {
+    "id": 28,
+    "slug": "japan-3x3-women-wc2026-roster-announced-28",
+    "title": "〖日本代表〗3x3女子日本代表 ワールドカップ2026ロスター6名確定 — 田中平和ら選出",
+    "summary": "JBAが3x3女子日本代表のFIBA 3x3ワールドカップ2026（ポーランド・ワルシャワ、6/1-7）出場ロスター6名を発表。田中平和（トヨタ自動車アンテロープス）、桂葵（トヨタ紡織サンシャインラビッツ）、鶴見彩、高橋未来（アイシンウィングス）、宮下希保（富士通レッドウェーブ）、野口さくら（アイシンウィングス）の6名が選出。5月20〜22日の直前合宿を経てメンバーが確定。",
+    "sourceUrl": "https://basket-count.com/article/detail/258113",
+    "imageUrl": null,
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 27,
+    "slug": "japan-3x3-men-wc2026-camp-members-announced-27",
+    "title": "〖日本代表〗3x3男子日本代表 直前合宿メンバー6名発表 — 小澤崚らW杯出場権争い",
+    "summary": "JBAが3x3男子日本代表のFIBA 3x3ワールドカップ2026（ポーランド・ワルシャワ、6/1-7）に向けた直前合宿（5/26-27）参加メンバー6名を発表。小澤崚（SHIBUYA SCELFIDA）、クーリバリソロモン（UTSUNOMIYA BREX.EXE）、出羽崚一（UENOHARA SUNRISE）、井後健矢（SAGAMIHARA PROCESS）、仲西佑起（NINJA AIRS）、バラダランタホリ玲依（大東文化大学）。この6名から4名を絞りW杯に臨む。日本はPool Cでオランダ・ドイツ・中国・NZと対戦。",
+    "sourceUrl": "https://basketballking.jp/news/japan/20260522/614305.html",
+    "imageUrl": null,
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 36,
+        "name": "SHIBUYA SCELFIDA.EXE"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      },
+      {
+        "id": 31,
+        "name": "UENOHARA SUNRISE.EXE"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "fiba-3x3-world-tour-shanghai-2026-hangzhou-jingwei-champion-26",
+    "title": "〖World Tour〗WT上海2026 — Hangzhou Jingweiが中国勢初優勝！今季4戦で4チーム異なる優勝",
+    "summary": "FIBA 3x3 World Tour Shanghai 2026（5/23-24）が終了。Hangzhou Jingwei（中国）が決勝でUlaanbaatar MMC Energy（モンゴル）を19-16で下し優勝。今季4大会で4チームが異なる優勝を飾る混戦模様。MVP: Vuk Borovicanin（大会最多34得点、player value 45.2）。最終順位: 1. Hangzhou Jingwei 2. Ulaanbaatar MMC Energy 3. Shanghai 4. Crvena Zvezda。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/hangzhou-jingwei-stun-field-to-claim-fiba-3x3-world-tour-shanghai-2026-win",
+    "imageUrl": null,
+    "publishedAt": "2026-05-24",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 25,
+    "slug": "exe-premier-japan-2026-men-round1-waterras-shibuya-shinagawa-win-25",
+    "title": "〖EXE PREMIER〗男子ROUND.1@ワテラス — Day1はSHIBUYA SCELFIDA.EXE、Day2はSHINAGAWA CITY.EXEが優勝",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.1（5/16-17、ワテラス）が終了。Day1はSHIBUYA SCELFIDA.EXEが優勝、MVP: 小澤崚（日本国内ランキング1位）。Day2はSHINAGAWA CITY.EXEが制した。小澤崚はその後3x3男子日本代表のW杯直前合宿にも選出。",
+    "sourceUrl": "https://3x3exe.com/premier/mr1_result_20260516/",
+    "imageUrl": null,
+    "publishedAt": "2026-05-16",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 36,
+        "name": "SHIBUYA SCELFIDA.EXE"
+      },
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "fiba-3x3-world-tour-zadar-2026-miami-champion-24",
+    "title": "〖World Tour〗WTザダル2026 — Miamiが復活優勝！MVP James Parrott が大会最多34得点",
+    "summary": "FIBA 3x3 World Tour Zadar 2026（5/15-16、クロアチア）が終了。Miamiが決勝でAmsterdam RABOBANKを21-19で破り優勝。開幕戦宇都宮でLimanに20-8と大敗した雪辱を果たした。MVP: James Parrott（大会最多34得点）。ザダルは今年初登場の新開催地で入場無料、1万人超の観客を動員。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/miami-win-fiba-3x3-world-tour-zadar-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-05-16",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 17,
+        "name": "Miami"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "fiba-3x3-world-tour-chengdu-2026-ub-champion-23",
+    "title": "〖World Tour〗WT成都2026 — Ubが連覇チャンピオン！セルビア対決の決勝でLimanを21-19で撃破",
+    "summary": "FIBA 3x3 World Tour Chengdu 2026（5/2-3）が終了。Ub（セルビア）が決勝でLiman（セルビア）を21-19で下し優勝。宇都宮で優勝したLimanとの「セルビア対決」となった決勝は終盤まで拮抗した激戦。MVP: Filip Kaluderovic。最終順位: 1. Ub 2. Liman 3. Ulaanbaatar MMC Energy 4. Skyliners 5. Miami。SHINAGAWAも出場。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/ub-win-fiba-3x3-world-tour-chengdu-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-05-03",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 16,
+        "name": "Liman"
+      },
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "fiba-3x3-world-tour-utsunomiya-opener-2026-liman-champion-29",
+    "title": "〖World Tour〗WT宇都宮オープナー2026 — Limanが優勝！QFでMiamiを20-8と圧倒",
+    "summary": "FIBA 3x3 World Tour Utsunomiya Opener 2026（4/25-26、二荒山神社）が閉幕。Liman（セルビア）が決勝でSkyliners（ドイツ）を21-15で撃破し初戦優勝。準々決勝では2連覇中のMiami（アメリカ）を20-8と大差で下した。MVP: Andreja Milutinovic。最終順位: 1. Liman 2. Skyliners 3. Ub 4. Antwerp 5. Amsterdam RABOBANK。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/liman-claim-fiba-3x3-world-tour-utsunomiya-opener-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-04-26",
+    "updatedAt": "2026-05-29T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 16,
+        "name": "Liman"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      }
+    ]
+  },
+  {
     "id": 16,
     "slug": "usa-basketball-3x3-pro-rosters-2026-miami-phoenix-16",
     "title": "〖USA Basketball〗2026 FIBA 3x3 Pro Circuit向けにTeam Miami・Team Phoenixのロスター発表",
