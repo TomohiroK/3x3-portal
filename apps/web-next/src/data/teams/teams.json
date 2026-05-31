@@ -466,5 +466,18 @@
     "instagramAccount": "zethree3x3",
     "tiktokAccount": null,
     "updatedAt": "2026-02-26T00:00:00Z"
+  },
+  {
+    "id": 37,
+    "slug": "ninja-airs-exe-37",
+    "name": "NINJA AIRS.EXE",
+    "location": "大阪府",
+    "category": "EXE",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-05-31T00:00:00Z"
   }
 ]

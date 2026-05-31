@@ -1,5 +1,48 @@
 [
   {
+    "id": 32,
+    "slug": "fiba-3x3-world-cup-2026-warsaw-opens-tomorrow-preview-32",
+    "title": "〖World Cup〗FIBA 3x3 ワールドカップ2026 明日ワルシャワ開幕 — セルビア・スペインが優勝候補筆頭",
+    "summary": "FIBA 3x3 ワールドカップ2026（6/1-7、ポーランド・ワルシャワ、Palace of Culture and Science前）がいよいよ明日開幕。男子は6連覇を狙うセルビア（Strahinja Stojacic擁する）と2025年王者スペイン（Guim Expósito MVP）が最有力候補。USA・フランス・ドイツ・ラトビアが上位争い。日本男子はプールCでオランダ・ドイツ・中国・NZと対戦。日本女子も出場。Women's Seriesも同時開催予定。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/3x3-world-cup-2026-mens-power-rankings-who-enters-warsaw-as-favorites",
+    "imageUrl": null,
+    "publishedAt": "2026-05-31",
+    "updatedAt": "2026-05-31T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 31,
+    "slug": "exe-premier-japan-2026-men-round2-kobe-day1-ninja-airs-win-31",
+    "title": "〖EXE PREMIER〗男子ROUND.2@神戸 DAY.1 — 新規参入NINJA AIRS.EXEが初戦制覇！",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.2（5/30、キャンパススクェア（ユニバードーム）、神戸）のDay.1が終了。2026シーズン新規参入のNINJA AIRS.EXE（大阪）がDAY.1を制覇した。DAY.2（5/31）は本日開催中。",
+    "sourceUrl": "https://3x3exe.com/premier/result_260530_kobe/",
+    "imageUrl": null,
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-31T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 37,
+        "name": "NINJA AIRS.EXE"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "exe-premier-japan-2026-men-round2-kashiwa-shinagawa-win-30",
+    "title": "〖EXE PREMIER〗男子ROUND.2@柏 — SHINAGAWA CITY.EXEが連続優勝！",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.2（5/30、セブンパーク アリオ柏「スマイル・パーク」）が終了。SHINAGAWA CITY.EXEが優勝。ROUND.1（ワテラスDay2）に引き続きSHINAGAWAが勝ち名乗りを上げた。",
+    "sourceUrl": "https://3x3exe.com/premier/mr2_result_20260530/",
+    "imageUrl": null,
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-31T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      }
+    ]
+  },
+  {
     "id": 28,
     "slug": "japan-3x3-women-wc2026-roster-announced-28",
     "title": "〖日本代表〗3x3女子日本代表 ワールドカップ2026ロスター6名確定 — 田中平和ら選出",

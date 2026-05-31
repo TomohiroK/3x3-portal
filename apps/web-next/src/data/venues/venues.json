@@ -198,5 +198,13 @@
     "region": "Amsterdam, Netherlands",
     "websiteUrl": "https://ndsm.nl/",
     "updatedAt": "2026-05-29T00:00:00Z"
+  },
+  {
+    "id": 26,
+    "slug": "heumarkt-vienna",
+    "name": "Heumarkt",
+    "region": "Vienna, Austria",
+    "websiteUrl": null,
+    "updatedAt": "2026-05-31T00:00:00Z"
   }
 ]

@@ -460,19 +460,19 @@
     "id": 13,
     "slug": "3x3-exe-premier-japan-2026-men-round2-kashiwa-ario",
     "name": "3x3.EXE PREMIER JAPAN 2026 MEN ROUND.2（セブンパーク アリオ柏）",
-    "description": "男子リーグROUND.2（柏開催）。※一部日程・会場は調整中表記あり。",
+    "description": "男子リーグROUND.2（柏開催）。結果: Day1はSHINAGAWA CITY.EXEが優勝。Day2（5/31）は開催中。",
     "location": "セブンパーク アリオ柏 スマイル・パーク（千葉県柏市）",
     "country": "日本",
     "startDate": "2026-05-30",
     "endDate": "2026-05-31",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-06T00:00:00Z"
+    "updatedAt": "2026-05-31T00:00:00Z"
   },
   {
     "id": 14,
@@ -483,32 +483,37 @@
     "country": "日本",
     "startDate": "2026-05-30",
     "endDate": "2026-05-30",
-    "status": "開催予定",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "updatedAt": "2026-05-31T00:00:00Z"
   },
   {
     "id": 15,
     "slug": "3x3-exe-premier-japan-2026-men-round2-kobe-univadome",
     "name": "3x3.EXE PREMIER JAPAN 2026 MEN ROUND.2（キャンパススクェア / ユニバードーム）",
-    "description": "男子リーグROUND.2（神戸開催）。",
+    "description": "男子リーグROUND.2（神戸開催）。結果: Day1はNINJA AIRS.EXEが優勝。Day2（5/31）は開催中。",
     "location": "キャンパススクェア（ユニバードーム）（兵庫県神戸市）",
     "country": "日本",
     "startDate": "2026-05-30",
     "endDate": "2026-05-31",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 37,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-05-31T00:00:00Z"
   },
   {
     "id": 16,
@@ -519,14 +524,14 @@
     "country": "日本",
     "startDate": "2026-05-30",
     "endDate": "2026-05-30",
-    "status": "開催予定",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "updatedAt": "2026-05-31T00:00:00Z"
   },
   {
     "id": 17,
@@ -748,7 +753,7 @@
     "id": 30,
     "slug": "fiba-3x3-world-tour-amsterdam-2026",
     "name": "FIBA 3x3 World Tour Amsterdam 2026",
-    "description": "FIBA 3x3 World Tour 2026第5戦（アムステルダム）。Women's Seriesとの同時開催。会場はアムステルダムの歴史的な造船所跡地・NDSM Wharf。DeQing・Phoenix・Skylinersが Xi'an Challenger から出場権を獲得。",
+    "description": "FIBA 3x3 World Tour 2026第6戦（アムステルダム）。Women's Seriesとの同時開催。会場はアムステルダムの歴史的な造船所跡地・NDSM Wharf。DeQing・Phoenix・Skylinersが Xi'an Challenger から出場権を獲得。",
     "location": "NDSM Wharf（Amsterdam, Netherlands）",
     "country": "オランダ",
     "startDate": "2026-06-19",
@@ -779,5 +784,46 @@
     "tiktokAccount": null,
     "participants": [],
     "updatedAt": "2026-03-29T00:00:00Z"
+  },
+  {
+    "id": 31,
+    "slug": "fiba-3x3-world-tour-vienna-2026",
+    "name": "FIBA 3x3 World Tour Vienna 2026",
+    "description": "FIBA 3x3 World Tour 2026第5戦（ウィーン）。Women's Series Viennaと同時開催。会場はウィーン中心部のHeumarkt（地下鉄U4シュタットパーク駅近く）。Ubが参加確定。入場チケット33ユーロ〜。",
+    "location": "Heumarkt（Vienna, Austria）",
+    "country": "オーストリア",
+    "startDate": "2026-06-12",
+    "endDate": "2026-06-14",
+    "status": "開催予定",
+    "imageUrl": null,
+    "websiteUrl": "https://worldtour.fiba3x3.com/2026/vienna",
+    "xAccount": "FIBA3x3",
+    "instagramAccount": "fiba3x3",
+    "tiktokAccount": null,
+    "participants": [
+      {
+        "teamId": 15,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-05-31T00:00:00Z"
+  },
+  {
+    "id": 32,
+    "slug": "fiba-3x3-womens-series-vienna-2026",
+    "name": "FIBA 3x3 Women's Series Vienna 2026",
+    "description": "FIBA 3x3 Women's Series 2026のヨーロッパラウンド・ウィーン大会。World Tour Viennaと同時開催（Heumarkt）。上海ファイナルへの出場権をかけた戦い。",
+    "location": "Heumarkt（Vienna, Austria）",
+    "country": "オーストリア",
+    "startDate": "2026-06-12",
+    "endDate": "2026-06-13",
+    "status": "開催予定",
+    "imageUrl": null,
+    "websiteUrl": "https://womensseries.fiba3x3.com/2026/vienna",
+    "xAccount": "FIBA3x3",
+    "instagramAccount": "fiba3x3",
+    "tiktokAccount": null,
+    "participants": [],
+    "updatedAt": "2026-05-31T00:00:00Z"
   }
 ]
