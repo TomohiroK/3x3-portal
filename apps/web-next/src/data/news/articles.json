@@ -1,5 +1,81 @@
 [
   {
+    "id": 38,
+    "slug": "fiba-3x3-world-cup-2026-day3-madagascar-stuns-spain-38",
+    "title": "〖World Cup〗WC2026 Day3 — マダガスカルが王者スペインを撃破！史上初のノックアウトステージ進出",
+    "summary": "FIBA 3x3 World Cup 2026（ワルシャワ）3日目（6/3）。マダガスカル男子が大会史上最大の番狂わせを演じ、Day2に続きオーストラリア（22-17）・ディフェンディングチャンピオンのスペインを撃破（20-19）、Pool A 3位でノックアウトステージへ史上初進出。男子Pool Cではドイツが全勝を維持。女子Pool AではドイツがDay3も勝利し全勝でグループ首位を独走。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/madagascar-shock-the-world-germany-remain-resilient-on-day-3-of-the-fiba-3x3-world-cup-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-06-03",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 37,
+    "slug": "fiba-3x3-world-cup-2026-day2-czechia-stuns-usa-37",
+    "title": "〖World Cup〗WC2026 Day2 — チェコがUSAを21-20で逆転撃破！Borovkaの決勝レイアップ",
+    "summary": "FIBA 3x3 World Cup 2026（ワルシャワ）2日目（6/2）。チェコがオーストラリアを17-14で下した後、女王アメリカと対戦。スコア20-20の土壇場でŠtěpán Borovkaがタフなレイアップを決め21-20で撃破。Filip Novotnyが8得点。同じくDay2のハイライトはアメリカ男子が9得点差でオーストラリアを圧倒。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/czechia-and-usa-steal-the-show-on-day-2-of-the-fiba-3x3-world-cup-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-06-02",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 36,
+    "slug": "fiba-3x3-world-cup-2026-day1-serbia-netherlands-shine-36",
+    "title": "〖World Cup〗WC2026 開幕 Day1 — セルビア・オランダが圧倒的発進！ポーランド初開催に熱狂",
+    "summary": "FIBA 3x3 World Cup 2026（6/1-7、ワルシャワ、Palace of Culture and Science前）がDay1（6/1）開幕。男子はディフェンディングチャンピオンのセルビアが勝利スタート。女子は前年王者オランダが開幕戦を支配。男子Pool C（日本・オランダ・ドイツ・中国・NZ）はドイツが初戦白星。日本男子（Pool C）・女子（Pool D）も初戦スタート。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/serbia-and-the-netherlands-shine-on-day-1-of-the-fiba-3x3-world-cup-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-06-01",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 35,
+    "slug": "exe-premier-japan-2026-men-round2-kobe-day2-minakami-win-35",
+    "title": "〖EXE PREMIER〗男子ROUND.2@神戸 DAY.2 — MINAKAMI TOWN.EXEが優勝！MVP坂東勝悟",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.2（5/31、キャンパススクェア（ユニバードーム）、神戸）のDay.2が終了。MINAKAMI TOWN.EXEが優勝、MVP #18 坂東勝悟。DAY.1（5/30）はNINJA AIRS.EXEが制しており、ROUND.2の神戸会場は2チームが1勝ずつ分け合う結果となった。",
+    "sourceUrl": "https://3x3exe.com/premier/result-_260531_kobe/",
+    "imageUrl": null,
+    "publishedAt": "2026-05-31",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 8,
+        "name": "MINAKAMI TOWN.EXE"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "slug": "exe-premier-japan-2026-women-round2-kashiwa-flowlish-win-34",
+    "title": "〖EXE PREMIER〗女子ROUND.2@柏 — FLOWLISH GUNMAが優勝！",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 女子ROUND.2（5/30、セブンパーク アリオ柏「スマイル・パーク」）が終了。FLOWLISH GUNMAが優勝。同日開催の男子ROUND.2（柏）はSHINAGAWA CITY.EXEが制した。",
+    "sourceUrl": "https://3x3exe.com/premier/",
+    "imageUrl": null,
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 2,
+        "name": "FLOWLISH GUNMA"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "fiba-3x3-world-tour-malaga-manama-2026-added-33",
+    "title": "〖World Tour〗WT Málaga（10/10-11）& WT Manama（11/21-22）が2026カレンダーに追加",
+    "summary": "FIBAが2026 FIBA 3x3 Men's Pro Circuitへ新たに2大会を追加発表。WT Málaga（10/10-11、スペイン）は2012年のWT Madrid以来となるスペイン初開催。WT Manama（11/21-22、バーレーン）は2023・2024・2025 Finalに続く4回目のバーレーン開催。またChallenger大会も複数追加され、WT出場権獲得のチャンスが拡大。",
+    "sourceUrl": "https://fiba3x3.com/en/news/2026/two-new-world-tours-and-more-challengers-added-to-fiba-3x3-mens-pro-circuit-2026-season.html",
+    "imageUrl": null,
+    "publishedAt": "2026-05-28",
+    "updatedAt": "2026-06-05T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
     "id": 32,
     "slug": "fiba-3x3-world-cup-2026-warsaw-opens-tomorrow-preview-32",
     "title": "〖World Cup〗FIBA 3x3 ワールドカップ2026 明日ワルシャワ開幕 — セルビア・スペインが優勝候補筆頭",

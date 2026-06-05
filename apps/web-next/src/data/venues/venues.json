@@ -206,5 +206,21 @@
     "region": "Vienna, Austria",
     "websiteUrl": null,
     "updatedAt": "2026-05-31T00:00:00Z"
+  },
+  {
+    "id": 27,
+    "slug": "malaga-city-center-court",
+    "name": "Málaga特設コート",
+    "region": "Málaga, Spain",
+    "websiteUrl": null,
+    "updatedAt": "2026-06-05T00:00:00Z"
+  },
+  {
+    "id": 28,
+    "slug": "manama-city-center-court",
+    "name": "Manama特設コート",
+    "region": "Manama, Bahrain",
+    "websiteUrl": null,
+    "updatedAt": "2026-06-05T00:00:00Z"
   }
 ]
