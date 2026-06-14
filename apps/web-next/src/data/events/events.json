@@ -542,14 +542,14 @@
     "country": "日本",
     "startDate": "2026-06-13",
     "endDate": "2026-06-14",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "updatedAt": "2026-06-14T00:00:00Z"
   },
   {
     "id": 18,
@@ -560,14 +560,14 @@
     "country": "日本",
     "startDate": "2026-06-13",
     "endDate": "2026-06-14",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "updatedAt": "2026-06-14T00:00:00Z"
   },
   {
     "id": 19,
@@ -817,14 +817,14 @@
     "country": "オーストリア",
     "startDate": "2026-06-12",
     "endDate": "2026-06-13",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://womensseries.fiba3x3.com/2026/vienna",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-06-12T00:00:00Z"
+    "updatedAt": "2026-06-14T00:00:00Z"
   },
   {
     "id": 33,
