@@ -1,5 +1,103 @@
 [
   {
+    "id": 46,
+    "slug": "fiba-3x3-world-tour-amsterdam-2026-opens-46",
+    "title": "〖World Tour〗WTアムステルダム2026 開幕 — 地元の星Amsterdam RABOBANKが前戦王者として凱旋",
+    "summary": "FIBA 3x3 World Tour 2026第6戦（6/19-21、NDSM Wharf、アムステルダム）が開幕。Women's Seriesも同時開催。前戦ウィーンを制したばかりの地元Amsterdam RABOBANKがPool Dの4位シードとして凱旋出場。トップシードはUb（セルビア）。USA勢のMiami・Phoenixも参戦。決勝は6/21。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/all-you-need-to-know-before-fiba-3x3-world-tour-amsterdam-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-06-19",
+    "updatedAt": "2026-06-19T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "fiba-3x3-world-tour-vienna-2026-amsterdam-rabobank-champion-42",
+    "title": "〖World Tour〗WTウィーン2026 — Amsterdam RABOBANKが今季5戦目で5チーム目の異なる王者に！決勝でLimanを18-13で撃破",
+    "summary": "FIBA 3x3 World Tour Vienna 2026（6/12-14）が終了。Amsterdam RABOBANK（オランダ）が決勝でLiman（セルビア）を18-13で下し優勝、今季5戦目にして5チーム目の異なる優勝チームとなった。MVP: Worthy de Jong（大会通算33得点）。最終順位: 1. Amsterdam RABOBANK 2. Liman 3. Baskets Bonn 4. Ub 5. Skyliners。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/Amsterdam-Rabobank-win-FIBA-3x3-World-Tour-Vienna-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-06-14",
+    "updatedAt": "2026-06-19T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 16,
+        "name": "Liman"
+      },
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      },
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 21,
+        "name": "Skyliners"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "slug": "fiba-3x3-womens-series-vienna-2026-madrid-champion-45",
+    "title": "〖Women's Series〗Women's Seriesウィーン2026 — Madridが2026シーズン初優勝！決勝でUlaanbaatar Amazonsを20-14で撃破",
+    "summary": "FIBA 3x3 Women's Series Vienna 2026（6/12-14、Heumarkt、World Tour Viennaと同時開催）が終了。Madrid（スペイン）が決勝でUlaanbaatar Amazonsを20-14で下し、2026シーズン初優勝。MVP: Juana Camilion（Madrid、key assists部門1位）。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/madrid-claim-first-womens-series-win-of-2026-in-vienna",
+    "imageUrl": null,
+    "publishedAt": "2026-06-14",
+    "updatedAt": "2026-06-19T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 43,
+    "slug": "exe-premier-japan-2026-round3-ube-shibuya-uenohara-win-43",
+    "title": "〖EXE PREMIER〗ROUND.3 ALL CONFERENCE@宇部 — 男子はSHIBUYA SCELFIDA.EXE、女子はUENOHARA SUNRISE.EXEが優勝（開幕10連勝）",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 ROUND.3 ALL CONFERENCE（6/13-14、恩田スポーツパーク、宇部市制105周年記念）が終了。男子はSHIBUYA SCELFIDA.EXEが優勝、MVPは#11 Kristaps Gluditis。女子はUENOHARA SUNRISE.EXEが4戦全勝で優勝し、開幕から無傷の10連勝を達成。",
+    "sourceUrl": "https://3x3exe.com/premier/result_r3ac_men/",
+    "imageUrl": null,
+    "publishedAt": "2026-06-14",
+    "updatedAt": "2026-06-19T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 36,
+        "name": "SHIBUYA SCELFIDA.EXE"
+      },
+      {
+        "id": 31,
+        "name": "UENOHARA SUNRISE.EXE"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "slug": "qoq-3x3-2026-jba-star-champion-44",
+    "title": "〖代表〗「Q.O.Q. 3×3 2026」優勝はJBA 3×3 STAR — 女子U23代表がU21代表を21-15で撃破",
+    "summary": "国内大会「Q.O.Q. 3×3 2026」（6/13、東京・有明）の決勝でJBA 3×3 STAR（女子U23日本代表）がJBA 3×3 HOPE（女子U21日本代表）を21-15で下し優勝。優勝・準優勝の両チームはFIBA 3x3 Women's Series 2026 高崎STOP（8/29-30）への出場権を獲得した。",
+    "sourceUrl": "https://japanbasketball.jp/japan/87082",
+    "imageUrl": null,
+    "publishedAt": "2026-06-13",
+    "updatedAt": "2026-06-19T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
     "id": 38,
     "slug": "fiba-3x3-world-cup-2026-day3-madagascar-stuns-spain-38",
     "title": "〖World Cup〗WC2026 Day3 — マダガスカルが王者スペインを撃破！史上初のノックアウトステージ進出",

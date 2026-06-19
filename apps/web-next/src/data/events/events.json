@@ -537,37 +537,47 @@
     "id": 17,
     "slug": "3x3-exe-premier-japan-2026-men-round3-ube",
     "name": "3x3.EXE PREMIER JAPAN 2026 MEN ROUND.3 ALL CONFERENCE（恩田スポーツパーク）",
-    "description": "男子リーグROUND.3 ALL CONFERENCE（宇部開催）。",
+    "description": "男子リーグROUND.3 ALL CONFERENCE（宇部開催、市制105周年記念）。結果: SHIBUYA SCELFIDA.EXEが優勝（MVP: #11 Kristaps Gluditis）。",
     "location": "恩田スポーツパーク（山口県宇部市）",
     "country": "日本",
     "startDate": "2026-06-13",
     "endDate": "2026-06-14",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-06-14T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 36,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 18,
     "slug": "3x3-exe-premier-japan-2026-women-round3-ube",
     "name": "3x3.EXE PREMIER JAPAN 2026 WOMEN ROUND.3（恩田スポーツパーク）",
-    "description": "女子リーグROUND.3（宇部開催）。",
+    "description": "女子リーグROUND.3（宇部開催、市制105周年記念）。結果: UENOHARA SUNRISE.EXEが4戦全勝で優勝、開幕から無傷の10連勝を達成。",
     "location": "恩田スポーツパーク（山口県宇部市）",
     "country": "日本",
     "startDate": "2026-06-13",
     "endDate": "2026-06-14",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-06-14T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 31,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 19,
@@ -645,11 +655,11 @@
     "id": 24,
     "slug": "fiba-3x3-womens-series-2026-takasaki",
     "name": "FIBA 3x3 Women's Series 2026 Takasaki",
-    "description": "FIBA 3x3 Women's Series 2026のアジアラウンド・高崎大会。世界トップの女子3x3選手が群馬県高崎市に集結。上海ファイナルへの出場権をかけた戦い。",
+    "description": "FIBA 3x3 Women's Series 2026のアジアラウンド・高崎大会。世界トップの女子3x3選手が群馬県高崎市に集結。上海ファイナルへの出場権をかけた戦い。Q.O.Q. 3×3 2026優勝のJBA 3×3 STAR、準優勝のJBA 3×3 HOPEが出場権を獲得。",
     "location": "ビエント高崎（群馬県高崎市）",
     "country": "日本",
-    "startDate": "2026-08-15",
-    "endDate": "2026-08-16",
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-30",
     "status": "開催予定",
     "imageUrl": null,
     "websiteUrl": "https://womensseries.fiba3x3.com/2026",
@@ -753,19 +763,32 @@
     "id": 30,
     "slug": "fiba-3x3-world-tour-amsterdam-2026",
     "name": "FIBA 3x3 World Tour Amsterdam 2026",
-    "description": "FIBA 3x3 World Tour 2026第6戦（アムステルダム）。Women's Seriesとの同時開催。会場はアムステルダムの歴史的な造船所跡地・NDSM Wharf。DeQing・Phoenix・Skylinersが Xi'an Challenger から出場権を獲得。",
+    "description": "FIBA 3x3 World Tour 2026第6戦（アムステルダム）。Women's Seriesとの同時開催。会場はアムステルダムの歴史的な造船所跡地・NDSM Wharf。トップシードはUb（セルビア）。前戦ウィーン優勝の地元Amsterdam RABOBANKがPool D 4位シードで凱旋。USA勢のMiami・Phoenixも参戦。6/19開幕、6/21決勝。",
     "location": "NDSM Wharf（Amsterdam, Netherlands）",
     "country": "オランダ",
     "startDate": "2026-06-19",
     "endDate": "2026-06-21",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://worldtour.fiba3x3.com/2026/amsterdam",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-05-29T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 15,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 18,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 17,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 28,
@@ -789,12 +812,12 @@
     "id": 31,
     "slug": "fiba-3x3-world-tour-vienna-2026",
     "name": "FIBA 3x3 World Tour Vienna 2026",
-    "description": "FIBA 3x3 World Tour 2026第5戦（ウィーン）。Women's Series Viennaと同時開催。会場はウィーン中心部のHeumarkt（地下鉄U4シュタットパーク駅近く）。Ubが参加確定。入場チケット33ユーロ〜。",
+    "description": "FIBA 3x3 World Tour 2026第5戦（ウィーン）。Women's Series Viennaと同時開催。会場はウィーン中心部のHeumarkt（地下鉄U4シュタットパーク駅近く）。結果: Amsterdam RABOBANK（オランダ）が優勝（決勝でLimanを18-13で撃破）。MVP: Worthy de Jong（大会通算33得点）。最終順位: 1. Amsterdam RABOBANK(NED) 2. Liman(SRB) 3. Baskets Bonn(GER) 4. Ub(SRB) 5. Skyliners(GER)。今季5戦目にして5チーム目の異なる優勝チームとなった。",
     "location": "Heumarkt（Vienna, Austria）",
     "country": "オーストリア",
     "startDate": "2026-06-12",
     "endDate": "2026-06-14",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://worldtour.fiba3x3.com/2026/vienna",
     "xAccount": "FIBA3x3",
@@ -804,19 +827,35 @@
       {
         "teamId": 15,
         "status": "confirmed"
+      },
+      {
+        "teamId": 16,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 18,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 21,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 38,
+        "status": "confirmed"
       }
     ],
-    "updatedAt": "2026-06-12T00:00:00Z"
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 32,
     "slug": "fiba-3x3-womens-series-vienna-2026",
     "name": "FIBA 3x3 Women's Series Vienna 2026",
-    "description": "FIBA 3x3 Women's Series 2026のヨーロッパラウンド・ウィーン大会。World Tour Viennaと同時開催（Heumarkt）。上海ファイナルへの出場権をかけた戦い。",
+    "description": "FIBA 3x3 Women's Series 2026のヨーロッパラウンド・ウィーン大会。World Tour Viennaと同時開催（Heumarkt）。結果: Madrid（スペイン）が優勝（決勝でUlaanbaatar Amazonsを20-14で撃破）。MVP: Juana Camilion（Madrid）。上海ファイナルへの出場権をかけた戦いの一つ。",
     "location": "Heumarkt（Vienna, Austria）",
     "country": "オーストリア",
     "startDate": "2026-06-12",
-    "endDate": "2026-06-13",
+    "endDate": "2026-06-14",
     "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://womensseries.fiba3x3.com/2026/vienna",
@@ -824,7 +863,7 @@
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-06-14T00:00:00Z"
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 33,
@@ -861,5 +900,36 @@
     "tiktokAccount": null,
     "participants": [],
     "updatedAt": "2026-06-05T00:00:00Z"
+  },
+  {
+    "id": 35,
+    "slug": "fiba-3x3-lion-city-challenger-2026-singapore",
+    "name": "FIBA 3x3 Lion City Challenger 2026",
+    "description": "FIBA 3x3 Challengerシンガポール大会。FIBAとシンガポールの新たな複数年パートナーシップによる開催。JBA主導の男子3x3専門チーム「Team TOKYO 2026」が初陣を迎え、Pool Bでトロント（カナダ）・ボルドー（フランス）と対戦。各プール上位2チームが決勝トーナメントに進出し、上位3チームにFIBA 3x3 World Tourローザンヌ出場権が付与される。",
+    "location": "シンガポール（会場未定）",
+    "country": "シンガポール",
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-21",
+    "status": "開催予定",
+    "imageUrl": null,
+    "websiteUrl": "https://worldtour.fiba3x3.com/2026",
+    "xAccount": "FIBA3x3",
+    "instagramAccount": "fiba3x3",
+    "tiktokAccount": null,
+    "participants": [
+      {
+        "teamId": 39,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 40,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 41,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-06-19T00:00:00Z"
   }
 ]

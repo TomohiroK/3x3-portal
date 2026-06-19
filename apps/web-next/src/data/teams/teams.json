@@ -15,7 +15,7 @@
   {
     "id": 18,
     "slug": "amsterdam-ned-18",
-    "name": "Amsterdam HiPRO",
+    "name": "Amsterdam RABOBANK",
     "location": "Netherlands",
     "category": "WT",
     "imageUrl": null,
@@ -23,7 +23,7 @@
     "xAccount": null,
     "instagramAccount": "teamamsterdam3x3_hipro",
     "tiktokAccount": null,
-    "updatedAt": "2026-03-26T00:00:00Z"
+    "updatedAt": "2026-06-19T00:00:00Z"
   },
   {
     "id": 24,
@@ -479,5 +479,57 @@
     "instagramAccount": null,
     "tiktokAccount": null,
     "updatedAt": "2026-05-31T00:00:00Z"
+  },
+  {
+    "id": 38,
+    "slug": "baskets-bonn-ger-38",
+    "name": "Baskets Bonn",
+    "location": "Germany",
+    "category": "WT",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-06-19T00:00:00Z"
+  },
+  {
+    "id": 39,
+    "slug": "team-tokyo-2026-39",
+    "name": "Team TOKYO 2026",
+    "location": "日本",
+    "category": "代表",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-06-19T00:00:00Z"
+  },
+  {
+    "id": 40,
+    "slug": "toronto-can-40",
+    "name": "Toronto",
+    "location": "Canada",
+    "category": "WT",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-06-19T00:00:00Z"
+  },
+  {
+    "id": 41,
+    "slug": "bordeaux-fra-41",
+    "name": "Bordeaux",
+    "location": "France",
+    "category": "WT",
+    "imageUrl": null,
+    "websiteUrl": null,
+    "xAccount": null,
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "updatedAt": "2026-06-19T00:00:00Z"
   }
 ]
