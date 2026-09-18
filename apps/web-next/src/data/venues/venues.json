@@ -222,5 +222,29 @@
     "region": "Manama, Bahrain",
     "websiteUrl": null,
     "updatedAt": "2026-06-05T00:00:00Z"
+  },
+  {
+    "id": 29,
+    "slug": "yoyogi-national-stadium-second-gymnasium",
+    "name": "国立代々木競技場 第二体育館",
+    "region": "東京都渋谷区",
+    "websiteUrl": "https://www.jpnsport.go.jp/yoyogi/",
+    "updatedAt": "2026-09-18T00:00:00Z"
+  },
+  {
+    "id": 30,
+    "slug": "sukhbaatar-square",
+    "name": "Sukhbaatar Square",
+    "region": "Ulaanbaatar, Mongolia",
+    "websiteUrl": null,
+    "updatedAt": "2026-09-18T00:00:00Z"
+  },
+  {
+    "id": 31,
+    "slug": "hongshan-riverfront-park",
+    "name": "Hongshan Riverfront Park",
+    "region": "Wuhan, China",
+    "websiteUrl": null,
+    "updatedAt": "2026-09-18T00:00:00Z"
   }
 ]

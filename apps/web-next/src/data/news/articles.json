@@ -1,5 +1,201 @@
 [
   {
+    "id": 57,
+    "slug": "fiba-3x3-europe-cup-2026-antwerp-result-57",
+    "title": "〖Europe Cup〗ヨーロッパカップ2026 — 男子ラトビアが全勝優勝、女子オランダが連覇",
+    "summary": "FIBA 3x3 Europe Cup Crelan 2026（9/11-13、ベルギー・アントワープ）で、男子はラトビアが5戦全勝で2度目の欧州王者に（決勝でオランダに勝利、3位フランス、MVP Kristaps Gludītis）。女子はオランダが大会連覇を果たし、44得点のNoortje DriessenがMVPに選ばれた。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/noortje-driessen-crowned-fiba-3x3-europe-cup-crelan-2026-mvp",
+    "imageUrl": null,
+    "publishedAt": "2026-09-13",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 56,
+    "slug": "exe-premier-2026-men-round8-okayama-result-56",
+    "title": "〖EXE PREMIER〗男子ROUND.8@岡山 — SHINAGAWA CITY.EXEが今季5度目の優勝、10/3-4にPLAYOFFS",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.8のイオンモール岡山「未来スクエア」大会は、9/12にTOKYO DIME.EXEが今季初優勝、9/13はSHINAGAWA CITY.EXEが決勝でHACHINOHE DIME.EXEとの大接戦を制し今季5度目の優勝（MVPは#8 Jevonnie Scott）。9/5のひろしまゲートパーク大会はUTSUNOMIYA BREX.EXEが優勝しPLAYOFFS出場権を獲得。PLAYOFFSは10/3-4にグラングリーン大阪で開催され、日本・タイ・ニュージーランド・オーストラリア・ベトナムから男子24チーム、女子6チームが出場する。",
+    "sourceUrl": "https://3x3exe.com/premier/result_mr8_okayama_260913/",
+    "imageUrl": null,
+    "publishedAt": "2026-09-13",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      },
+      {
+        "id": 7,
+        "name": "HACHINOHE DIME.EXE"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "slug": "france-win-womens-series-shanghai-final-2026-55",
+    "title": "〖Women's Series〗Women's Series上海ファイナル2026 — フランスが3度目のシーズン制覇",
+    "summary": "FIBA 3x3 Women's Series Project Redwings Shanghai Final 2026（9/5-6）の決勝で、フランスがRapid Bucharest（ルーマニア）を22-14で下し、2019年・2024年に続く3度目のシーズンタイトルを獲得。準決勝ではNeftchi SOCARに15-13で勝利。3位はオランダ。MVPはLaetitia Guapo（フランス）。",
+    "sourceUrl": "https://about.fiba.basketball/en/news/france-win-fiba-3x3-womens-series-project-redwings-shanghai-final-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-09-06",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 54,
+    "slug": "canada-win-womens-series-takasaki-2026-54",
+    "title": "〖Women's Series〗Women's Series高崎2026 — カナダが決勝で日本を20-10で下し優勝",
+    "summary": "FIBA 3x3 Women's Series高崎Stop（8/29-30、ビエント高崎）の決勝で、カナダが日本を20-10で下し、5月の上海Stopに続く今季2度目の優勝。日本は準優勝。MVPはMerissah Russell（カナダ）。",
+    "sourceUrl": "https://www.cbc.ca/sports/olympics/summer/basketball/3x3-basketball/canada-3x3-womens-series-takasaki-title-9.7325803",
+    "imageUrl": null,
+    "publishedAt": "2026-08-30",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 53,
+    "slug": "baskets-bonn-win-wt-debrecen-2026-53",
+    "title": "〖World Tour〗Baskets Bonnがアムステルダム・ローザンヌ・デブレツェンでWT3大会連続優勝",
+    "summary": "FIBA 3x3 World Tourデブレツェン2026（8/29-30）の決勝で、Baskets Bonn（ドイツ）がAmsterdam RABOBANKを下し優勝。Fabian Giessmannが決勝の2ポイントで勝負を決めた。ローザンヌ（8/14-15、決勝でRaudondvaris Hoptransに勝利）に続きWT3大会連続優勝で、連勝を今季最長の16に伸ばした。",
+    "sourceUrl": "https://about.fiba.basketball/en/news/debrecen-delivers-another-landmark-chapter-in-its-3x3-story",
+    "imageUrl": null,
+    "publishedAt": "2026-08-30",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      },
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 19,
+        "name": "Raudondvaris"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "slug": "netherlands-win-womens-series-tokyo-2026-52",
+    "title": "〖Women's Series〗Women's Series東京2026 — オランダが優勝、Mitsubishi Electricが準優勝・日本代表が3位",
+    "summary": "FIBA 3x3 Women's Series東京Stop（8/1-2、国立代々木競技場 第二体育館）の決勝で、オランダが地元Mitsubishi Electricを21-16で下し今季3度目のStop優勝。3位決定戦は日本が北京に勝利。MVPは大会最多41得点のIlse Kuijt（オランダ）。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/netherlands-claim-third-womens-series-title-of-season-at-tokyo-stop",
+    "imageUrl": null,
+    "publishedAt": "2026-08-02",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 51,
+    "slug": "ub-win-wt-marseille-2026-51",
+    "title": "〖World Tour〗WTマルセイユ2026 — UbがRaudondvarisを21-16で下し今季2勝目",
+    "summary": "FIBA 3x3 World Tourマルセイユ2026（7/4-5）の決勝で、Ub（セルビア）がRaudondvaris Hoptrans（リトアニア）を21-16で下し今季2度目のWT優勝。MVPはStrahinja Stojacic（Ub）。",
+    "sourceUrl": "https://fiba3x3.com/en/news/2026/strahinja-stojacic-named-fiba-3x3-world-tour-marseille-2026-mvp.html",
+    "imageUrl": null,
+    "publishedAt": "2026-07-05",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 19,
+        "name": "Raudondvaris"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "slug": "liman-win-wt-ulaanbaatar-2026-50",
+    "title": "〖World Tour〗WTウランバートル2026 — Limanが延長17-15で地元勢を下し今季初の2勝目",
+    "summary": "FIBA 3x3 World Tourウランバートル2026（6/27-28、Sukhbaatar Square）の決勝で、Liman（セルビア）が地元Ulaanbaatar MMC Energyを延長17-15で撃破。宇都宮オープナーに続く優勝で、今季初めてWT2勝を挙げたチームとなった。MVPはStefan Milivojevic（Liman）。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/liman-become-first-two-time-winners-of-2026-with-fiba-3x3-world-tour-ulaanbaatar-triumph",
+    "imageUrl": null,
+    "publishedAt": "2026-06-28",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 16,
+        "name": "Liman"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "slug": "exe-premier-2026-men-round4-utsunomiya-result-49",
+    "title": "〖EXE PREMIER〗男子ROUND.4@アークタウン宇都宮 — SHINAGAWA CITY.EXEが今季3度目の優勝",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 男子ROUND.4（6/27、アークタウン宇都宮）はSHINAGAWA CITY.EXEがROUND.1・2に続く今季3度目の優勝。地元のUTSUNOMIYA BREX.EXEは準優勝。MVPは#8 Jevonnie Scott（SHINAGAWA CITY.EXE）。",
+    "sourceUrl": "https://3x3exe.com/premier/result_0627_utsunomiya_men/",
+    "imageUrl": null,
+    "publishedAt": "2026-06-27",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      },
+      {
+        "id": 6,
+        "name": "UTSUNOMIYA BREX.EXE"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "slug": "baskets-bonn-win-wt-amsterdam-2026-48",
+    "title": "〖World Tour〗WTアムステルダム2026 — Baskets Bonnが地元Amsterdamを21-19で逆転しWT初優勝",
+    "summary": "FIBA 3x3 World Tourアムステルダム2026（6/19-21、NDSM Wharf）の決勝で、Baskets Bonn（ドイツ）が最大7点差をひっくり返しAmsterdam RABOBANKに21-19で勝利、クラブ史上初のWT優勝を果たした。3位はUb。MVPは決勝13得点・大会通算50得点のFabian Giessmann。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/baskets-bonn-win-their-first-ever-world-tour-in-amsterdam",
+    "imageUrl": null,
+    "publishedAt": "2026-06-21",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      },
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 15,
+        "name": "Ub"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "slug": "team-tokyo-2026-lion-city-challenger-result-47",
+    "title": "〖代表〗Team TOKYO 2026、Lion City Challengerデビュー戦は2連敗で予選敗退",
+    "summary": "JBAの3x3専門チーム「Team TOKYO 2026」が初の公式戦FIBA 3x3 Lion City Challenger（シンガポール）に出場。初戦はトロントに13-21、第2戦はボルドーに14-20で敗れ予選敗退となった。小川麻斗は両試合で7得点を挙げ、初戦では7得点・5リバウンドの「Wファイブ」を記録。",
+    "sourceUrl": "https://japanbasketball.jp/japan/87141",
+    "imageUrl": null,
+    "publishedAt": "2026-06-20",
+    "updatedAt": "2026-09-18T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 39,
+        "name": "Team TOKYO 2026"
+      },
+      {
+        "id": 40,
+        "name": "Toronto"
+      },
+      {
+        "id": 41,
+        "name": "Bordeaux"
+      }
+    ]
+  },
+  {
     "id": 46,
     "slug": "fiba-3x3-world-tour-amsterdam-2026-opens-46",
     "title": "〖World Tour〗WTアムステルダム2026 開幕 — 地元の星Amsterdam RABOBANKが前戦王者として凱旋",
