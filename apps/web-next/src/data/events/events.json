@@ -1092,19 +1092,24 @@
     "id": 42,
     "slug": "fiba-3x3-u23-world-cup-2026-wuhan",
     "name": "FIBA 3x3 U23 World Cup 2026",
-    "description": "FIBA 3x3 U23ワールドカップ2026（中国・武漢）。男子は第7回大会で20チームが出場、武漢での開催は初。前回王者は男子リトアニア。9/19に準決勝・決勝。",
+    "description": "FIBA 3x3 U23ワールドカップ2026（中国・武漢）。男女各20チームが出場し、武漢での開催は初。【結果】男子はリトアニアが決勝でラトビアを19-18で下し大会連覇、MVPはPaulius Velutis。女子はアメリカが決勝でカナダを15-10で下し2度目の優勝、MVPはVictoria Elizabeth Mckinney。女子日本代表は予選プール1勝3敗のグループ3位で決勝トーナメント進出を逃した。",
     "location": "Hongshan Riverfront Park（Wuhan, China）",
     "country": "中国",
     "startDate": "2026-09-15",
     "endDate": "2026-09-19",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://fiba3x3.basketball/2026/u23worldcup",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-09-18T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 42,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-09-20T00:00:00Z"
   },
   {
     "id": 43,
@@ -1177,5 +1182,46 @@
     "tiktokAccount": null,
     "participants": [],
     "updatedAt": "2026-09-18T00:00:00Z"
+  },
+  {
+    "id": 47,
+    "slug": "asian-games-2026-aichi-nagoya-3x3",
+    "name": "第20回アジア競技大会（2026／愛知・名古屋） 3x3バスケットボール",
+    "description": "アジア競技大会2026の3x3バスケットボール競技。9/21-23の予選プールで上位3チームに入ると9/24の準々決勝進出決定戦または準々決勝へ進み、9/25に準決勝・3位決定戦・決勝を実施。男子日本代表はバラダランタホリ玲依（大東文化大学）、野田悠峨（日本体育大学）、ロイ優太郎（白鴎大学）、小野恵富（江戸川大学）の大学生4名。女子日本代表は平下結貴・西ファトゥマ七南（トヨタ紡織サンシャインラビッツ）、山本遥香（三菱電機コアラーズ）、堀内桜花（シャンソン化粧品シャンソンVマジック）の4名。",
+    "location": "金城ふ頭駅前特設コート（愛知県名古屋市港区）",
+    "country": "日本",
+    "startDate": "2026-09-21",
+    "endDate": "2026-09-25",
+    "status": "開催予定",
+    "imageUrl": null,
+    "websiteUrl": "https://www.aichi-nagoya2026.org/ja/sport/3x3-basketball/",
+    "xAccount": "AsianGames_2026",
+    "instagramAccount": null,
+    "tiktokAccount": null,
+    "participants": [
+      {
+        "teamId": 42,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-09-20T00:00:00Z"
+  },
+  {
+    "id": 48,
+    "slug": "3x3-exe-premier-japan-2026-women-round8-takasaki",
+    "name": "3x3.EXE PREMIER JAPAN 2026 WOMEN ROUND.8（ビエント高崎）",
+    "description": "3x3.EXE PREMIER JAPAN 2026 女子シーズン最終ラウンド。群馬県高崎市で開催され、10/3-4のPLAYOFFS（グラングリーン大阪）進出をかけた最後の戦いとなる。",
+    "location": "ビエント高崎ビッグキューブ（群馬県高崎市）",
+    "country": "日本",
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-26",
+    "status": "開催予定",
+    "imageUrl": null,
+    "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
+    "xAccount": "3x3exe",
+    "instagramAccount": "3x3exe_premier",
+    "tiktokAccount": null,
+    "participants": [],
+    "updatedAt": "2026-09-20T00:00:00Z"
   }
 ]

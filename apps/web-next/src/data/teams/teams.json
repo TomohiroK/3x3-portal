@@ -531,5 +531,18 @@
     "instagramAccount": null,
     "tiktokAccount": null,
     "updatedAt": "2026-06-19T00:00:00Z"
+  },
+  {
+    "id": 42,
+    "slug": "japan-3x3-national-team-42",
+    "name": "3x3日本代表",
+    "location": "日本",
+    "category": "代表",
+    "imageUrl": null,
+    "websiteUrl": "https://japanbasketball.jp/",
+    "xAccount": "JAPANBASKETBALL",
+    "instagramAccount": "japan_basketball",
+    "tiktokAccount": null,
+    "updatedAt": "2026-09-20T00:00:00Z"
   }
 ]

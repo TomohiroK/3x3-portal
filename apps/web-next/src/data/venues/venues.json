@@ -246,5 +246,13 @@
     "region": "Wuhan, China",
     "websiteUrl": null,
     "updatedAt": "2026-09-18T00:00:00Z"
+  },
+  {
+    "id": 32,
+    "slug": "kinjofuto-station-court-nagoya",
+    "name": "金城ふ頭駅前特設コート",
+    "region": "愛知県名古屋市",
+    "websiteUrl": null,
+    "updatedAt": "2026-09-20T00:00:00Z"
   }
 ]
