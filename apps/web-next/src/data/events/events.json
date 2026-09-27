@@ -685,7 +685,7 @@
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-03-25T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z"
   },
   {
     "id": 25,
@@ -1120,14 +1120,14 @@
     "country": "中国",
     "startDate": "2026-09-26",
     "endDate": "2026-09-27",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://worldtour.fiba3x3.com/2026",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-09-18T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z"
   },
   {
     "id": 44,
@@ -1187,12 +1187,12 @@
     "id": 47,
     "slug": "asian-games-2026-aichi-nagoya-3x3",
     "name": "第20回アジア競技大会（2026／愛知・名古屋） 3x3バスケットボール",
-    "description": "アジア競技大会2026の3x3バスケットボール競技。9/21-23の予選プールで上位3チームに入ると9/24の準々決勝進出決定戦または準々決勝へ進み、9/25に準決勝・3位決定戦・決勝を実施。男子日本代表はバラダランタホリ玲依（大東文化大学）、野田悠峨（日本体育大学）、ロイ優太郎（白鴎大学）、小野恵富（江戸川大学）の大学生4名。女子日本代表は平下結貴・西ファトゥマ七南（トヨタ紡織サンシャインラビッツ）、山本遥香（三菱電機コアラーズ）、堀内桜花（シャンソン化粧品シャンソンVマジック）の4名。予選プールは女子が1勝2敗（B組3位）、男子が2勝1敗（D組2位）。女子はプレーインでマレーシア、準々決勝で中国を破り準決勝で韓国と対戦。男子は準決勝進出ならず。",
+    "description": "アジア競技大会2026の3x3バスケットボール競技。9/21-23の予選プールで上位3チームに入ると9/24の準々決勝進出決定戦または準々決勝へ進み、9/25に準決勝・3位決定戦・決勝を実施。男子日本代表はバラダランタホリ玲依（大東文化大学）、野田悠峨（日本体育大学）、ロイ優太郎（白鴎大学）、小野恵富（江戸川大学）の大学生4名。女子日本代表は平下結貴・西ファトゥマ七南（トヨタ紡織サンシャインラビッツ）、山本遥香（三菱電機コアラーズ）、堀内桜花（シャンソン化粧品シャンソンVマジック）の4名。予選プールは女子が1勝2敗（B組3位）、男子が2勝1敗（D組2位）。女子はプレーインでマレーシア、準々決勝で中国を破り、準決勝で韓国に19-8、決勝でフィリピンに21-11で勝利し金メダルを獲得。男子は8位。男子は韓国が決勝でカタールを19-10で下し初の金メダル、銅メダルはイラン。女子の銀はフィリピン、銅は韓国。",
     "location": "金城ふ頭駅前特設コート（愛知県名古屋市港区）",
     "country": "日本",
     "startDate": "2026-09-21",
     "endDate": "2026-09-25",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://www.aichi-nagoya2026.org/ja/sport/3x3-basketball/",
     "xAccount": "AsianGames_2026",
@@ -1204,24 +1204,29 @@
         "status": "confirmed"
       }
     ],
-    "updatedAt": "2026-09-25T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z"
   },
   {
     "id": 48,
     "slug": "3x3-exe-premier-japan-2026-women-round8-takasaki",
     "name": "3x3.EXE PREMIER JAPAN 2026 WOMEN ROUND.8（ビエント高崎）",
-    "description": "3x3.EXE PREMIER JAPAN 2026 女子シーズン最終ラウンド。群馬県高崎市で開催され、10/3-4のPLAYOFFS（グラングリーン大阪）進出をかけた最後の戦いとなる。",
+    "description": "3x3.EXE PREMIER JAPAN 2026 女子シーズン最終ラウンド。群馬県高崎市で開催され、10/3-4のPLAYOFFS（グラングリーン大阪）進出をかけた最後の戦いとなる。地元のFLOWLISH GUNMA.EXEが準決勝・決勝の接戦を制してラウンド優勝し、PLAYOFFS出場権を獲得（MVPは#3 髙橋芙由子）。",
     "location": "ビエント高崎ビッグキューブ（群馬県高崎市）",
     "country": "日本",
     "startDate": "2026-09-26",
     "endDate": "2026-09-26",
-    "status": "開催予定",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3exe",
     "instagramAccount": "3x3exe_premier",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-09-20T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 2,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-09-27T00:00:00Z"
   }
 ]

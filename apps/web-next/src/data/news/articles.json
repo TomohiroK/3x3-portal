@@ -988,5 +988,52 @@
         "name": "3x3日本代表"
       }
     ]
+  },
+  {
+    "id": 62,
+    "slug": "asian-games-2026-3x3-japan-women-gold-62",
+    "title": "〖アジア大会〗3x3女子日本代表が金メダル — 連敗スタートから5連勝で初優勝",
+    "summary": "第20回アジア競技大会（愛知・名古屋）の3x3バスケットボールで、女子日本代表が金メダルを獲得。予選プールで2連敗と崖っぷちからプレーイン、準々決勝を勝ち上がり、9/25の準決勝では予選全勝の韓国を19-8で圧倒。決勝ではフィリピンを21-11で下した（平下結貴9得点、堀内桜花8得点、西ファトゥマ七南2得点、山本遥香2得点）。女子の銀はフィリピン、銅は韓国。男子日本代表は8位で大会を終えた。",
+    "sourceUrl": "https://news.yahoo.co.jp/articles/b776853b52f7f0f090665ee8692202de1bfc4a0b",
+    "imageUrl": null,
+    "publishedAt": "2026-09-25",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 42,
+        "name": "3x3日本代表"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "slug": "asian-games-2026-3x3-men-korea-gold-63",
+    "title": "〖アジア大会〗男子3x3は韓国が初の金メダル — 決勝でカタールを19-10",
+    "summary": "アジア競技大会2026の男子3x3バスケットボール決勝が9/25に名古屋・金城ふ頭駅前特設コートで行われ、韓国がカタールを19-10で下し、同種目で初の金メダルを獲得した。銀はカタール、銅はイラン。大会はU23世代の選手に出場が限定され、18の国・地域が参加した。",
+    "sourceUrl": "https://news.sbs.co.kr/english/article.do?news_id=N1008770133",
+    "imageUrl": null,
+    "publishedAt": "2026-09-25",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "relatedTeams": []
+  },
+  {
+    "id": 64,
+    "slug": "exe-premier-2026-women-round8-takasaki-result-64",
+    "title": "〖EXE PREMIER〗女子ROUND.8@高崎 — FLOWLISH GUNMA.EXEがホームで優勝しPLAYOFFS出場へ",
+    "summary": "3x3.EXE PREMIER JAPAN 2026 女子ROUND.8（9/26、ビエント高崎ビッグキューブ）は、地元のFLOWLISH GUNMA.EXEが準決勝・決勝の接戦を制して優勝し、昨年の高崎大会決勝で敗れた雪辱を果たすとともにPLAYOFFS出場権を獲得した。MVPは#3 髙橋芙由子（FLOWLISH GUNMA.EXE）、スーパードライ賞は#33 遠藤桐（UENOHARA SUNRISE.EXE）。9/27には出場全チームが確定し、PLAYOFFSは10/3-4にグラングリーン大阪 ロートハートスクエアうめきたで男子22チーム、女子6チームにより行われる。",
+    "sourceUrl": "https://3x3exe.com/premier/result_wr8_takasaki/",
+    "imageUrl": null,
+    "publishedAt": "2026-09-26",
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 2,
+        "name": "FLOWLISH GUNMA"
+      },
+      {
+        "id": 31,
+        "name": "UENOHARA SUNRISE.EXE"
+      }
+    ]
   }
 ]
