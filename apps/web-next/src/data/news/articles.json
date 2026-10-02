@@ -1035,5 +1035,93 @@
         "name": "UENOHARA SUNRISE.EXE"
       }
     ]
+  },
+  {
+    "id": 65,
+    "slug": "fiba-3x3-world-tour-bucharest-2026-relocated-65",
+    "title": "〖World Tour〗10/10-11のWTマラガ大会がルーマニア・ブカレストへ開催地変更",
+    "summary": "FIBAは、10/10-11に予定していたFIBA 3x3 World Tour Málaga 2026（スペイン）の開催地をルーマニア・ブカレストへ変更すると発表した。大会はWorld Tour 2026カレンダー上の位置づけを維持し、マラガ大会への出場権を得ていたチームがそのまま出場する。出場権獲得チームにはUb（セルビア）、Miami（USA）、Amsterdam RABOBANK（オランダ）、Baskets Bonn（ドイツ）などが含まれる。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/fiba-3x3-world-tour-2026-heads-to-bucharest",
+    "imageUrl": null,
+    "publishedAt": "2026-09-09",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      },
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "slug": "fiba-3x3-world-tour-deqing-2026-antwerp-win-66",
+    "title": "〖World Tour〗WT徳清2026 — AntwerpがUbを21-17で下し今季WT初優勝",
+    "summary": "FIBA 3x3 World Tour Deqing 2026（9/26-27、中国・徳清）は、Antwerp（ベルギー）が決勝でUb（セルビア）を21-17で破り今季WT初優勝。準々決勝でMiamiに21-18、準決勝でViennaに21-10で勝利した。MVPはDennis Donkor（Antwerp、Player Value 41.9・総得点42はいずれも大会トップ）。3位Toulouse、4位Vienna。日本のShibuyaは9位。シュートアウトコンテストはToni Blazan（Vienna）、ダンクコンテストはYe Jianlinが制した。次戦は10/10-11のWTブカレスト。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/antwerp-claim-first-fiba-3x3-world-tour-win-of-2026-in-deqing",
+    "imageUrl": null,
+    "publishedAt": "2026-09-27",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 24,
+        "name": "Antwerp"
+      },
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 22,
+        "name": "Toulouse"
+      },
+      {
+        "id": 23,
+        "name": "Vienna"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "slug": "exe-premier-2026-season-award-67",
+    "title": "〖EXE PREMIER〗2026シーズンアウォード発表 — 男子MVPはJevonnie Scott、女子MVPはIbeh Esther Chikamso",
+    "summary": "3x3.EXE PREMIERが2026 SEASON AWARDを発表。男子シーズンMVPはJevonnie Scott（SHINAGAWA CITY.EXE #8、総得点228点で2位・Round MVP3回、満場一致で選出）、女子シーズンMVPはIbeh Esther Chikamso（SHINJUKU GIVERS.EXE #23、総得点168点で1位・Round MVP2回）。新人王は男子が野村武利生（DRIVESTAGE.EXE）、女子が小島百花（SHINSHU SAKU REGION.EXE）。女子1試合平均得点1位は髙橋芙由子（FLOWLISH GUNMA.EXE）。Best Owner of the yearはSHONAN SEASIDE.EXEの大和田貢氏、Best Venue of the yearは札幌市北3条広場（アカプラ）。表彰は10/3-4のPLAYOFFS（グラングリーン大阪）で行われる。",
+    "sourceUrl": "https://3x3exe.com/premier/2026-season-award/",
+    "imageUrl": null,
+    "publishedAt": "2026-10-02",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 1,
+        "name": "SHINAGAWA CITY 3x3 BASKETBALL CLUB"
+      },
+      {
+        "id": 27,
+        "name": "SHINJUKU GIVERS.EXE"
+      },
+      {
+        "id": 32,
+        "name": "SHINSHU SAKU REGION.EXE"
+      },
+      {
+        "id": 2,
+        "name": "FLOWLISH GUNMA"
+      },
+      {
+        "id": 10,
+        "name": "SHONAN SEASIDE.EXE"
+      }
+    ]
   }
 ]

@@ -208,14 +208,6 @@
     "updatedAt": "2026-05-31T00:00:00Z"
   },
   {
-    "id": 27,
-    "slug": "malaga-city-center-court",
-    "name": "Málaga特設コート",
-    "region": "Málaga, Spain",
-    "websiteUrl": null,
-    "updatedAt": "2026-06-05T00:00:00Z"
-  },
-  {
     "id": 28,
     "slug": "manama-city-center-court",
     "name": "Manama特設コート",
@@ -254,5 +246,13 @@
     "region": "愛知県名古屋市",
     "websiteUrl": null,
     "updatedAt": "2026-09-20T00:00:00Z"
+  },
+  {
+    "id": 33,
+    "slug": "bucharest-city-center-court",
+    "name": "Bucharest特設コート",
+    "region": "Bucharest, Romania",
+    "websiteUrl": null,
+    "updatedAt": "2026-10-02T00:00:00Z"
   }
 ]

@@ -673,7 +673,7 @@
     "id": 22,
     "slug": "3x3-exe-premier-japan-2026-playoffs-osaka",
     "name": "3x3.EXE PREMIER JAPAN 2026 PLAYOFFS（グラングリーン大阪）",
-    "description": "シーズンプレーオフ（男女合同・大阪開催）。",
+    "description": "3x3.EXE PREMIER 2026シーズンの頂上決戦。日本・タイ・ニュージーランド・オーストラリア・ベトナムの上位チームが集結し、男子22チーム・女子6チームが出場。男子は予備予選トーナメント→グループ予選（A〜D）→決勝トーナメント、女子はグループ予選（A・B）→決勝で優勝を争う。シーズンアウォードの表彰も行われる。YouTubeで無料ライブ配信あり。",
     "location": "グラングリーン大阪 ロートハートスクエアうめきた（大阪府大阪市）",
     "country": "日本",
     "startDate": "2026-10-03",
@@ -685,7 +685,7 @@
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
     "participants": [],
-    "updatedAt": "2026-09-27T00:00:00Z"
+    "updatedAt": "2026-10-02T00:00:00Z"
   },
   {
     "id": 25,
@@ -871,11 +871,11 @@
   },
   {
     "id": 33,
-    "slug": "fiba-3x3-world-tour-malaga-2026",
-    "name": "FIBA 3x3 World Tour Málaga 2026",
-    "description": "FIBA 3x3 World Tour 2026の新規追加大会（マラガ、スペイン）。2012年のWT Madrid以来となるスペイン初開催。World Tour 2026カレンダーへの追加が発表された。",
-    "location": "Málaga特設コート（Málaga, Spain）",
-    "country": "スペイン",
+    "slug": "fiba-3x3-world-tour-bucharest-2026",
+    "name": "FIBA 3x3 World Tour Bucharest 2026",
+    "description": "FIBA 3x3 World Tour 2026（ルーマニア・ブカレスト）。当初スペイン・マラガで予定されていた大会が開催地をブカレストに変更（日程・出場チームは変更なし）。Ub、Miami、Amsterdam RABOBANK、Baskets Bonnなどが出場権を獲得している。",
+    "location": "Bucharest特設コート（Bucharest, Romania）",
+    "country": "ルーマニア",
     "startDate": "2026-10-10",
     "endDate": "2026-10-11",
     "status": "開催予定",
@@ -884,8 +884,25 @@
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-06-05T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 15,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 17,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 18,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 38,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-10-02T00:00:00Z"
   },
   {
     "id": 34,
@@ -1115,19 +1132,48 @@
     "id": 43,
     "slug": "fiba-3x3-world-tour-deqing-2026",
     "name": "FIBA 3x3 World Tour Deqing 2026",
-    "description": "FIBA 3x3 World Tour 2026（中国・徳清）。",
+    "description": "FIBA 3x3 World Tour 2026（中国・徳清）。2年連続の徳清開催。決勝でAntwerp（ベルギー）がUb（セルビア）を21-17で下し今季WT初優勝。3位Toulouse、4位Vienna。MVPはDennis Donkor（Antwerp）。",
     "location": "Deqing（China）",
     "country": "中国",
     "startDate": "2026-09-26",
     "endDate": "2026-09-27",
-    "status": "開催中",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://worldtour.fiba3x3.com/2026",
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-09-27T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 24,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 15,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 22,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 23,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 17,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 18,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 40,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-10-02T00:00:00Z"
   },
   {
     "id": 44,
