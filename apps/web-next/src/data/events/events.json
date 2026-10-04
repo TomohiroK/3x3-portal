@@ -673,19 +673,36 @@
     "id": 22,
     "slug": "3x3-exe-premier-japan-2026-playoffs-osaka",
     "name": "3x3.EXE PREMIER JAPAN 2026 PLAYOFFS（グラングリーン大阪）",
-    "description": "3x3.EXE PREMIER 2026シーズンの頂上決戦。日本・タイ・ニュージーランド・オーストラリア・ベトナムの上位チームが集結し、男子22チーム・女子6チームが出場。男子は予備予選トーナメント→グループ予選（A〜D）→決勝トーナメント、女子はグループ予選（A・B）→決勝で優勝を争う。シーズンアウォードの表彰も行われる。YouTubeで無料ライブ配信あり。",
+    "description": "3x3.EXE PREMIER 2026シーズンの頂上決戦。日本・タイ・ニュージーランド・オーストラリア・ベトナムの上位チームが集結し、男子22チーム・女子6チームが出場。男子は予備予選トーナメント→グループ予選（A〜D）→決勝トーナメント、女子はグループ予選（A・B）→決勝で優勝を争う。シーズンアウォードの表彰も行われる。YouTubeで無料ライブ配信あり。男子決勝はSHIBUYA SCELFIDA.EXEがUENOHARA SUNRISE.EXEを21-16で下して優勝（準決勝はSHIBUYA SCELFIDA.EXEがMINAKAMI TOWN.EXEに22-17、UENOHARA SUNRISE.EXEがEPIC.EXEに21-20で勝利）。女子決勝はSHINJUKU GIVERS.EXEがUENOHARA SUNRISE.EXEを14-12で破り優勝した。",
     "location": "グラングリーン大阪 ロートハートスクエアうめきた（大阪府大阪市）",
     "country": "日本",
     "startDate": "2026-10-03",
     "endDate": "2026-10-04",
-    "status": "開催予定",
+    "status": "終了",
     "imageUrl": null,
     "websiteUrl": "https://3x3exe.com/premier/japan_2026_schedule/",
     "xAccount": "3x3league",
     "instagramAccount": "3x3.exe",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-10-02T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 36,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 31,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 27,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 8,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-10-04T00:00:00Z"
   },
   {
     "id": 25,

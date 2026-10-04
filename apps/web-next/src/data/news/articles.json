@@ -1123,5 +1123,33 @@
         "name": "SHONAN SEASIDE.EXE"
       }
     ]
+  },
+  {
+    "id": 68,
+    "slug": "exe-premier-2026-playoffs-shibuya-shinjuku-champions-68",
+    "title": "〖EXE PREMIER〗2026 PLAYOFFS — 男子はSHIBUYA SCELFIDA.EXE、女子はSHINJUKU GIVERS.EXEが優勝",
+    "summary": "3x3.EXE PREMIER 2026 PLAYOFFS（10/3-4、グラングリーン大阪 ロートハートスクエアうめきた）が閉幕。男子決勝はSHIBUYA SCELFIDA.EXEがUENOHARA SUNRISE.EXEを21-16で下し優勝。準決勝ではSHIBUYA SCELFIDA.EXEがMINAKAMI TOWN.EXEに22-17、UENOHARA SUNRISE.EXEがEPIC.EXEに21-20で勝利した。女子決勝はSHINJUKU GIVERS.EXEがUENOHARA SUNRISE.EXEとのロースコアの接戦を14-12で制し、頂点に立った。",
+    "sourceUrl": "https://3x3exe.com/premier/result/?round=583",
+    "imageUrl": null,
+    "publishedAt": "2026-10-04",
+    "updatedAt": "2026-10-04T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 36,
+        "name": "SHIBUYA SCELFIDA.EXE"
+      },
+      {
+        "id": 31,
+        "name": "UENOHARA SUNRISE.EXE"
+      },
+      {
+        "id": 27,
+        "name": "SHINJUKU GIVERS.EXE"
+      },
+      {
+        "id": 8,
+        "name": "MINAKAMI TOWN.EXE"
+      }
+    ]
   }
 ]
