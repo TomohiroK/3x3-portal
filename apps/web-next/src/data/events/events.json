@@ -890,7 +890,7 @@
     "id": 33,
     "slug": "fiba-3x3-world-tour-bucharest-2026",
     "name": "FIBA 3x3 World Tour Bucharest 2026",
-    "description": "FIBA 3x3 World Tour 2026（ルーマニア・ブカレスト）。当初スペイン・マラガで予定されていた大会が開催地をブカレストに変更（日程・出場チームは変更なし）。Ub、Miami、Amsterdam RABOBANK、Baskets Bonnなどが出場権を獲得している。",
+    "description": "FIBA 3x3 World Tour 2026（ルーマニア・ブカレスト）。当初スペイン・マラガで予定されていた大会が開催地をブカレストに変更（日程・出場チームは変更なし）。16チームが出場し、プールAはUb・Hangzhou Jingwei・Kaunas VDU、プールBはMiami・DeQing・Cluj、プールCはBaskets Bonn・Toulouse・予選ドローA勝者、プールDはAntwerp・Ulaanbaatar MMC Energy・予選ドローB勝者。予選ドローAは前回王者Amsterdam RABOBANK・Lausanne・Phoenix、予選ドローBはFuengirola・Taipei WanBao・Dubaiで争われる。",
     "location": "Bucharest特設コート（Bucharest, Romania）",
     "country": "ルーマニア",
     "startDate": "2026-10-10",
@@ -917,9 +917,17 @@
       {
         "teamId": 38,
         "status": "confirmed"
+      },
+      {
+        "teamId": 24,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 22,
+        "status": "confirmed"
       }
     ],
-    "updatedAt": "2026-10-02T00:00:00Z"
+    "updatedAt": "2026-10-09T00:00:00Z"
   },
   {
     "id": 34,
@@ -1196,7 +1204,7 @@
     "id": 44,
     "slug": "fiba-3x3-world-tour-macau-2026",
     "name": "FIBA 3x3 World Tour Macau 2026",
-    "description": "FIBA 3x3 World Tour 2026（マカオ）。",
+    "description": "FIBA 3x3 World Tour 2026（マカオ）。Ub、Warsaw、DeQing、Ulaanbaatar MMC Energyが出場権を獲得済みで、9/18-19のHongcheon Challengerを制したVienna、準優勝のCotai WOLFUNITED、Taipei WanBaoも出場権を手にした。",
     "location": "Macau（China）",
     "country": "中国",
     "startDate": "2026-10-17",
@@ -1207,8 +1215,17 @@
     "xAccount": "FIBA3x3",
     "instagramAccount": "fiba3x3",
     "tiktokAccount": null,
-    "participants": [],
-    "updatedAt": "2026-09-18T00:00:00Z"
+    "participants": [
+      {
+        "teamId": 15,
+        "status": "confirmed"
+      },
+      {
+        "teamId": 23,
+        "status": "confirmed"
+      }
+    ],
+    "updatedAt": "2026-10-09T00:00:00Z"
   },
   {
     "id": 45,

@@ -1151,5 +1151,41 @@
         "name": "MINAKAMI TOWN.EXE"
       }
     ]
+  },
+  {
+    "id": 69,
+    "slug": "fiba-3x3-world-tour-bucharest-2026-pools-69",
+    "title": "〖World Tour〗WTブカレスト2026のプール決定 — 世界1位Ubが第1シード、前回王者Amsterdamは予選ドローから",
+    "summary": "FIBAは10/10-11開催のFIBA 3x3 World Tour Bucharest 2026のシードとプール分けを発表した。16チームが出場し、第1シードは世界ランキング1位のUb（セルビア）、以下Miami（USA）、Baskets Bonn（ドイツ）、前回大会王者のAmsterdam RABOBANK（オランダ）が続く。プールAはUb・Hangzhou Jingwei・Kaunas VDU、プールBはMiami・DeQing・地元Cluj、プールCはBaskets Bonn・Toulouse・予選ドローA勝者、プールDはAntwerp・Ulaanbaatar MMC Energy・予選ドローB勝者。予選ドローAはAmsterdam RABOBANK・Lausanne・Phoenix、予選ドローBはFuengirola・Taipei WanBao・Dubaiが本戦プール入りを争う。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/pools-finalized-for-fiba-3x3-world-tour-bucharest-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-10-07",
+    "updatedAt": "2026-10-09T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      },
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      },
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 24,
+        "name": "Antwerp"
+      },
+      {
+        "id": 22,
+        "name": "Toulouse"
+      }
+    ]
   }
 ]
