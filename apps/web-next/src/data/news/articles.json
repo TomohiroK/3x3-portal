@@ -1187,5 +1187,41 @@
         "name": "Toulouse"
       }
     ]
+  },
+  {
+    "id": 70,
+    "slug": "fiba-3x3-world-tour-bucharest-2026-day1-70",
+    "title": "〖World Tour〗WTブカレスト2026初日 — 世界1位Ubがプール敗退、Miami・Amsterdam・Fuengirolaが無敗で準々決勝へ",
+    "summary": "FIBA 3x3 World Tour Bucharest 2026の初日（10/10、ParkLake Shopping Center）、第1シードのUb（セルビア）はプールAでKaunas VDUに11-21で敗れ、Hangzhou Jingweiには21-16で勝ったものの、3チームが1勝1敗で並び得点差でKaunas VDUとHangzhou Jingweiが勝ち上がった。プールBはMiami（USA）が2連勝で1位通過し、DeQingがClujを21-13で下して続いた。前回王者Amsterdam RABOBANK（オランダ）は予選ドローからプールCまで無敗で突破し、Baskets BonnもToulouseを17-12で破って準々決勝へ。プールDはFuengirola（スペイン）が無敗で1位、AntwerpがUlaanbaatar MMC Energyに21-19で競り勝った。10/11の準々決勝はKaunas VDU vs Baskets Bonn、Fuengirola vs DeQing、Miami vs Antwerp、Amsterdam RABOBANK vs Hangzhou Jingwei。",
+    "sourceUrl": "https://www.fiba.basketball/en/news/miami-fuengirola-lead-the-way-as-quarter-finals-are-set-at-world-tour-bucharest-2026",
+    "imageUrl": null,
+    "publishedAt": "2026-10-10",
+    "updatedAt": "2026-10-11T00:00:00Z",
+    "relatedTeams": [
+      {
+        "id": 15,
+        "name": "Ub"
+      },
+      {
+        "id": 17,
+        "name": "Miami"
+      },
+      {
+        "id": 18,
+        "name": "Amsterdam RABOBANK"
+      },
+      {
+        "id": 38,
+        "name": "Baskets Bonn"
+      },
+      {
+        "id": 24,
+        "name": "Antwerp"
+      },
+      {
+        "id": 22,
+        "name": "Toulouse"
+      }
+    ]
   }
 ]

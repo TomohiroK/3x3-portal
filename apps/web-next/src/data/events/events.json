@@ -890,12 +890,12 @@
     "id": 33,
     "slug": "fiba-3x3-world-tour-bucharest-2026",
     "name": "FIBA 3x3 World Tour Bucharest 2026",
-    "description": "FIBA 3x3 World Tour 2026（ルーマニア・ブカレスト）。当初スペイン・マラガで予定されていた大会が開催地をブカレストに変更（日程・出場チームは変更なし）。16チームが出場し、プールAはUb・Hangzhou Jingwei・Kaunas VDU、プールBはMiami・DeQing・Cluj、プールCはBaskets Bonn・Toulouse・予選ドローA勝者、プールDはAntwerp・Ulaanbaatar MMC Energy・予選ドローB勝者。予選ドローAは前回王者Amsterdam RABOBANK・Lausanne・Phoenix、予選ドローBはFuengirola・Taipei WanBao・Dubaiで争われる。",
-    "location": "Bucharest特設コート（Bucharest, Romania）",
+    "description": "FIBA 3x3 World Tour 2026（ルーマニア・ブカレスト）。当初スペイン・マラガで予定されていた大会が開催地をブカレストに変更（日程・出場チームは変更なし）。16チームが出場し、プールAはUb・Hangzhou Jingwei・Kaunas VDU、プールBはMiami・DeQing・Cluj、プールCはBaskets Bonn・Toulouse・予選ドローA勝者、プールDはAntwerp・Ulaanbaatar MMC Energy・予選ドローB勝者。予選ドローAは前回王者Amsterdam RABOBANK・Lausanne・Phoenix、予選ドローBはFuengirola・Taipei WanBao・Dubaiで争われる。 10/10の初日はParkLake Shopping Centerで実施され、第1シードのUbがプールAで1勝1敗ながら得点差で敗退。準々決勝は Kaunas VDU vs Baskets Bonn、Fuengirola vs DeQing、Miami vs Antwerp、Amsterdam RABOBANK vs Hangzhou Jingwei の組み合わせで10/11に行われる。",
+    "location": "ParkLake Shopping Center（Bucharest, Romania）",
     "country": "ルーマニア",
     "startDate": "2026-10-10",
     "endDate": "2026-10-11",
-    "status": "開催予定",
+    "status": "開催中",
     "imageUrl": null,
     "websiteUrl": "https://worldtour.fiba3x3.com/2026/26dc7eba-ab86-492f-aa2b-c8082f11d5fb",
     "xAccount": "FIBA3x3",
@@ -927,7 +927,7 @@
         "status": "confirmed"
       }
     ],
-    "updatedAt": "2026-10-09T00:00:00Z"
+    "updatedAt": "2026-10-11T00:00:00Z"
   },
   {
     "id": 34,
